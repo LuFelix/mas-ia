@@ -9,6 +9,8 @@ import {
     CompleteActivity,
     ActivityFilterDTO,
     PaginatedActivitiesResponse,
+    CreateActivityDto,
+    UpdateActivityDto,
 } from '../../shared/models/activity.model';
 import { environment } from '../../../environments/environment';
 

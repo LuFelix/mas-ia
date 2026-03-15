@@ -182,7 +182,7 @@ export class AuthService {
         "READ_USERS", "INVITE_USER", "CREATE_USER", "EDIT_USER_PROFILE",
         "ASSIGN_USER_ROLES", "DELETE_USER", "EXPORT_USERS",
         "READ_CERTIFICATIONS", "MANAGE_CERTIFICATIONS", "VIEW_DASHBOARD", // <--- PERMISSÃO DO DASHBOARD
-        "TAKE_CERTIFICATIONS", "SIMULATE_EXAM" // Adicionadas para teste
+        "TAKE_CERTIFICATIONS", "SIMULATE_EXAM", "READ_ACTIVITIES" // Adicionadas para teste
         // Confirme se VIEW_DASHBOARD está exatamente assim!
     ];
 
