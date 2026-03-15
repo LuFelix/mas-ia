@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Agente de Viagens",
+    "shortDescription": "Profissional responsável por atender clientes e auxiliá-los na aquisição de passagens, hospedagens e pacotes.",
+    "description": "O Agente de Viagens atua em agências físicas ou online, oferecendo consultoria personalizada, comparando preços, rotas e atrativos turísticos. Precisa conhecer sistemas de reserva e normas do setor.",
+    "passingScore": 70,
+    "modality": "online",
+    "durationHours": 16
+  },
+  {
+    "name": "Camareira / Arrumador",
+    "shortDescription": "Responsável pela limpeza, arrumação e organização de quartos, áreas comuns e enxoval.",
+    "description": "A Camareira ou Arrumador garante o padrão de higiene e conforto dos hóspedes, seguindo normas de hotelaria, checklist de limpeza e protocolos de segurança.",
+    "passingScore": 70,
+    "modality": "inPerson",
+    "durationHours": 12
+  },
+  {
+    "name": "Chefe de Governança",
+    "shortDescription": "Coordena a equipe de limpeza e arrumação de hotéis e resorts.",
+    "description": "Organiza escala da equipe, supervisiona procedimentos de limpeza, controla enxoval e garante cumprimento dos padrões do estabelecimento.",
+    "passingScore": 75,
+    "modality": "inPerson",
+    "durationHours": 20
+  }
+]

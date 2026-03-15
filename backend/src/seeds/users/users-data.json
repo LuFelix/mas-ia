@@ -1,0 +1,62 @@
+[
+  {
+    "cpf": "123.456.789-09",
+    "password": "Senha@1234",
+    "email": "joao.silva@example.com",
+    "name": "João Silva"
+  },
+  {
+    "cpf": "234.567.890-18",
+    "password": "Senha@1234",
+    "email": "maria.santos@example.com",
+    "name": "Maria Santos"
+  },
+  {
+    "cpf": "345.678.901-27",
+    "password": "Senha@1234",
+    "email": "pedro.oliveira@example.com",
+    "name": "Pedro Oliveira"
+  },
+  {
+    "cpf": "456.789.012-36",
+    "password": "Senha@1234",
+    "email": "ana.costa@example.com",
+    "name": "Ana Costa"
+  },
+  {
+    "cpf": "567.890.123-45",
+    "password": "Senha@1234",
+    "email": "carlos.rodrigues@example.com",
+    "name": "Carlos Rodrigues"
+  },
+  {
+    "cpf": "678.901.234-54",
+    "password": "Senha@1234",
+    "email": "juliana.pereira@example.com",
+    "name": "Juliana Pereira"
+  },
+  {
+    "cpf": "789.012.345-63",
+    "password": "Senha@1234",
+    "email": "rafael.almeida@example.com",
+    "name": "Rafael Almeida"
+  },
+  {
+    "cpf": "890.123.456-72",
+    "password": "Senha@1234",
+    "email": "fernanda.lima@example.com",
+    "name": "Fernanda Lima"
+  },
+  {
+    "cpf": "901.234.567-81",
+    "password": "Senha@1234",
+    "email": "bruno.souza@example.com",
+    "name": "Bruno Souza"
+  },
+  {
+    "cpf": "012.345.678-90",
+    "password": "Senha@1234",
+    "email": "patricia.ferreira@example.com",
+    "name": "Patrícia Ferreira"
+  }
+]

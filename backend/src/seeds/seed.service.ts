@@ -5,6 +5,8 @@ import { Repository } from 'typeorm';
 import * as bcrypt from 'bcrypt';
 import { Role } from 'src/roles/entities/role.entity';
 import { User } from 'src/users/entities/user.entity';
+import { SeedUsersService } from './users/seed-users.service';
+import { SeedCertificationsService } from './certifications/seed-certifications.service';
 
 @Injectable()
 export class SeedService {
@@ -15,6 +17,8 @@ export class SeedService {
     private readonly roleRepository: Repository<Role>,
     @InjectRepository(User)
     private readonly userRepository: Repository<User>,
+    private readonly seedUsersService: SeedUsersService,
+    private readonly seedCertificationsService: SeedCertificationsService,
   ) {}
 
   async run() {
@@ -29,6 +33,12 @@ export class SeedService {
     } else {
       this.logger.error('A role "administrador" não foi encontrada ou criada. O usuário admin não será populado.');
     }
+
+    // 3. Seed de usuários (colaboradores / dados adicionais)
+    await this.seedUsersService.run();
+
+    // 4. Seed de certificações
+    await this.seedCertificationsService.run();
 
     this.logger.log('Seeding concluído com sucesso.');
   }
