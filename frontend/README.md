@@ -1,13 +1,51 @@
-# Aplicação Frontend - Avaliação Técnica
+# MAS-IA (Front-end Angular)
 
-Este repositório contém o código-fonte aplicação em **Angular** que serve como a interface de usuário da aplicação.
+Este repositório contém o código-fonte do **front-end Angular** da aplicação **MAS-IA**, que consome a API do backend.
 
-## 🚀 Como Executar o Projeto
+> Nota: este projeto depende de um backend (NestJS). Você pode rodar o backend localmente ou via Docker Compose.
 
-Esta aplicação foi projetada para ser executada como parte de um ambiente Docker Compose, que gerencia a comunicação com a API de backend. Para subir a aplicação completa, por favor, siga as instruções no repositório de orquestração principal.
+## 🚀 Como Executar o Projeto (Front + Backend)
 
-**➡️ [Link para o Repositório de Orquestração](https://github.com/kelvinwbsantos/avaliacao-tecnica.git)**
+### 1) Instalar dependências
 
+```bash
+npm install
+```
+
+### 2) Rodar o backend (opcional, mas necessário para a UI funcionar corretamente)
+
+#### a) Via Docker Compose (recomendado)
+
+Na raiz do workspace (onde está o `docker-compose.yml`):
+
+```bash
+docker compose up --build
+```
+
+#### b) Local (Node/NestJS)
+
+```bash
+cd ../backend
+npm install
+npm run start:dev
+```
+
+### 3) Rodar o frontend
+
+```bash
+npm start
+```
+
+> O frontend roda em: http://localhost:4200
+
+### 4) Seed de dados (opcional)
+
+```bash
+npm run seed:users
+npm run seed:certifications
+```
+
+---
 
 README - Arquitetura do Projeto
 
