@@ -1,0 +1,25 @@
+<div class="activities-management-container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Gerenciamento de Atividades</mat-card-title>
+      <mat-card-subtitle>Liste, crie, edite e exclua atividades interativas</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <div class="actions-bar">
+        <button mat-raised-button color="primary" (click)="onCreateActivity()">
+          <mat-icon>add</mat-icon>
+          Nova Atividade
+        </button>
+      </div>
+
+      <app-activities-list
+        [dataSource]="dataSource"
+        [isLoading]="isLoading"
+        [isDeleting]="isDeleting"
+        [displayedColumns]="displayedColumns"
+        (openDetails)="onOpenDetails($event)">
+      </app-activities-list>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -68,11 +68,17 @@ export const routes: Routes = [
                 data: { permissions: ['READ_USERS'] }
             },
             {   // Rota para Certificações (Gerencial)
-                path: 'certifications',
-                // Usando loadChildren para consistência (precisa criar certifications.routes.ts)
-                loadChildren: () => import('./features/certifications/pages/certifications-page/certifications.routes').then(m => m.CERTIFICATIONS_ROUTES),
+                path: 'certifications-management',
+                // Usando loadChildren para consistência (certifications-management página)
+                loadChildren: () => import('./features/certifications/pages/certifications-management-page/certifications-management.routes').then(m => m.CERTIFICATIONS_MANAGEMENT_ROUTES),
                 canActivate: [PermissionGuard],
                 data: { permissions: ['READ_CERTIFICATIONS'] }
+            },
+            {   // Rota para Atividades (Gerencial)
+                path: 'activities-management',
+                loadComponent: () => import('./features/activities/pages/activities-management-page/activities-management-page.component').then(m => m.ActivitiesManagementPageComponent),
+                canActivate: [PermissionGuard],
+                data: { permissions: ['READ_ACTIVITIES'] } // Ajustar permissão conforme necessário
             },
             {   // Rota para Convidar Colaboradores
                 path: 'invite',

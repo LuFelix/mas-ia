@@ -14,6 +14,18 @@ export interface InitialActivity {
 }
 
 /**
+ * Interface para criação de atividade (POST)
+ */
+export interface CreateActivityDto extends InitialActivity {}
+
+/**
+ * Interface para atualização de atividade (PATCH)
+ */
+export interface UpdateActivityDto extends Partial<CreateActivityDto> {
+    isActive?: boolean;
+}
+
+/**
  * Interface para a Atividade completa retornada pelo backend (GET).
  */
 export interface CompleteActivity extends InitialActivity {
