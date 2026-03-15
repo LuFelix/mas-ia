@@ -1,0 +1,18 @@
+/* src/app/features/activities/pages/activities-management-page/activities-management-page.component.scss */
+
+.activities-management-container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.actions-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+mat-card-content {
+  padding-top: 0;
+}

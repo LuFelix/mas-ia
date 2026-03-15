@@ -58,7 +58,10 @@ export class SideNavComponent {
     { link: '/app/users', label: 'Usuários', icon: 'group', requiredPermission: 'READ_USERS' }, 
 
     // Certificações (Gerencial)
-    { link: '/app/certifications', label: 'Certificações', icon: 'assignment_turned_in', requiredPermission: 'READ_CERTIFICATIONS' },
+    { link: '/app/certifications-management', label: 'Gerenciar Certificações', icon: 'assignment_turned_in', requiredPermission: 'READ_CERTIFICATIONS' },
+
+    // Atividades (Gerencial)
+    { link: '/app/activities-management', label: 'Gerenciar Atividades', icon: 'settings', requiredPermission: 'READ_ACTIVITIES' },
 
     // Certificações Disponíveis (Candidato)
     {

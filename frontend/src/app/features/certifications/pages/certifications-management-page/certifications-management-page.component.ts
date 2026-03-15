@@ -24,7 +24,7 @@ import {
 import { CertificationsListComponent } from '../../components/certifications-list/certifications-list.component';
 
 @Component({
-  selector: 'app-certifications-page',
+  selector: 'app-certifications-management-page',
   standalone: true,
   imports: [
     CommonModule,
@@ -35,10 +35,10 @@ import { CertificationsListComponent } from '../../components/certifications-lis
     MatSnackBarModule, CertificationsListComponent 
   ],
     providers: [ DatePipe ],
-  templateUrl: './certifications-page.component.html',
-  styleUrl: './certifications-page.component.scss',
+  templateUrl: './certifications-management-page.component.html',
+  styleUrl: './certifications-management-page.component.scss',
 })
-export class CertificationsPage implements AfterViewInit { 
+export class CertificationsManagementPageComponent implements AfterViewInit { 
   
   private certificationsService: CertificationsService = inject(CertificationsService);
   private readonly dialog = inject(MatDialog);
