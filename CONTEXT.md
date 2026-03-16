@@ -6,7 +6,7 @@
 - **Integração de IA:** O sistema utilizará a API do Gemini.
 
 ## 2. Stack Tecnológica (Monorepo)
-- **Frontend:** Angular (Standalone Components, Angular Material, SCSS, Tailwind/Flexbox).
+- **Frontend:** Angular (Standalone Components, Angular Material com o tema `@angular/material/prebuilt-themes/azure-blue.css`, SCSS, Tailwind/Flexbox).
 - **Backend:** NestJS (REST API, TypeORM, Class-Validator, Swagger).
 - **Banco de Dados:** PostgreSQL.
 - **Infraestrutura:** Docker (docker-compose.yml na raiz unindo front, back e db).
@@ -19,7 +19,13 @@
 
 ## 4. Estado Atual do Sistema
 - O monorepo está limpo, configurado e com o `.env` isolado no backend.
-- **Backend:** Tabela `activities` criada. Entidade possui os campos `type`, `category`, `difficultyLevel` e `hasAI`. O CRUD está operante.
+- **Backend:** Tabela `activities` criada e CRUD operante.
+- **Frontend:** Backoffice (Listagem Gerencial e Modal de Edição) das atividades totalmente concluído e funcional.
 
 ## 5. Missão Imediata (Next Step)
-Criar a **Listagem Gerencial (Backoffice)** das atividades. Precisamos garantir que o administrador consiga listar, criar, editar e excluir as ferramentas interativas no banco de dados, utilizando tabelas do Angular Material e o padrão de Modais (MatDialog) para os formulários de edição/criação. espelhando rigorosamente a arquitetura, os filtros e o visual do módulo de certificações já existente.
+Criar o Frontend do **Simulador Visual de Crescimento Patrimonial**. O usuário chegará nesta tela após clicar em "Iniciar Simulação" nos detalhes da atividade. 
+A arquitetura deve seguir estritamente o padrão Smart/Dumb:
+1. Um "Smart Component" (Página) para gerenciar o estado e ler o `:id` da rota.
+2. Um "Dumb Component" (Formulário) recebendo inputs para: Capital Inicial, Aporte Mensal, Taxa de Juros Mensal e Prazo (em meses).
+3. Um "Dumb Component" (Visualização) para exibir o resultado financeiro simulado.
+A interface deve utilizar estritamente os componentes do Angular Material (Cards, Form Fields, Buttons) aproveitando a paleta de cores primária e secundária do tema `azure-blue`, integrados com Tailwind CSS para alinhamento e grid responsivo.

@@ -91,8 +91,8 @@ export class ActivityTakePageComponent implements OnInit, OnDestroy {
     // Roteamento condicional baseado no tipo da atividade
     switch (this.activity.type) {
       case 'simulador':
-        // this.router.navigate(['/app/activities/simulate/compound-interest', this.activity.id]);
-        this.snackBar.open('Iniciando Simulador Visual...', 'Fechar', { duration: 2000 });
+        // Navega para o Simulador de Crescimento Patrimonial passando o ID da atividade
+        this.router.navigate(['/app/activities/simulator/wealth-growth', this.activity.id]);
         break;
       case 'conversor':
         this.snackBar.open('Iniciando Conversor de Taxas...', 'Fechar', { duration: 2000 });
