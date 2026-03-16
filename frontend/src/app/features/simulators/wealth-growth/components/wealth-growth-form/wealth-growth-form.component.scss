@@ -1,0 +1,45 @@
+/* Caminho: src/app/features/simulators/wealth-growth/components/wealth-growth-form/wealth-growth-form.component.scss */
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+}
+
+.form-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0 0 16px 0;
+
+  mat-icon {
+    font-size: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+.full-width {
+  width: 100%;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.simulate-button {
+  padding: 0 32px;
+  height: 48px;
+  font-size: 1rem;
+  border-radius: 8px;
+
+  mat-icon {
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+}

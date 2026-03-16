@@ -133,6 +133,11 @@ export const routes: Routes = [
                 loadComponent: () => import('./features/certifications/pages/certificate-verify-page/certificate-verify-page.component')
                     .then(m => m.CertificateVerifyPageComponent) // Usando o nome correto do componente
             },
+            {   // Rota para o Simulador de Crescimento Patrimonial
+                path: 'activities/simulator/wealth-growth/:id',
+                loadComponent: () => import('./features/simulators/wealth-growth/pages/wealth-growth-page/wealth-growth-page.component')
+                    .then(m => m.WealthGrowthPageComponent)
+            },
             //outras rotas filhas aqui
         ]
     },

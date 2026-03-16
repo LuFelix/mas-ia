@@ -1,0 +1,63 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-wrapper">
+
+  <h2 class="form-title">
+    <mat-icon>show_chart</mat-icon>
+    Parâmetros da Simulação
+  </h2>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Capital Inicial (R$)</mat-label>
+    <input matInput type="number" formControlName="initialCapital" placeholder="Ex: 10000" min="0" />
+    <mat-icon matPrefix>account_balance_wallet</mat-icon>
+    @if (form.get('initialCapital')?.hasError('required') && form.get('initialCapital')?.touched) {
+      <mat-error>Capital inicial é obrigatório.</mat-error>
+    }
+    @if (form.get('initialCapital')?.hasError('min') && form.get('initialCapital')?.touched) {
+      <mat-error>O valor não pode ser negativo.</mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Aporte Mensal (R$)</mat-label>
+    <input matInput type="number" formControlName="monthlyContribution" placeholder="Ex: 500" min="0" />
+    <mat-icon matPrefix>add_circle_outline</mat-icon>
+    @if (form.get('monthlyContribution')?.hasError('required') && form.get('monthlyContribution')?.touched) {
+      <mat-error>Aporte mensal é obrigatório.</mat-error>
+    }
+    @if (form.get('monthlyContribution')?.hasError('min') && form.get('monthlyContribution')?.touched) {
+      <mat-error>O valor não pode ser negativo.</mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Taxa de Juros (% ao mês)</mat-label>
+    <input matInput type="number" formControlName="interestRate" placeholder="Ex: 0.8" min="0" step="0.01" />
+    <mat-icon matPrefix>percent</mat-icon>
+    @if (form.get('interestRate')?.hasError('required') && form.get('interestRate')?.touched) {
+      <mat-error>Taxa de juros é obrigatória.</mat-error>
+    }
+    @if (form.get('interestRate')?.hasError('min') && form.get('interestRate')?.touched) {
+      <mat-error>A taxa não pode ser negativa.</mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Prazo (Meses)</mat-label>
+    <input matInput type="number" formControlName="months" placeholder="Ex: 24" min="1" />
+    <mat-icon matPrefix>calendar_month</mat-icon>
+    @if (form.get('months')?.hasError('required') && form.get('months')?.touched) {
+      <mat-error>O prazo é obrigatório.</mat-error>
+    }
+    @if (form.get('months')?.hasError('min') && form.get('months')?.touched) {
+      <mat-error>O prazo mínimo é 1 mês.</mat-error>
+    }
+  </mat-form-field>
+
+  <div class="form-actions">
+    <button mat-raised-button color="primary" type="submit" class="simulate-button">
+      <mat-icon>calculate</mat-icon>
+      Simular Crescimento
+    </button>
+  </div>
+
+</form>

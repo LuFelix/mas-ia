@@ -20,6 +20,7 @@ import { ExamsModule } from './exams/exams.module';
 import { CertificatesModule } from './certificates/certificates.module';
 import { SuiService } from './sui/sui.service';
 import { ActivitiesModule } from './activities/activities.module';
+import { WealthGrowthModule } from './simulators/wealth-growth/wealth-growth.module'; 
 
 @Module({
   imports: [
@@ -52,6 +53,7 @@ import { ActivitiesModule } from './activities/activities.module';
     ExamsModule,
     CertificatesModule,
     ActivitiesModule,
+    WealthGrowthModule,
   ],
   controllers: [AppController],
   providers: [AppService, MailerService, SuiService],
