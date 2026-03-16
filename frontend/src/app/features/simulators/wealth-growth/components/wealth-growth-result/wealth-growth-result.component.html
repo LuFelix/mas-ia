@@ -1,0 +1,69 @@
+@if (resultData) {
+  <mat-card class="result-card">
+    <mat-card-header>
+      <mat-card-title class="result-title">
+        <mat-icon>insights</mat-icon>
+        Resultado da Simulação
+      </mat-card-title>
+      <mat-card-subtitle>Projeção com juros compostos</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content class="p-6 space-y-4">
+
+      <div class="result-item">
+        <div class="result-label">
+          <mat-icon>savings</mat-icon>
+          <span>Valor Total Investido</span>
+        </div>
+        <span class="result-value invested">
+          {{ resultData.totalInvested | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+        </span>
+      </div>
+
+      <mat-divider></mat-divider>
+
+      <div class="result-item">
+        <div class="result-label">
+          <mat-icon>trending_up</mat-icon>
+          <span>Rendimento (Juros)</span>
+        </div>
+        <span class="result-value earnings">
+          {{ earnings | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+        </span>
+      </div>
+
+      <mat-divider></mat-divider>
+
+      <div class="result-item highlight">
+        <div class="result-label">
+          <mat-icon>account_balance</mat-icon>
+          <span>Valor Total com Juros</span>
+        </div>
+        <span class="result-value total">
+          {{ resultData.totalWithInterest | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
+        </span>
+      </div>
+      @if (resultData && resultData.history && resultData.history.length > 0) {
+  <mat-divider style="margin: 24px 0 16px 0;"></mat-divider>
+  
+  <div class="teaser-section">
+    <p style="font-size: 0.85rem; color: #666; font-weight: 500; text-transform: uppercase; margin-bottom: 4px;">
+      Curva de Evolução (vs. Poupança)
+    </p>
+    
+    <app-wealth-growth-mini-chart [history]="resultData.history"></app-wealth-growth-mini-chart>
+
+    <button mat-stroked-button color="primary" style="width: 100%; margin-top: 16px; padding: 20px 0;">
+      <mat-icon>insights</mat-icon> Ver Análise Detalhada
+    </button>
+  </div>
+}
+
+    </mat-card-content>
+  </mat-card>
+} @else {
+  <div class="empty-state">
+    <mat-icon>bar_chart</mat-icon>
+    <p>Preencha os parâmetros ao lado e clique em <strong>Simular Crescimento</strong> para ver o resultado aqui.</p>
+  </div>
+}
