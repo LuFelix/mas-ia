@@ -1,0 +1,68 @@
+.modal-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+  color: #0b3b75;
+}
+
+.modal-title-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.modal-content {
+  padding: 0;
+}
+
+.chart-container {
+  position: relative;
+  height: 450px; 
+  width: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.table-container {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.full-width-table {
+  width: 100%;
+}
+
+.savings-column {
+  color: #f44336;
+}
+
+.compound-column {
+  color: #005cbb;
+  font-weight: 600;
+}
+
+.table-row {
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: #f5f9ff;
+  }
+}
+
+.modal-actions {
+  padding: 16px 24px;
+}
+
+// Pequeno ajuste para a barra de rolagem da tabela ficar mais limpa
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}

@@ -3,6 +3,14 @@
 .result-card {
   border-radius: 12px !important;
   overflow: hidden;
+  border: 1px solid #d7e6fb;
+  box-shadow: 0 6px 18px rgba(0, 73, 151, 0.08);
+}
+
+.result-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
 .result-title {
@@ -33,6 +41,7 @@
   align-items: center;
   gap: 8px;
   font-size: 0.95rem;
+  color: #3b5f8a;
 
   mat-icon {
     font-size: 1.2rem;
@@ -45,6 +54,7 @@
 .result-value {
   font-size: 1.1rem;
   font-weight: 600;
+  color: #0b3b75;
 
   &.invested {
     opacity: 0.8;
@@ -52,12 +62,32 @@
 
   &.earnings {
     font-size: 1rem;
+    color: #005cbb;
   }
 
   &.total {
     font-size: 1.4rem;
     font-weight: 700;
   }
+}
+
+.section-divider {
+  margin: 24px 0 16px;
+}
+
+.teaser-title {
+  font-size: 0.85rem;
+  color: #4a6a8f;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 4px;
+}
+
+.detailed-button {
+  width: 100%;
+  margin-top: 16px;
+  padding: 20px 0;
+  border-color: #99bff1;
 }
 
 .empty-state {
@@ -69,6 +99,9 @@
   padding: 48px 24px;
   gap: 16px;
   opacity: 0.5;
+  border: 1px dashed #c6dbf8;
+  border-radius: 12px;
+  background: #f6faff;
 
   mat-icon {
     font-size: 3rem;
@@ -81,5 +114,6 @@
     line-height: 1.6;
     max-width: 280px;
     margin: 0;
+    color: #3b5f8a;
   }
 }

@@ -8,7 +8,7 @@
       <mat-card-subtitle>Projeção com juros compostos</mat-card-subtitle>
     </mat-card-header>
 
-    <mat-card-content class="p-6 space-y-4">
+    <mat-card-content class="result-content">
 
       <div class="result-item">
         <div class="result-label">
@@ -43,21 +43,22 @@
           {{ resultData.totalWithInterest | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}
         </span>
       </div>
+      
       @if (resultData && resultData.history && resultData.history.length > 0) {
-  <mat-divider style="margin: 24px 0 16px 0;"></mat-divider>
-  
-  <div class="teaser-section">
-    <p style="font-size: 0.85rem; color: #666; font-weight: 500; text-transform: uppercase; margin-bottom: 4px;">
-      Curva de Evolução (vs. Poupança)
-    </p>
-    
-    <app-wealth-growth-mini-chart [history]="resultData.history"></app-wealth-growth-mini-chart>
+        <mat-divider class="section-divider"></mat-divider>
+        
+        <div class="teaser-section">
+          <p class="teaser-title">
+            Curva de Evolução (vs. Poupança)
+          </p>
+          
+          <app-wealth-growth-mini-chart [history]="resultData.history"></app-wealth-growth-mini-chart>
 
-    <button mat-stroked-button color="primary" style="width: 100%; margin-top: 16px; padding: 20px 0;">
-      <mat-icon>insights</mat-icon> Ver Análise Detalhada
-    </button>
-  </div>
-}
+          <button mat-stroked-button color="primary" class="detailed-button" (click)="openDetailedAnalysis();">
+            <mat-icon>insights</mat-icon> Ver Análise Detalhada
+          </button>
+        </div>
+      }
 
     </mat-card-content>
   </mat-card>
