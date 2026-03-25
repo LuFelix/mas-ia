@@ -1,5 +1,4 @@
-/* Container da página */
-.available-activities-container {
+.wealth-growth-page {
   padding: 16px 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -8,12 +7,26 @@
     margin-bottom: 4px; 
     font-size: 1.5rem; 
     font-weight: 600;
-    color: #333;
+    color: #0b3b75;
   }
   .subtitle {
-    color: #666;
+    color: #4a6a8f;
     margin-bottom: 20px; 
     font-size: 1rem;
+  }
+}
+
+.feedback-banner {
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  font-size: 0.92rem;
+  border: 1px solid transparent;
+
+  &.error {
+    background: #fff3f3;
+    color: #b42318;
+    border-color: #fecdca;
   }
 }
 
@@ -25,10 +38,17 @@
   overflow: hidden;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
   
-  background-image: url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2070&auto=format&fit=crop'); 
-  background-color: #0b0f19; /* Fundo mais escuro caso a imagem não carregue */
+  background-image:
+    linear-gradient(135deg, rgba(0, 92, 187, 0.88), rgba(11, 59, 117, 0.92)),
+    radial-gradient(circle at 15% 20%, rgba(138, 192, 255, 0.34), transparent 45%),
+    radial-gradient(circle at 90% 90%, rgba(255, 255, 255, 0.14), transparent 42%);
+  background-color: #0b3b75;
   background-size: cover;
   background-position: center;
+
+  &.is-loading {
+    opacity: 0.9;
+  }
 
   /* O PAINEL DE VIDRO (AGORA MUITO MAIS TRANSPARENTE) */
   .card-info-wrapper {
@@ -36,7 +56,7 @@
     margin: 32px; 
     
     /* Mágica do Vidro: Baixei de 0.85 para 0.15 (15% de branco apenas) */
-    background: rgba(255, 255, 255, 0.15); 
+    background: rgba(255, 255, 255, 0.16); 
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border: 1px solid rgba(255, 255, 255, 0.2); 
@@ -106,8 +126,9 @@
 .content-card {
   flex: 1; /* Faz o card preencher o espaço vertical disponível */
   background: #ffffff;
+  border: 1px solid #d7e6fb;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 73, 151, 0.12);
   padding: 24px;
   overflow: hidden;
 }

@@ -21,11 +21,13 @@ import { WealthGrowthSimulationResponse } from '../../models/wealth-growth.model
 })
 export class WealthGrowthPageComponent implements OnInit {
   private route = inject(ActivatedRoute);
-  // Injetando o nosso serviço que fala com o NestJS
   private wealthGrowthService = inject(WealthGrowthService);
 
   public activityId: string | null = null;
-public resultData: WealthGrowthSimulationResponse | null = null;
+  public resultData: WealthGrowthSimulationResponse | null = null;
+  public isLoading = false;
+  public errorMessage: string | null = null;
+
   ngOnInit(): void {
     this.activityId = this.route.snapshot.paramMap.get('id');
   }
@@ -34,22 +36,27 @@ public resultData: WealthGrowthSimulationResponse | null = null;
    * Recebe os dados do formulário e envia para o Motor de Matemática (Backend NestJS)
    */
   onSimulate(data: WealthGrowthFormData): void {
-    // Mapeamos os dados do front para o DTO exato que o backend exige
+    this.isLoading = true;
+    this.errorMessage = null;
+
     const requestPayload = {
       initialCapital: data.initialCapital,
       monthlyContribution: data.monthlyContribution,
       interestRate: data.interestRate,
-      periodMonths: data.months // O front chamou de 'months', o back espera 'periodMonths'
+      periodMonths: data.months,
     };
 
     this.wealthGrowthService.calculateProjection(requestPayload).subscribe({
       next: (response) => {
-        // 3. Muito mais limpo! Repassa o objeto inteiro (com totais e histórico)
         this.resultData = response;
+        this.isLoading = false;
       },
       error: (err) => {
         console.error('Erro na API do Simulador:', err);
-      }
+        this.errorMessage = 'Não foi possível calcular a simulação agora. Tente novamente em instantes.';
+        this.resultData = null;
+        this.isLoading = false;
+      },
     });
   }
 }
