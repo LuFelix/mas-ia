@@ -1,0 +1,67 @@
+<h2 mat-dialog-title class="modal-title">
+  <div class="modal-title-content">
+    <mat-icon color="primary">query_stats</mat-icon>
+    <span>Análise Detalhada da Simulação</span>
+  </div>
+  <button mat-icon-button mat-dialog-close>
+    <mat-icon>close</mat-icon>
+  </button>
+</h2>
+
+<mat-dialog-content class="mat-typography modal-content">
+  
+  <mat-tab-group animationDuration="0ms" color="primary">
+    
+    <mat-tab label="Gráfico Comparativo">
+      <div class="chart-container">
+        <canvas baseChart
+          [data]="lineChartData"
+          [options]="lineChartOptions"
+          [type]="'line'">
+        </canvas>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Tabela de Evolução">
+      <div class="table-container">
+        <table mat-table [dataSource]="dataSource" class="full-width-table">
+          
+          <ng-container matColumnDef="month">
+            <th mat-header-cell *matHeaderCellDef> Mês </th>
+            <td mat-cell *matCellDef="let element"> {{ element.month }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="invested">
+            <th mat-header-cell *matHeaderCellDef> Total Investido </th>
+            <td mat-cell *matCellDef="let element"> {{ element.invested | currency:'BRL':'symbol':'1.2-2':'pt-BR' }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="savingsValue">
+            <th mat-header-cell *matHeaderCellDef> Na Poupança </th>
+            <td mat-cell *matCellDef="let element" class="savings-column"> 
+              {{ element.savingsValue | currency:'BRL':'symbol':'1.2-2':'pt-BR' }} 
+            </td>
+          </ng-container>
+
+          <ng-container matColumnDef="compoundValue">
+            <th mat-header-cell *matHeaderCellDef> Com Juros Compostos </th>
+            <td mat-cell *matCellDef="let element" class="compound-column"> 
+              {{ element.compoundValue | currency:'BRL':'symbol':'1.2-2':'pt-BR' }} 
+            </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="table-row"></tr>
+        </table>
+      </div>
+      
+      <mat-paginator [pageSizeOptions]="[12, 24, 60]" [pageSize]="12" showFirstLastButtons></mat-paginator>
+    </mat-tab>
+
+  </mat-tab-group>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end" class="modal-actions">
+  <button mat-flat-button color="primary" mat-dialog-close>Entendi</button>
+</mat-dialog-actions>

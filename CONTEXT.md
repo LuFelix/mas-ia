@@ -6,26 +6,31 @@
 - **Integração de IA:** O sistema utilizará a API do Gemini.
 
 ## 2. Stack Tecnológica (Monorepo)
-- **Frontend:** Angular (Standalone Components, Angular Material com o tema `@angular/material/prebuilt-themes/azure-blue.css`, SCSS, Tailwind/Flexbox).
+- **Frontend:** Angular (Standalone Components, Angular Material com o tema `@angular/material/prebuilt-themes/azure-blue.css`, SCSS, Tailwind/Flexbox, Chart.js/ng2-charts).
 - **Backend:** NestJS (REST API, TypeORM, Class-Validator, Swagger).
 - **Banco de Dados:** PostgreSQL.
-- **Infraestrutura:** Docker (docker-compose.yml na raiz unindo front, back e db).
+- **Infraestrutura:** Docker (docker-compose.yml na raiz com volumes configurados para isolamento de dependências).
 
 ## 3. Padrões de Arquitetura (REGRAS RÍGIDAS)
 - **Frontend (Smart vs. Dumb Components):**
   - Páginas (`/pages`) são os "Chefs" (Smart): Injetam serviços, acessam rotas, chamam o backend.
   - Componentes de Layout (`/components`) são os "Garçons" (Dumb): NÃO acessam banco nem rotas. Apenas recebem `@Input()` e emitem `@Output()`.
-- **Backend:** Separação estrita entre `Controllers`, `Services`, `DTOs` e `Entities`. Soft delete habilitado (`isActive`).
+  - Contratos de dados hiper-específicos vivem na pasta `models` dentro da própria feature.
+- **Backend:** Separação estrita entre `Controllers`, `Services`, `DTOs` e `Entities`.
 
 ## 4. Estado Atual do Sistema
-- O monorepo está limpo, configurado e com o `.env` isolado no backend.
-- **Backend:** Tabela `activities` criada e CRUD operante.
-- **Frontend:** Backoffice (Listagem Gerencial e Modal de Edição) das atividades totalmente concluído e funcional.
+- O monorepo está limpo, configurado e rodando via Docker.
+- **Backend:** - CRUD de atividades operante.
+  - Endpoint do simulador de Crescimento Patrimonial (`/simulators/wealth-growth/calculate`) finalizado, retornando totais e a matriz de histórico mês a mês.
+- **Frontend:** - Backoffice (Listagem Gerencial e Modal de Edição) das atividades concluído.
+  - Tela base do Simulador de Crescimento Patrimonial (Smart/Dumb) finalizada, integrando formulário, requisição à API e exibição de resultados financeiros.
+  - Implementado "Mini Gráfico Teaser" (Chart.js) no card de resultados demonstrando a curva de juros compostos versus poupança.
 
 ## 5. Missão Imediata (Next Step)
-Criar o Frontend do **Simulador Visual de Crescimento Patrimonial**. O usuário chegará nesta tela após clicar em "Iniciar Simulação" nos detalhes da atividade. 
-A arquitetura deve seguir estritamente o padrão Smart/Dumb:
-1. Um "Smart Component" (Página) para gerenciar o estado e ler o `:id` da rota.
-2. Um "Dumb Component" (Formulário) recebendo inputs para: Capital Inicial, Aporte Mensal, Taxa de Juros Mensal e Prazo (em meses).
-3. Um "Dumb Component" (Visualização) para exibir o resultado financeiro simulado.
-A interface deve utilizar estritamente os componentes do Angular Material (Cards, Form Fields, Buttons) aproveitando a paleta de cores primária e secundária do tema `azure-blue`, integrados com Tailwind CSS para alinhamento e grid responsivo.
+Criar a **Modal de Análise Detalhada** do Simulador de Crescimento Patrimonial. 
+O usuário chegará nesta interface ao clicar no botão "Ver Análise Detalhada" exibido abaixo do mini-gráfico.
+A missão envolve:
+1. Criar um componente de Angular Material Dialog (`MatDialog`).
+2. Receber via injeção de dados o array completo do `history` e os totais financeiros.
+3. Renderizar um gráfico completo e interativo (Chart.js) com eixos visíveis, legendas e tooltips, comparando o Valor Investido, Poupança e Juros Compostos.
+4. (Opcional) Renderizar uma tabela (Data Table) paginada exibindo o detalhamento numérico exato mês a mês para conferência matemática.

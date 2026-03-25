@@ -1,13 +1,16 @@
-<div class="available-activities-container">
-  
+<div class="wealth-growth-page">
   <h1>Simulador de Crescimento Patrimonial</h1>
   <p class="subtitle">Descubra o poder dos juros compostos e simule o crescimento do seu patrimônio.</p>
 
-  <div class="simulator-premium-card">
+  @if (errorMessage) {
+    <div class="feedback-banner error">
+      <span>{{ errorMessage }}</span>
+    </div>
+  }
+
+  <div class="simulator-premium-card" [class.is-loading]="isLoading">
     <div class="card-info-wrapper">
-      
       <div class="simulator-grid">
-        
         <div class="form-section">
           <div class="card-header-custom">
             <h3 class="card-title">Parâmetros da Simulação</h3>
@@ -23,15 +26,19 @@
         <div class="result-section">
           <div class="card-header-custom">
             <h3 class="card-title">Projeção Final</h3>
-            <p class="card-subtitle">Veja como seu dinheiro trabalha para você.</p>
+            <p class="card-subtitle">
+              @if (isLoading) {
+                Calculando sua projeção...
+              } @else {
+                Veja como seu dinheiro trabalha para você.
+              }
+            </p>
           </div>
           <div class="content-card">
             <app-wealth-growth-result [resultData]="resultData"></app-wealth-growth-result>
           </div>
         </div>
-
       </div>
-
     </div>
   </div>
 </div>

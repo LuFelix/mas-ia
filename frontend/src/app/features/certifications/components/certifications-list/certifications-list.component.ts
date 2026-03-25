@@ -85,5 +85,4 @@ export class CertificationsListComponent {
     return originalName;
   }
   
-  // (A lógica de 'loadCertifications' etc. FOI REMOVIDA)
 }
