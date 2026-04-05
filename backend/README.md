@@ -1,4 +1,4 @@
-# Aplicação Backend - Avaliação Técnica
+# Aplicação Backend - MAS Motor de Aprendizagem Smart
 
 Este repositório contém o código-fonte da API em **NestJS**.
 
@@ -18,7 +18,7 @@ docker-compose up -d
 
 Isto iniciará:
 - ✅ Backend (NestJS)
-- ✅ Frontend (React/Vue)
+- ✅ Frontend (Angular)
 - ✅ PostgreSQL (Banco de dados)
 
 Aguarde ~30-60 segundos para que todos os containers estejam prontos.
@@ -251,19 +251,77 @@ DELETE FROM roles;
 ```
 backend/
 ├── src/
-│   ├── seeds/          🌱 Seed service e module
+│   ├── seeds/              # 🌱 Seed service e module
 │   │   ├── seed.service.ts
 │   │   └── seed.module.ts
-│   ├── roles/          Papéis/Funções
-│   ├── users/          Usuários
-│   ├── auth/           Autenticação
-│   ├── admin/          Admin panel
-│   └── ...outras pastas
-├── migration-seed.sh   🔧 Script de seed
-├── seed-docker.sh      🔧 Script Docker
-├── src/run-seed.ts     🌱 Script de seed detalhado
-├── src/seed.ts         🌱 Script de seed simples
+│   │
+│   ├── activities/         # 📝 Domínio: Atividades Pedagógicas
+│   │   ├── dto/
+│   │   │   ├── create-activity.dto.ts
+│   │   │   └── update-activity.dto.ts
+│   │   ├── entities/
+│   │   │   └── activity.entity.ts
+│   │   ├── activities.controller.spec.ts
+│   │   ├── activities.controller.ts
+│   │   ├── activities.module.ts
+│   │   ├── activities.service.spec.ts
+│   │   └── activities.service.ts
+│   │
+│   ├── simulators/         # 🎮 Domínio: Simuladores (Ex: Arena Investments)
+│   │   ├── dto/
+│   │   │   ├── create-simulator-result.dto.ts
+│   │   │   └── ...
+│   │   ├── entities/
+│   │   │   └── simulator.entity.ts
+│   │   ├── simulators.controller.ts
+│   │   ├── simulators.module.ts
+│   │   └── simulators.service.ts
+│   │
+│   ├── mas/                # 🧠 Domínio: Motor de Aprendizagem Smart (Tutor)
+│   │   ├── dto/
+│   │   │   └── send-message.dto.ts
+│   │   ├── entities/
+│   │   │   └── interaction.entity.ts
+│   │   ├── mas.controller.ts
+│   │   ├── mas.module.ts
+│   │   ├── mas.service.ts
+│   │   └── mas.service.spec.ts
+│   │
+│   ├── admin/              # ⚙️ Domínio: Painel Administrativo
+│   │   └── ... (estrutura padrão: dto, entities, controller, service, module, specs)
+│   ├── auth/               # 🔐 Domínio: Autenticação (JWT, Login)
+│   │   └── ... (estrutura padrão)
+│   ├── certificates/       # 📜 Domínio: Emissão de Certificados
+│   │   └── ... (estrutura padrão)
+│   ├── certifications/     # 🎓 Domínio: Trilhas de Certificação
+│   │   └── ... (estrutura padrão)
+│   ├── enrollments/        # 📋 Domínio: Matrículas
+│   │   └── ... (estrutura padrão)
+│   ├── exams/              # 📝 Domínio: Avaliações/Provas
+│   │   └── ... (estrutura padrão)
+│   ├── invites/            # ✉️ Domínio: Convites de Acesso
+│   │   └── ... (estrutura padrão)
+│   ├── mailer/             # 📧 Domínio/Infra: Envio de E-mails
+│   │   └── ... (estrutura padrão)
+│   ├── questions/          # ❓ Domínio: Banco de Questões
+│   │   └── ... (estrutura padrão)
+│   ├── roles/              # 🎭 Domínio: Papéis (RBAC)
+│   │   └── ... (estrutura padrão)
+│   └── users/              # 👤 Domínio: Usuários
+│       └── ... (estrutura padrão)
+│
+├── test/                   # 🧪 Testes E2E (End-to-End)
+│   ├── app.e2e-spec.ts
+│   └── jest-e2e.json
+│
+├── migration-seed.sh       # 🔧 Script de seed
+├── seed-docker.sh          # 🔧 Script Docker
+├── src/run-seed.ts         # 🌱 Script de seed detalhado
+├── src/seed.ts             # 🌱 Script de seed simples
+├── nest-cli.json
+├── tsconfig.json
 └── package.json
+
 ```
 
 ---

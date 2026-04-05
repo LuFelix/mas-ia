@@ -77,7 +77,8 @@
           <mat-card-actions align="end" class="cert-actions">
             <button mat-raised-button
                     color="primary"
-                    (click)="start.emit()"
+                    [routerLink]="activity.type === 'comparador' ? ['/app/activities/simulator/arena-investments', '1'] : null"
+                    (click)="activity.type !== 'comparador' && start.emit()"
                     class="start-button">
                 <mat-icon>play_circle_filled</mat-icon>
                 <span>Iniciar Simulação Interativa</span>

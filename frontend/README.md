@@ -72,7 +72,21 @@ src/app/
 │
 ├── features/           # 🚀 OS BAIRROS (Domínios de Negócio)
 │   │
-│   ├── certifications/   # <-- Domínio "Certificações"
+├── activities/       # Domínio "Atividades" (A casca pedagógica)
+│   │   ├── components/   # (Garçons das atividades)
+│   │   │   ├── activities-card-grid-classic/
+│   │   │   ├── activities-card-grid-modern/
+│   │   │   ├── activities-list/             (Tabela do Admin)
+│   │   │   ├── activity-take-classic/       (Interface de resolução)
+│   │   │   └── activity-take-modern/
+│   │   ├── pages/        # (Os "Pratos" servidos nas rotas)
+│   │   │   ├── activities-management-page/  (Gerencial)
+│   │   │   ├── activity-take-page/          (Onde o aluno responde)
+│   │   │   └── avaliable-activities-page/   (Vitrine)
+│   │   └── services/     
+│   │       └── activities.service.ts
+│   │
+├── certifications/   # <-- Domínio "Certificações"
 │   │   ├── components/   # (Garçons SÓ desta feature)
 │   │   │   ├── certification-grid-modern/
 │   │   │   ├── certification-grid-classic/
@@ -107,6 +121,34 @@ src/app/
 │   │   ├── services/
 │   │   │   └── user.service.ts
 │   │   └── user-routes/
+│   │
+│   ├── mas/ # <--Domínio "MAS" (Front-end do Tutor AI)
+│   │   ├── components/   
+│   │   │   ├── mas-chat-widget/ (O balãozinho flutuante global)
+│   │   │   ├── mas-context-panel/(Painel lateral de dicas para a tela atual)
+│   │   │   └── mas-typing-indicator/
+│   │   ├── pages/        
+│   │   │   └── mas-mentorship-page/ (Sessão inteira dedicada ao tutor)
+│   │   ├── models/       
+│   │   │   └── mas-interaction.model.ts
+│   │   └── services/     
+│   │       └── mas-tutor.service.ts (Comunicação via WebSocket/REST com o NestJS/Eliza)
+│   │
+│   ├── simulators/ # <-- Domínio "Simuladores" (Os motores interativos)
+│   │   ├── arena-investments/
+│   │   │   ├── components/
+│   │   │   │   ├── arena-investments-detailed-modal/
+│   │   │   │   ├── arena-investments-form/
+│   │   │   │   ├── arena-investments-mini-chart/
+│   │   │   │   └── arena-investments-result/
+│   │   │   ├── pages/
+│   │   │   │   └── arena-investments-page/
+│   │   │   ├── models/
+│   │   │   │   └── arena-investments.model.ts
+│   │   │   └── services/
+│   │   │       └── arena-investments.service.ts
+│   │   └── wealth-growth/
+│   │       └── ... (mesma estrutura do arena)
 │   │
 │   ├── shared/           # <-- Domínio "Conteúdo Compartilhado"
 │   │   ├── components/   # (Ex: content-shared.component.ts)

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WealthGrowthDetailedModal } from './wealth-growth-detailed-modal';
+import { WealthGrowthDetailedModalComponent } from './wealth-growth-detailed-modal.component';
 
 describe('WealthGrowthDetailedModal', () => {
-  let component: WealthGrowthDetailedModal;
-  let fixture: ComponentFixture<WealthGrowthDetailedModal>;
+  let component: WealthGrowthDetailedModalComponent;
+  let fixture: ComponentFixture<WealthGrowthDetailedModalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [WealthGrowthDetailedModal]
+      imports: [WealthGrowthDetailedModalComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(WealthGrowthDetailedModal);
+    fixture = TestBed.createComponent(WealthGrowthDetailedModalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,53 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="arena-form">
+  
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Valor Inicial (R$)</mat-label>
+    <mat-icon matPrefix>account_balance_wallet</mat-icon>
+    <input
+      matInput
+      type="text"
+      class="formatted-input"
+      inputmode="decimal"
+      [value]="valorInicialDisplay"
+      (input)="onCurrencyInput('valorInicial', $event)"
+      (blur)="markAsTouched('valorInicial')"
+      placeholder="Ex.: R$ 1.000,00">
+    <mat-error *ngIf="form.get('valorInicial')?.hasError('required')">O valor é obrigatório</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Aporte Mensal (R$)</mat-label>
+    <mat-icon matPrefix>savings</mat-icon>
+    <input
+      matInput
+      type="text"
+      class="formatted-input"
+      inputmode="decimal"
+      [value]="aporteMensalDisplay"
+      (input)="onCurrencyInput('aporteMensal', $event)"
+      (blur)="markAsTouched('aporteMensal')"
+      placeholder="Ex.: R$ 200,00">
+    <mat-error *ngIf="form.get('aporteMensal')?.hasError('required')">O aporte é obrigatório</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Prazo em Meses</mat-label>
+    <mat-icon matPrefix>calendar_month</mat-icon>
+    <input
+      matInput
+      type="text"
+      class="formatted-input"
+      inputmode="numeric"
+      [value]="prazoMesesDisplay"
+      (input)="onIntegerInput('prazoMeses', $event)"
+      (blur)="markAsTouched('prazoMeses')"
+      placeholder="Ex.: 120">
+    <mat-error *ngIf="form.get('prazoMeses')?.hasError('required')">O prazo é obrigatório</mat-error>
+  </mat-form-field>
+
+  <button mat-flat-button color="primary" type="submit" class="submit-button" [disabled]="form.invalid">
+    <mat-icon>sports_mma</mat-icon>
+    Iniciar Batalha na Arena
+  </button>
+
+</form>

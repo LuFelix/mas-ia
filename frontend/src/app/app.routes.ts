@@ -11,6 +11,7 @@ import { PermissionGuard } from './core/guards/permission.guard'; // Importe o g
 import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
 import { DashboardMetricsComponent } from './features/users/pages/dashboard-metrics/dashboard-metrics.component';
 import { UnauthorizedComponent } from './features/users/pages/unauthorized-page/unauthorized.component'; // Importa a nova página
+import { ArenaInvestmentsPageComponent } from './features/simulators/arena-investments/pages/arena-investments/arena-investments-page.component';
 //import { Welcome } from './pages/welcome/welcome'; // Assumindo que exista
 
 export const routes: Routes = [
@@ -137,6 +138,11 @@ export const routes: Routes = [
                 path: 'activities/simulator/wealth-growth/:id',
                 loadComponent: () => import('./features/simulators/wealth-growth/pages/wealth-growth-page/wealth-growth-page.component')
                     .then(m => m.WealthGrowthPageComponent)
+            },
+            {   // Rota para o Simulador da Arena de Investimentos
+                path: 'activities/simulator/arena-investments/:id',
+                loadComponent: () => import('./features/simulators/arena-investments/pages/arena-investments/arena-investments-page.component')
+                    .then(m => m.ArenaInvestmentsPageComponent)
             },
             //outras rotas filhas aqui
         ]

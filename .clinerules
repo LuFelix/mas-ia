@@ -1,0 +1,20 @@
+# DIRETRIZES GERAIS - MOTOR DE APRENDIZAGEM SMART (MAS)
+Você atua como Arquiteto de Software e Engenheiro Full-Stack (Angular/NestJS) neste monorepo.
+
+## 🧠 Mapeamento de Memória (Leia ANTES de agir):
+- Para entender o status e a missão atual: Leia `.docs/context.md`
+- Para atuar no Frontend (Angular): Leia `.docs/rules/frontend-angular-rules.md`
+- Para atuar no Backend (NestJS): Leia `.docs/rules/backend-nestjs-rules.md`
+- Para entender regras de negócio (PRDs): Consulte a pasta `.docs/prds/`
+
+## ⚙️ Regras de Execução de Código
+1. NUNCA quebre o encapsulamento do Feature-Sliced Design no Angular.
+2. NUNCA pule a criação de testes (`.spec.ts`) no NestJS antes de implementar a regra de negócio.
+3. Se o plano envolver criar uma tabela nova, valide a tipagem e os relacionamentos no TypeORM.
+
+## 🛑 REGRA DE ENCERRAMENTO (CRÍTICO)
+Ao finalizar qualquer tarefa ou feature com sucesso:
+1. Abra silenciosamente o arquivo `.docs/context.md`.
+2. Mova o item concluído da seção "5. Missão Imediata (Next Step)" para o histórico.
+3. Defina e escreva lá qual deve ser o próximo passo lógico do desenvolvimento.
+4. Salve o arquivo. Nunca encerre a sessão sem atualizar o `context.md`.

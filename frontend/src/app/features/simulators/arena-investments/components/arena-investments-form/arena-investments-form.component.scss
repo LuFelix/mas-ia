@@ -1,0 +1,21 @@
+.arena-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.submit-button {
+  padding: 24px 0;
+  font-size: 1.1rem;
+  margin-top: 8px;
+}
+
+.formatted-input {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}

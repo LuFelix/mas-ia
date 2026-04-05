@@ -1,0 +1,1 @@
+O que é uma Activity? (Uma tarefa pedagógica). O que é um Simulator? (Uma ferramenta prática gamificada). O que é o MAS? (O tutor de inteligência artificial).

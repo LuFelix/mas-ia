@@ -7,6 +7,7 @@ import { Role } from 'src/roles/entities/role.entity';
 import { User } from 'src/users/entities/user.entity';
 import { SeedUsersService } from './users/seed-users.service';
 import { SeedCertificationsService } from './certifications/seed-certifications.service';
+import { SeedActivitiesService } from './activities/seed-activities.service';
 
 @Injectable()
 export class SeedService {
@@ -19,6 +20,7 @@ export class SeedService {
     private readonly userRepository: Repository<User>,
     private readonly seedUsersService: SeedUsersService,
     private readonly seedCertificationsService: SeedCertificationsService,
+    private readonly seedActivitiesService: SeedActivitiesService,
   ) {}
 
   async run() {
@@ -37,8 +39,11 @@ export class SeedService {
     // 3. Seed de usuários (colaboradores / dados adicionais)
     await this.seedUsersService.run();
 
-    // 4. Seed de certificações
+    // 4. Seed de certificações / trilhas
     await this.seedCertificationsService.run();
+
+    // 5. Seed de atividades e simuladores
+    await this.seedActivitiesService.run();
 
     this.logger.log('Seeding concluído com sucesso.');
   }
@@ -48,7 +53,7 @@ export class SeedService {
    * Retorna a role de "administrador".
    */
   private async seedRoles(): Promise<Role | undefined> {
-    const rolesToCreate = ['colaborador', 'administrador', 'gente_e_cultura'];
+    const rolesToCreate = ['colaborador', 'administrador', 'usuário'];
     let adminRole: Role | undefined;
 
     for (const roleName of rolesToCreate) {

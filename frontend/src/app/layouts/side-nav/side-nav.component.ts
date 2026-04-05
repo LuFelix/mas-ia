@@ -51,6 +51,21 @@ export class SideNavComponent {
       label: 'Atividades', 
       icon: 'calculate' 
     },
+    // Trilhas Disponíveis (Estudante)
+    {
+      link: '/app/available-certifications', 
+      label: 'Trilhas Disponíveis',   
+      icon: 'school',                     
+      requiredPermission: 'TAKE_CERTIFICATIONS' 
+    },
+    // Minhas Conquistas (Estudante)
+    {
+      link: '/app/achievements', 
+      label: 'Minhas Conquistas',
+      icon: 'workspace_premium', 
+      requiredPermission: 'TAKE_CERTIFICATIONS'
+    },
+
 
     // --- SEÇÃO GERENCIAL E CERTIFICAÇÃO ---
 
@@ -58,26 +73,10 @@ export class SideNavComponent {
     { link: '/app/users', label: 'Usuários', icon: 'group', requiredPermission: 'READ_USERS' }, 
 
     // Certificações (Gerencial)
-    { link: '/app/certifications-management', label: 'Gerenciar Certificações', icon: 'assignment_turned_in', requiredPermission: 'READ_CERTIFICATIONS' },
+    { link: '/app/certifications-management', label: 'Gerenciar Trilhas', icon: 'assignment_turned_in', requiredPermission: 'READ_CERTIFICATIONS' },
 
     // Atividades (Gerencial)
     { link: '/app/activities-management', label: 'Gerenciar Atividades', icon: 'settings', requiredPermission: 'READ_ACTIVITIES' },
-
-    // Certificações Disponíveis (Candidato)
-    {
-      link: '/app/available-certifications', 
-      label: 'Certificações Disponíveis',   
-      icon: 'school',                     
-      requiredPermission: 'TAKE_CERTIFICATIONS' 
-    },
-
-    // Minhas Conquistas (Candidato)
-    {
-      link: '/app/achievements', 
-      label: 'Minhas Conquistas',
-      icon: 'workspace_premium', 
-      requiredPermission: 'TAKE_CERTIFICATIONS'
-    },
 
     // Convidar Colaboradores
     { link: '/app/invite', label: 'Convidar', icon: 'person_add', requiredPermission: 'INVITE_USER' }, 

@@ -2,7 +2,7 @@ services:
   # --- BANCO DE DADOS POSTGRES ---
   db:
     image: postgres:16-alpine
-    container_name: mas_postgres_db
+    container_name: mas_postgres_db_lab
     restart: unless-stopped
     env_file:
       - ./.env
@@ -27,7 +27,7 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile.dev
-    container_name: mas_nestjs_backend
+    container_name: mas_nestjs_backend_lab
     restart: unless-stopped
     env_file:
       - ./.env
@@ -59,7 +59,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile.dev
-    container_name: mas_angular_frontend
+    container_name: mas_angular_frontend_lab
     restart: unless-stopped
     env_file:
       - ./.env

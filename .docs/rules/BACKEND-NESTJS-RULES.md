@@ -1,0 +1,1 @@
+Use o CLI do NestJS para gerar recursos. Siga a estrutura: Controller recebe a requisição -> Valida com DTO (class-validator) -> Passa para o Service -> Service usa o Repository (TypeORM/Prisma) para acessar o Postgres.

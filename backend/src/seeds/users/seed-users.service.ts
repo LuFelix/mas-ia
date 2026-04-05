@@ -57,10 +57,10 @@ export class SeedUsersService {
         role: collaboratorRole,
         phonenumber: '00000000000',
         cep: '00000000',
-        uf: 'SP',
-        city: 'São Paulo',
+        uf: 'AL',
+        city: 'Maceió',
         neighborhood: 'Centro',
-        street: 'Rua Exemplo',
+        street: 'Rua da Praia',
       });
 
       await this.userRepository.save(newUser);
