@@ -27,7 +27,7 @@ export class UserService {
   private readonly API_URL = environment.apiUrl;
   // --- DEFINIÇÃO DE ROTAS HÍBRIDAS ---
   // 1. Rota para LISTAGEM (AdminController no backend)
-  private readonly LIST_PATH = `${this.API_URL}/admin/users`; 
+  private readonly LIST_PATH = `${this.API_URL}/users`; 
   // 2. Rota UsersController para AÇÕES DE UM ITEM
   private readonly ITEM_PATH = `${this.API_URL}/users`; 
   
