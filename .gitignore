@@ -9,6 +9,7 @@
 # Logs e arquivos de sistema
 *.log
 .DS_Store
+COMANDOS_UTEIS.md
 
 
 # ==========================================
@@ -103,4 +104,4 @@ Desktop.ini
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
-!.vscode/extensions.json
+!.vscode/extensions.jsonCOMANDOS_UTEIS.md
