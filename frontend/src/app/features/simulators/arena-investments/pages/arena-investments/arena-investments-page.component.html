@@ -1,0 +1,31 @@
+<div class="arena-page-container">
+  
+  <div class="header-section">
+    <h1>⚔️ Arena de Investimentos</h1>
+    <p>Coloque os perfis Conservador, Moderado e Arrojado para lutar e veja quem vence no longo prazo.</p>
+  </div>
+
+  <div class="content-grid">
+    <mat-card class="form-card">
+      <app-arena-investments-form (simulate)="onSimulate($event)"></app-arena-investments-form>
+    </mat-card>
+
+    <div class="result-section">
+      
+      <div *ngIf="isLoading" class="loading-container">
+        <mat-spinner diameter="50"></mat-spinner>
+        <p>Calculando a batalha...</p>
+      </div>
+
+      <app-arena-investments-result 
+        *ngIf="simulationResult && !isLoading" 
+        [resultData]="simulationResult">
+      </app-arena-investments-result>
+
+      <div *ngIf="!simulationResult && !isLoading" class="empty-state">
+        <p>Preencha os dados e inicie a batalha para ver o resultado.</p>
+      </div>
+
+    </div>
+  </div>
+</div>

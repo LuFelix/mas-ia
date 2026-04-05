@@ -27,10 +27,12 @@
   - Implementado "Mini Gráfico Teaser" (Chart.js) no card de resultados demonstrando a curva de juros compostos versus poupança.
 
 ## 5. Missão Imediata (Next Step)
-Criar a **Modal de Análise Detalhada** do Simulador de Crescimento Patrimonial. 
-O usuário chegará nesta interface ao clicar no botão "Ver Análise Detalhada" exibido abaixo do mini-gráfico.
-A missão envolve:
-1. Criar um componente de Angular Material Dialog (`MatDialog`).
-2. Receber via injeção de dados o array completo do `history` e os totais financeiros.
-3. Renderizar um gráfico completo e interativo (Chart.js) com eixos visíveis, legendas e tooltips, comparando o Valor Investido, Poupança e Juros Compostos.
-4. (Opcional) Renderizar uma tabela (Data Table) paginada exibindo o detalhamento numérico exato mês a mês para conferência matemática.
+Implementar **testes automatizados do módulo Wealth Growth (backend)** cobrindo DTO e serviço de cálculo.
+Próximos focos:
+1. Adicionar testes unitários para validação do `SimulateWealthGrowthDto` (campos numéricos e positivos).
+2. Cobrir cenários principais do cálculo (aportes, juros compostos e histórico mês a mês).
+3. Validar casos de borda (valores zerados permitidos quando aplicável e rejeição de entradas inválidas).
+
+## 6. Histórico de Missões Concluídas
+- Ajuste de tipagem no DTO `SimulateWealthGrowthDto` para compatibilidade com `strictPropertyInitialization`, aplicando definite assignment (`!`) nos campos decorados por `class-validator`/`swagger`.
+- Missão anterior registrada: criação da **Modal de Análise Detalhada** do Simulador de Crescimento Patrimonial, com foco em `MatDialog`, recepção de `history` e totais, gráfico interativo e tabela opcional paginada.

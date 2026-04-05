@@ -65,7 +65,11 @@
             <h3>Acesso</h3>
             <p>Inicie a ferramenta em tela cheia para explorar os cálculos interativos.</p>
             
-            <button mat-flat-button color="primary" class="full-width-btn" (click)="start.emit()">
+            <button mat-flat-button
+                    color="primary"
+                    class="full-width-btn"
+                    [routerLink]="activity.type === 'comparador' ? ['/app/activities/simulator/arena-investments', '1'] : null"
+                    (click)="activity.type !== 'comparador' && start.emit()">
               <mat-icon>play_circle_outline</mat-icon> Iniciar Ferramenta
             </button>
 

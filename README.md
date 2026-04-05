@@ -1,6 +1,6 @@
-# Ambiente de Desenvolvimento da Avaliação Técnica
+# Ambiente de Desenvolvimento do MAS Motor de Aprendizagem Smart
 
-Este repositório contém a configuração do Docker Compose e os arquivos necessários para orquestrar e executar todo o ambiente de desenvolvimento, que consiste em um backend em NestJS e um frontend em Angular.
+Este repositório contém a configuração do Docker Compose e os arquivos necessários para orquestrar e executar todo o ambiente de desenvolvimento monorepo, que consiste em um backend em NestJS com db PostgreSql usando typeorm e um frontend em Angular.
 
 ## 🚀 Começando
 
@@ -121,9 +121,22 @@ Após a execução, o ambiente estará disponível nos seguintes endereços:
 ### Estrutura de Pastas Esperada
 
 Para que o `docker-compose.yml` funcione, sua estrutura de pastas local deve ser a seguinte:
+
 ```
 /workspace/
-|-- avaliacao-tecnica/  (Você está aqui)
-|-- back-nest-avaliacao-tecnica-1/
-|-- front-angular-avaliacao-tecnica-1/
+|-- Você está aqui
+|-- frontend/
+|-- backend/
+
 ```
+
+.docs/
+├── rules/                       # (Aqui ficam as arquiteturas)
+│   ├── simulators-context.md    # Regras de como fazer um simulador
+│   ├── activities-context.md    # Regras de como fazer uma atividade
+│   └── certifications-context.md# Regras das trilhas
+├── prds/                        # (Aqui ficam as lógicas de negócio longas)
+├── simulators/                  # (Aqui ficam as matemáticas de cada simulador)
+│   └── conversor-taxas.md
+└── prompts/                     # (Seus templates do Cline)
+    └── generate-simulator.md
