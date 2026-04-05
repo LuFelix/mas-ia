@@ -1,0 +1,137 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 24px;
+  background-color: var(--mat-sys-secondary-container);
+  box-shadow: var(--mat-sys-level5);
+  border-radius: 8px;
+  gap: 24px;
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 150px;
+  height: auto;
+  filter: invert(38%) sepia(65%) saturate(300%) hue-rotate(190deg);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.send-button {
+  width: 100%;
+  height: 48px;
+}
+
+/* =========================================
+   NOVA SEÇÃO: DIVISOR E BOTÃO DO GOOGLE
+   ========================================= */
+
+.social-login-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Flexbox para alinhar as linhas e o "OU" perfeitamente no centro */
+.divider-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.divider-line {
+  flex-grow: 1; /* Faz a linha esticar e ocupar o espaço vazio */
+  height: 1px;
+  background-color: var(--mat-sys-outline-variant);
+}
+
+.divider-text {
+  margin: 0 16px;
+  color: var(--mat-sys-outline);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Envelopando o botão do Google */
+.google-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+
+  /* Centraliza a tag do Angular caso sobre algum pixel */
+  ::ng-deep asl-google-signin-button {
+    display: flex;
+    justify-content: left;
+  }
+}
+
+/* =========================================
+   LINKS INFERIORES
+   ========================================= */
+
+.auth-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--mat-sys-on-secondary-container);
+
+  a {
+    cursor: pointer;
+    color: var(--mat-sys-primary); // Usa a cor primária para destacar os links
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+  }
+
+  span {
+    color: var(--mat-sys-outline); // Cor mais neutra para o texto normal
+  }
+
+  .register-link {
+    font-weight: 600;
+  }
+
+  .divider {
+    width: 80%;
+    height: 1px;
+    background-color: var(--mat-sys-outline-variant);
+    margin: 4px 0;
+  }
+}

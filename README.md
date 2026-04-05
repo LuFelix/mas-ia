@@ -1,4 +1,5 @@
 # Ambiente de Desenvolvimento do MAS Motor de Aprendizagem Smart
+# Desenvolvimento da Base de Gerenciamento de Usuários TIWEB
 
 Este repositório contém a configuração do Docker Compose e os arquivos necessários para orquestrar e executar todo o ambiente de desenvolvimento monorepo, que consiste em um backend em NestJS com db PostgreSql usando typeorm e um frontend em Angular.
 
@@ -123,10 +124,17 @@ Após a execução, o ambiente estará disponível nos seguintes endereços:
 Para que o `docker-compose.yml` funcione, sua estrutura de pastas local deve ser a seguinte:
 
 ```
+<<<<<<< HEAD
 /workspace/
 |-- Você está aqui
 |-- frontend/
 |-- backend/
+=======
+/mvp-base/(Você está aqui)
+|-- backend/
+|-- frontend/
+|-- wp/  
+>>>>>>> upstream/develop
 
 ```
 

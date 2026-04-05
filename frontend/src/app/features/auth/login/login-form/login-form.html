@@ -1,0 +1,66 @@
+<mat-card class="form-container">
+  <div class="logo-container">
+    <img src="logo2.png" alt="Logo da empresa" />
+  </div>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="outline">
+      <mat-label>E-mail ou CPF</mat-label>
+      <input matInput formControlName="identifier" placeholder="seu@email.com ou 000.000.000-00" />
+      @if (form.get('identifier')?.hasError('required')) {
+        <mat-error>O identificador é obrigatório</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Senha</mat-label>
+      <input matInput formControlName="password" [type]="hidePassword() ? 'password' : 'text'" />
+      <button mat-icon-button matSuffix type="button" (click)="togglePasswordVisibility($event)">
+        <mat-icon>{{ hidePassword() ? 'visibility_off' : 'visibility' }}</mat-icon>
+      </button>
+
+      @if (form.get('password')?.hasError('required')) {
+        <mat-error>A senha é obrigatória</mat-error>
+      } @else if (form.get('password')?.hasError('pattern') || form.get('password')?.hasError('minlength')) {
+        <mat-error>
+          A senha deve ter mín. 8 caracteres, com maiúsculas, minúsculas, números e símbolos.
+        </mat-error>
+      }
+    </mat-form-field>
+
+    <button class="send-button" mat-flat-button color="primary" type="submit"
+      [disabled]="form.invalid || isSubmitting()">
+      @if (isSubmitting()) {
+        <mat-spinner [diameter]="24"></mat-spinner>
+      } @else {
+        Entrar
+      }
+    </button>
+  </form>
+
+  <div class="social-login-section">
+    <div class="divider-container">
+      <span class="divider-line"></span>
+      <span class="divider-text">OU</span>
+      <span class="divider-line"></span>
+    </div>
+    
+    <div class="google-button-wrapper">
+  <asl-google-signin-button 
+    [width]="340"
+    type="standard" 
+    size="large" 
+    text="signin_with"
+    theme="filled_blue"
+    shape="pill"> 
+  </asl-google-signin-button>
+</div>
+   
+  </div>
+
+  <div class="auth-links">
+    <a routerLink="/forgot-password">Esqueci minha senha</a>
+    <div class="divider"></div>
+    <span>Não tem uma conta? <a class="register-link" routerLink="/register">Cadastre-se</a></span>
+  </div>
+</mat-card>

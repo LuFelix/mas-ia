@@ -3,7 +3,8 @@ import {
   Controller,
   Post,
   Body,
-  ValidationPipe,
+  
+  
 } from '@nestjs/common';
 import { AuthService } from './auth.service';
 
@@ -13,7 +14,10 @@ import {
   ApiResponse,
   ApiBody,
 } from '@nestjs/swagger';
-import { LoginDto, MinimalRegisterDto, RegisterDto } from './dto/auth.dto';
+import { LoginDto, MinimalRegisterDto, VerifyEmailDto } from './dto/auth.dto';
+import { Public } from './decorators/public.decorator';
+import { GoogleLoginDto } from './dto/google-token.dto';
+
 
 @ApiTags('Auth')
 @Controller('auth')
@@ -21,25 +25,29 @@ export class AuthController {
   constructor(private readonly authService: AuthService) { }
 
   @Post('register')
-  @ApiOperation({ summary: 'Registrar um novo usuário convidado' })
-  @ApiBody({ type: RegisterDto })
-  @ApiResponse({ status: 201, description: 'Usuário registrado com sucesso' })
-  @ApiResponse({ status: 400, description: 'Usuário com este CPF já existe' })
-  @ApiResponse({ status: 401, description: 'Token de convite inválido ou expirado' })
-  async register(@Body() registerDto: RegisterDto) {
-    const cpf = await this.authService.register(registerDto);
-    return { message: 'Usuário registrado com sucesso', cpf};
-  }
-
-  @Post('registerWithoutInvitation')
-  @ApiOperation({ summary: 'Registrar um novo usuário convidado' })
+  @ApiOperation({ summary: 'Registrar um novo usuário' })
   @ApiBody({ type: MinimalRegisterDto })
   @ApiResponse({ status: 201, description: 'Usuário registrado com sucesso' })
-  @ApiResponse({ status: 400, description: 'Usuário com este CPF já existe' })
-  async registerWithoutInvitation(@Body() minimalRegisterDto: MinimalRegisterDto) {
-    const cpf = await this.authService.registerWithoutInvitation(minimalRegisterDto);
-    return { message: 'Usuário registrado com sucesso', cpf};
+  @ApiResponse({ status: 400, description: 'Usuário com este e-mail já existe' })
+  async register(@Body() minimalRegisterDto: MinimalRegisterDto) {
+    const email = await this.authService.register(minimalRegisterDto);
+    return { message: 'Usuário registrado com sucesso', email };
   }
+
+  @Post('verify-email')
+  @ApiOperation({ summary: 'Verificar código de e-mail' })
+  @ApiBody({ type: VerifyEmailDto })
+  @ApiResponse({ status: 200, description: 'E-mail verificado com sucesso' })
+  @ApiResponse({ status: 401, description: 'Código inválido ou expirado' })
+  async verifyEmail(@Body() verifyEmailDto: VerifyEmailDto) {
+    return this.authService.verifyEmailCode(verifyEmailDto.email, verifyEmailDto.code);
+  }
+
+  @Public() // Garante que essa rota não exige JWT para ser acessada
+  @Post('google')
+  async googleLogin(@Body() data: GoogleLoginDto) {
+     return this.authService.loginWithGoogle(data.token);
+}
 
   @Post('login')
   @ApiOperation({ summary: 'Fazer login do usuário' })
@@ -53,4 +61,6 @@ export class AuthController {
       access_token: user.access_token,
     };
   }
+
+  
 }

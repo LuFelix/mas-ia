@@ -1,28 +1,31 @@
 // auth/dto/auth.dto.ts
-import { IsString, MinLength, Matches, Length, IsEmail, IsOptional } from 'class-validator';
+import { IsString, MinLength, Matches, Length, IsEmail, IsOptional, IsNotEmpty } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
 import { Transform } from 'class-transformer';
 
 export class RegisterDto {
+  
   @ApiProperty({
     description: 'Token de convite fornecido para o registro do usuário.',
     example: 'a12b3c4d5f6g7h8i9j0k',
   })
   @IsString()
-  token: string;
+  token!: string;
 
   @ApiProperty({
     description: 'CPF do usuário, que pode ser enviado com ou sem máscara.',
     example: '123.456.678-90',
   })
-  @Transform(({ value }) => value.replace(/\D/g, ''))
-  @Matches(/^\d{11}$/, { message: 'CPF deve conter exatamente 11 dígitos numéricos.' })
-  cpf!: string;
 
+  @ApiProperty({ example: 'pedrosilva@exemplo.com ou 12345678901' })
+  @IsNotEmpty({ message: 'O identificador (E-mail ou CPF) é obrigatório' })
+  identifier!: string;
+  
   @ApiProperty({
     description: 'Nome completo do usuário.',
     example: 'John Doe',
   })
+
   @IsString()
   name!: string;
 
@@ -104,57 +107,51 @@ export class RegisterDto {
 }
 
 export class LoginDto {
-  @ApiProperty({
-    description: 'CPF do usuário, que pode ser enviado com ou sem máscara.',
-    example: '123.456.678-90',
-  })
-  @Transform(({ value }) => value.replace(/\D/g, ''))
-  @Matches(/^\d{11}$/, { message: 'CPF deve conter exatamente 11 dígitos numéricos.' })
-  cpf!: string;
+  @ApiProperty({ example: 'luciano@exemplo.com ou 12345678901' })
+  @IsNotEmpty({ message: 'O identificador (E-mail ou CPF) é obrigatório' })
+  identifier!: string;
 
-  @ApiProperty({
-    description: 'Senha do usuário. Deve ter pelo menos 8 caracteres, incluindo letras maiúsculas, minúsculas, números e caracteres especiais.',
-    example: 'Senha@1234',
-  })
+  @ApiProperty({ example: '123456' })
   @IsString()
-  @MinLength(8, { message: 'A senha deve ter no mínimo 8 caracteres.' })
-  @Matches(/(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).+$/, {
-    message: 'A senha deve conter ao menos uma letra minúscula, uma maiúscula, um número e um caractere especial.',
-  })
+  @IsNotEmpty()
   password!: string;
 }
 
 export class MinimalRegisterDto {
-    @ApiProperty({
-    description: 'CPF do usuário, que pode ser enviado com ou sem máscara.',
-    example: '123.456.678-90',
-  })
-  @Transform(({ value }) => value.replace(/\D/g, ''))
-  @Matches(/^\d{11}$/, { message: 'CPF deve conter exatamente 11 dígitos numéricos.' })
-  cpf!: string;
-
-  @ApiProperty({
-    description: 'Senha do usuário. Deve ter pelo menos 8 caracteres, incluindo letras maiúsculas, minúsculas, números e caracteres especiais.',
-    example: 'Senha@1234',
-  })
-  @IsString()
-  @MinLength(8, { message: 'A senha deve ter no mínimo 8 caracteres.' })
-  @Matches(/(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).+$/, {
-    message: 'A senha deve conter ao menos uma letra minúscula, uma maiúscula, um número e um caractere especial.',
-  })
-  password!: string;
-
   @ApiProperty({
     description: 'Endereço de e-mail do usuário',
-    example: 'johndoe@example.com',
+    example: 'pedrosilva@example.com',
   })
   @IsEmail({}, { message: 'Formato de e-mail inválido.' })
   email!: string;
 
   @ApiProperty({
+    description: 'Senha do usuário. Deve ter pelo menos 8 caracteres, incluindo letras maiúsculas, minúsculas, números e caracteres especiais.',
+    example: 'Senha@1234',
+  })
+  @IsString()
+  @MinLength(8, { message: 'A senha deve ter no mínimo 8 caracteres.' })
+  @Matches(/(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).+$/, {
+    message: 'A senha deve conter ao menos uma letra minúscula, uma maiúscula, um número e um caractere especial.',
+  })
+  password!: string;
+
+  @ApiProperty({
     description: 'Nome completo do usuário.',
-    example: 'John Doe',
+    example: 'Pedro Silva',
   })
   @IsString()
   name!: string;
-  }
+}
+
+export class VerifyEmailDto {
+  @ApiProperty({ example: 'seu_email_real@dominio.com.br' })
+  @IsEmail({}, { message: 'E-mail inválido' })
+  @IsNotEmpty()
+  email!: string;
+
+  @ApiProperty({ example: '123456' })
+  @IsString()
+  @IsNotEmpty()
+  code!: string;
+}
