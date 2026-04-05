@@ -74,10 +74,55 @@ services:
       - backend
     networks:
       - app-network
+# --- BANCO DE DADOS MYSQL (WORDPRESS HEADLESS) ---
+  wp_db:
+    image: mysql:8.0
+    container_name: mvp_mysql_wp_db_lab
+    restart: unless-stopped
+    env_file:
+      - ./.env
+    environment:
+      MYSQL_DATABASE: ${WP_DB_NAME}
+      MYSQL_USER: ${WP_DB_USER}
+      MYSQL_PASSWORD: ${WP_DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${WP_DB_ROOT_PASSWORD}
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - app-network # Mude para o nome da rede que já existe no seu MVP
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # --- HEADLESS WORDPRESS ---
+  wordpress:
+    image: wordpress:latest
+    container_name: mvp_wordpress_lab
+    restart: unless-stopped
+    env_file:
+      - ./.env
+    environment:
+      WORDPRESS_DB_HOST: wp_db:3306
+      WORDPRESS_DB_USER: ${WP_DB_USER}
+      WORDPRESS_DB_PASSWORD: ${WP_DB_PASSWORD}
+      WORDPRESS_DB_NAME: ${WP_DB_NAME}
+      WORDPRESS_DEBUG: 1 
+    ports:
+      - "${WP_PORT}:80"
+    volumes:
+      - ./wp:/var/www/html
+    depends_on:
+      wp_db:
+        condition: service_healthy
+    networks:
+      - app-network # Mude para o nome da rede que já existe no seu MVP
 
 # --- GERENCIAMENTO DE VOLUMES ---
 volumes:
   pgdata:
+  mysql_data:
 
 networks:
   app-network:

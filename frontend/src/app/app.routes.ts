@@ -1,8 +1,6 @@
 import { Routes } from '@angular/router';
-import { LoginPage } from './features/users/pages/login-page/login-page';
+import { LoginPage } from './features/auth/login/login-page/login-page';
 import { LandingPage } from './pages/landing-page/landing-page';
-import { InvitePage } from './features/invite/components/invite-details/invite-details.component';
-import { Expired } from './features/invite/pages/expired/expired';
 import { authGuard } from './core/guards/auth-guard'; // Seu guarda de autenticação
 import { roleGuard } from './core/guards/role-guard'; // Seu guarda de role (vamos substituir/complementar)
 import { PermissionGuard } from './core/guards/permission.guard'; // Importe o guarda de permissão quando criado
@@ -10,18 +8,25 @@ import { PermissionGuard } from './core/guards/permission.guard'; // Importe o g
 // Importa o novo Layout e a página de Métricas
 import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
 import { DashboardMetricsComponent } from './features/users/pages/dashboard-metrics/dashboard-metrics.component';
-import { UnauthorizedComponent } from './features/users/pages/unauthorized-page/unauthorized.component'; // Importa a nova página
+
 import { ArenaInvestmentsPageComponent } from './features/simulators/arena-investments/pages/arena-investments/arena-investments-page.component';
+import { UnauthorizedComponent } from './core/pages/unauthorized-page/unauthorized.component'; // Importa a nova página
+import { AvailableActivitiesPageComponent } from './features/activities/pages/available-activities-page/available-activities-page.component';
 //import { Welcome } from './pages/welcome/welcome'; // Assumindo que exista
 
 export const routes: Routes = [
     // Rotas Públicas
     { path: 'login', component: LoginPage, title: 'TechSolutions - Login' },
     { path: '', component: LandingPage }, // Rota raiz pública
-    { path: 'invite/expired', component: Expired },
-    { path: 'invite/:token', component: InvitePage },
     // Rota para Acesso Negado
     { path: 'unauthorized', component: UnauthorizedComponent },
+    {
+        path: 'register',
+        title: 'Criar Conta | Educa-IA', // Título que aparece na aba do navegador
+        loadComponent: () => 
+        import('./features/auth/register/register-page/register-page.component')
+            .then(m => m.RegisterPageComponent)
+    },
     // Rotas Protegidas
     {
         path: 'app', // Prefixo para rotas autenticadas (ou pode ser '')
@@ -40,27 +45,6 @@ export const routes: Routes = [
                 data: { permissions: ['VIEW_DASHBOARD'] }
             },
 
-            // --- ROTAS: ATIVIDADES E CONTEÚDOS ---
-            {   // Rota para Atividades (Simulador Visual, Conversor e Arena)
-                path: 'activities', 
-                loadComponent: () => import('./features/activities/pages/available-activities-page/available-activities-page.component').then(m => m.AvailableActivitiesPageComponent),
-                // Descomentar as linhas seguintes altera o acesso                // canActivate: [PermissionGuard],
-                // data: { permissions: ['TAKE_CERTIFICATIONS'] }
-            },
-            {   // <-- Detalhes da Atividade (Chef) path: 'activities/:id', 
-                path: 'activities/:id',
-                loadComponent: () => import('./features/activities/pages/activity-take-page/activity-take-page.component').then(m => m.ActivityTakePageComponent),
-                // canActivate: [PermissionGuard],
-                // data: { permissions: ['TAKE_CERTIFICATIONS'] } // Ajuste a permissão se desejar bloquear no futuro
-            },
-            // {   // Rota para Conteúdos (Teoria, Fórmulas e Apoio Pedagógico)
-            //     path: 'contents', 
-            //     loadComponent: () => import('./features/contents/pages/available-contents-page/available-contents-page.component').then(m => m.AvailableContentsPageComponent),
-            //     // Descomentar as linhas seguintes altera o acesso
-            //     // canActivate: [PermissionGuard],
-            //     // data: { permissions: ['TAKE_CERTIFICATIONS'] }
-            // },
-                        
             // Rotas dos Módulos/Páginas (Lazy Loaded)
             {   // Rota para Usuários (Gerencial)
                 path: 'users',
@@ -74,12 +58,6 @@ export const routes: Routes = [
                 loadChildren: () => import('./features/certifications/pages/certifications-management-page/certifications-management.routes').then(m => m.CERTIFICATIONS_MANAGEMENT_ROUTES),
                 canActivate: [PermissionGuard],
                 data: { permissions: ['READ_CERTIFICATIONS'] }
-            },
-            {   // Rota para Atividades (Gerencial)
-                path: 'activities-management',
-                loadComponent: () => import('./features/activities/pages/activities-management-page/activities-management-page.component').then(m => m.ActivitiesManagementPageComponent),
-                canActivate: [PermissionGuard],
-                data: { permissions: ['READ_ACTIVITIES'] } // Ajustar permissão conforme necessário
             },
             {   // Rota para Convidar Colaboradores
                 path: 'invite',
@@ -133,6 +111,24 @@ export const routes: Routes = [
                 path: 'certificate/verify',
                 loadComponent: () => import('./features/certifications/pages/certificate-verify-page/certificate-verify-page.component')
                     .then(m => m.CertificateVerifyPageComponent) // Usando o nome correto do componente
+            },
+            { 
+                path: 'activities', 
+                loadComponent: () => import('./features/activities/pages/available-activities-page/available-activities-page.component').then(m => m.AvailableActivitiesPageComponent),
+                canActivate: [PermissionGuard],
+                data: { permissions: ['TAKE_CERTIFICATIONS'] } // Ou a permissão de aluno
+            },
+            {   // Rota para Atividades (Gerencial)
+                path: 'activities-management',
+                loadComponent: () => import('./features/activities/pages/activities-management-page/activities-management-page.component').then(m => m.ActivitiesManagementPageComponent),
+                canActivate: [PermissionGuard],
+                data: { permissions: ['READ_ACTIVITIES'] } // Ajustar permissão conforme necessário
+            },
+            {   // <-- Detalhes da Atividade (Chef) path: 'activities/:id', 
+                path: 'activities/:id',
+                loadComponent: () => import('./features/activities/pages/activity-take-page/activity-take-page.component').then(m => m.ActivityTakePageComponent),
+                // canActivate: [PermissionGuard],
+                // data: { permissions: ['TAKE_CERTIFICATIONS'] } // Ajuste a permissão se desejar bloquear no futuro
             },
             {   // Rota para o Simulador de Crescimento Patrimonial
                 path: 'activities/simulator/wealth-growth/:id',

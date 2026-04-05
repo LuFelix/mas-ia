@@ -7,11 +7,7 @@ import { AuthModule } from './auth/auth.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { RolesModule } from './roles/roles.module';
 import { UsersModule } from './users/users.module';
-import { InvitesModule } from './invites/invites.module';
-import { MailerService } from './mailer/mailer.service';
-import { MailerModule } from './mailer/mailer.module';
 import { GlobalJwtModule } from './shared/global-jwt.module';
-import { AdminModule } from './admin/admin.module';
 import { SeedModule } from './seeds/seed.module';
 import { QuestionsModule } from './questions/questions.module';
 import { CertificationsModule } from './certifications/certifications.module';
@@ -22,6 +18,7 @@ import { SuiService } from './sui/sui.service';
 import { ActivitiesModule } from './activities/activities.module';
 import { WealthGrowthModule } from './simulators/wealth-growth/wealth-growth.module'; 
 import { ArenaInvestmentsModule } from './simulators/arena-investments/arena-investments.module';
+import { MailerModule } from '@nestjs-modules/mailer';
 
 @Module({
   imports: [
@@ -40,13 +37,28 @@ import { ArenaInvestmentsModule } from './simulators/arena-investments/arena-inv
         synchronize: true,
       }),
     }),
+    MailerModule.forRootAsync({
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: async (config: ConfigService) => ({
+        transport: {
+          host: config.get('MAIL_HOST'),
+          port: config.get('MAIL_PORT'),
+          secure: config.get('MAIL_PORT') == 465, // true para 465, false para outras
+          auth: {
+            user: config.get('MAIL_USER'),
+            pass: config.get('MAIL_PASS'),
+          },
+        },
+        defaults: {
+          from: config.get('MAIL_FROM'),
+        },
+      }),
+    }),
     AuthModule,
     RolesModule,
     UsersModule,
-    InvitesModule,
-    MailerModule,
     GlobalJwtModule,
-    AdminModule,
     SeedModule,
     QuestionsModule,
     CertificationsModule,
@@ -58,6 +70,6 @@ import { ArenaInvestmentsModule } from './simulators/arena-investments/arena-inv
     ArenaInvestmentsModule,
   ],
   controllers: [AppController],
-  providers: [AppService, MailerService, SuiService],
+  providers: [AppService],
 })
 export class AppModule {}

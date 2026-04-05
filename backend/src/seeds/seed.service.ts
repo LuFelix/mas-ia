@@ -95,6 +95,7 @@ export class SeedService {
         cpf: adminCPF,
         password: hashedPassword,
         role: adminRole,
+        isVerified: true,
         phonenumber: '00000000000',
         cep: '00000000',
         uf: 'AL',

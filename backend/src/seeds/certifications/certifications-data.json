@@ -1,26 +1,34 @@
 [
   {
-    "name": "Agente de Viagens",
-    "shortDescription": "Profissional responsável por atender clientes e auxiliá-los na aquisição de passagens, hospedagens e pacotes.",
-    "description": "O Agente de Viagens atua em agências físicas ou online, oferecendo consultoria personalizada, comparando preços, rotas e atrativos turísticos. Precisa conhecer sistemas de reserva e normas do setor.",
+    "name": "Canguru de Matemática - Nível E",
+    "shortDescription": "Preparatório para a maior competição internacional de matemática para alunos do 5º e 6º ano.",
+    "description": "Esta trilha foca no desenvolvimento do raciocínio lógico-quantitativo através de problemas desafiadores da prova Canguru. Abrange aritmética básica, geometria intuitiva, quebra-cabeças lógicos e propriedades dos números, priorizando a interpretação de enunciados e estratégias de resolução de problemas sem o uso de fórmulas complexas.",
+    "passingScore": 60,
+    "modality": "online",
+    "durationHours": 20
+  },
+  {
+    "name": "Olimpíada Brasileira de Matemática (OBMEP) - Nível 2",
+    "shortDescription": "Treinamento intensivo para alunos do 8º e 9º ano com foco na 1ª e 2ª fase da competição.",
+    "description": "Trilha avançada baseada nos bancos de questões da OBMEP. Explora conceitos fundamentais de álgebra (equações e inequações), contagem (combinatória básica), geometria plana (áreas e perímetros) e aritmética (divisibilidade e restos). O objetivo é capacitar o aluno a estruturar justificativas matemáticas sólidas, essenciais para o sucesso na segunda fase da olimpíada.",
+    "passingScore": 65,
+    "modality": "online",
+    "durationHours": 30
+  },
+  {
+    "name": "Preparatório UFAL - Raciocínio Lógico e Matemática",
+    "shortDescription": "Foco nas competências de matemática e lógica para o ingresso na Universidade Federal de Alagoas.",
+    "description": "Conteúdo programático alinhado ao COPEVE/UFAL. A trilha aborda funções (1º e 2º grau, exponencial e logarítmica), trigonometria no ciclo, análise combinatória e probabilidade, além de estatística básica. Inclui simulados com questões de processos seletivos anteriores da UFAL, focando na agilidade de resolução e interpretação de gráficos e tabelas de dados regionais.",
+    "passingScore": 75,
+    "modality": "online",
+    "durationHours": 40
+  },
+  {
+    "name": "Preparatório IFAL - Integrado (Matemática)",
+    "shortDescription": "Revisão completa de matemática do Ensino Fundamental para o exame de seleção do IFAL.",
+    "description": "Trilha específica para candidatos aos cursos técnicos integrados. Cobre rigorosamente o edital do IFAL: conjuntos numéricos, razão e proporção, regra de três simples e composta, porcentagem, expressões algébricas, equações e sistemas, além de geometria plana e espacial básica. A metodologia utiliza questões de exames anteriores para familiarizar o aluno com o perfil da banca organizadora do instituto.",
     "passingScore": 70,
     "modality": "online",
-    "durationHours": 16
-  },
-  {
-    "name": "Camareira / Arrumador",
-    "shortDescription": "Responsável pela limpeza, arrumação e organização de quartos, áreas comuns e enxoval.",
-    "description": "A Camareira ou Arrumador garante o padrão de higiene e conforto dos hóspedes, seguindo normas de hotelaria, checklist de limpeza e protocolos de segurança.",
-    "passingScore": 70,
-    "modality": "inPerson",
-    "durationHours": 12
-  },
-  {
-    "name": "Chefe de Governança",
-    "shortDescription": "Coordena a equipe de limpeza e arrumação de hotéis e resorts.",
-    "description": "Organiza escala da equipe, supervisiona procedimentos de limpeza, controla enxoval e garante cumprimento dos padrões do estabelecimento.",
-    "passingScore": 75,
-    "modality": "inPerson",
-    "durationHours": 20
+    "durationHours": 35
   }
 ]

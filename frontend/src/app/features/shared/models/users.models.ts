@@ -42,21 +42,6 @@ export interface User {
   role?: { id: number, name: string };
 }
 
-// --- Interface para Registro (Usada pelo AuthService) ---
-export interface RegistrationData {
-  token?: string; // Token pode ser de convite, opcional dependendo do fluxo
-  cpf: string;
-  name: string;
-  email: string;
-  phonenumber?: string;
-  cep?: string;
-  uf?: string;
-  city?: string;
-  neighborhood?: string;
-  street?: string;
-  password: string;
-}
-
 // --- Interface para Dados do Usuário no LocalStorage/Componentes ---
 export interface UserData {
     id: string;         // Do token 'sub'
