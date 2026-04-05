@@ -21,6 +21,7 @@ import { CertificatesModule } from './certificates/certificates.module';
 import { SuiService } from './sui/sui.service';
 import { ActivitiesModule } from './activities/activities.module';
 import { WealthGrowthModule } from './simulators/wealth-growth/wealth-growth.module'; 
+import { ArenaInvestmentsModule } from './simulators/arena-investments/arena-investments.module';
 
 @Module({
   imports: [
@@ -54,6 +55,7 @@ import { WealthGrowthModule } from './simulators/wealth-growth/wealth-growth.mod
     CertificatesModule,
     ActivitiesModule,
     WealthGrowthModule,
+    ArenaInvestmentsModule,
   ],
   controllers: [AppController],
   providers: [AppService, MailerService, SuiService],

@@ -8,13 +8,24 @@ import { Certification } from 'src/certifications/entities/certification.entity'
 import { SeedService } from './seed.service';
 import { SeedUsersService } from './users/seed-users.service';
 import { SeedCertificationsService } from './certifications/seed-certifications.service';
+import { Activity } from 'src/activities/entities/activity.entity';
+import { SeedActivitiesService } from './activities/seed-activities.service';
 
 @Module({
   imports: [
     ConfigModule.forRoot(),
-    TypeOrmModule.forFeature([Role, User, Certification]),
+    TypeOrmModule.forFeature([
+      Role,
+      User,
+      Certification,
+      Activity,
+    ]),
   ],
-  providers: [SeedService, SeedUsersService, SeedCertificationsService],
+  providers: [
+    SeedService,
+    SeedUsersService,
+    SeedCertificationsService,
+    SeedActivitiesService],
   exports: [SeedService],
 })
 export class SeedModule {}

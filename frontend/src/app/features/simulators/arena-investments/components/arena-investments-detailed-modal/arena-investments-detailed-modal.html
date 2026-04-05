@@ -1,0 +1,12 @@
+<h2 mat-dialog-title>Evolução dos Perfis</h2>
+
+<mat-dialog-content>
+  <div class="chart-container">
+    <canvas
+      baseChart
+      [data]="lineChartData"
+      [options]="lineChartOptions"
+      [type]="'line'">
+    </canvas>
+  </div>
+</mat-dialog-content>

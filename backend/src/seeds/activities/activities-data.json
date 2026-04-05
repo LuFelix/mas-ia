@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "conversor-dinamico-de-taxas",
+    "name": "Conversor Dinâmico de Taxas",
+    "shortDescription": "Converta taxas de juros mensais para anuais e entenda a equivalência real.",
+    "description": "Desenvolvido para desmistificar as proporções no mercado financeiro, este módulo aplica a fórmula de taxas equivalentes. Através de uma interface reativa, observe instantaneamente a diferença prática e matemática entre o fracionamento simples de uma taxa e a sua real equivalência geométrica composta.",
+    "type": "conversor",
+    "category": "Matemática Financeira",
+    "difficultyLevel": "Intermediário",
+    "hasAI": false,
+    "isActive": true,
+    "pdfPath": null
+  },
+  {
+    "slug": "arena-de-investimentos",
+    "name": "Arena de Investimentos",
+    "shortDescription": "Compare projeções financeiras lado a lado com auxílio de Inteligência Artificial.",
+    "description": "Esta ferramenta consolida as aprendizagens ao permitir a sobreposição de diferentes projeções financeiras (como Poupança vs. Tesouro Direto) em um único gráfico. Integrada a uma API de Inteligência Artificial, a funcionalidade plota os dados comparativos e fornece uma análise textual simplificada para orientar a tomada de decisão.",
+    "type": "comparador",
+    "category": "Educação Financeira",
+    "difficultyLevel": "Avançado",
+    "hasAI": true,
+    "isActive": true,
+    "pdfPath": null
+  },
+  {
+    "slug": "simulador-visual-de-crescimento-patrimonial",
+    "name": "Simulador Visual de Crescimento Patrimonial",
+    "shortDescription": "Visualize o impacto dos juros compostos no seu dinheiro.",
+    "description": "Esta ferramenta processa variáveis de Capital Inicial, Aportes, Taxa e Tempo. Utilizando a equação de juros compostos, o sistema gera uma representação gráfica interativa da curva exponencial do patrimônio.",
+    "type": "simulador",
+    "category": "Matemática Financeira",
+    "difficultyLevel": "Iniciante",
+    "hasAI": false,
+    "isActive": true,
+    "pdfPath": null
+  }
+]

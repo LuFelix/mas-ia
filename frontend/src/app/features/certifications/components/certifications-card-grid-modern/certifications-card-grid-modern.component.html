@@ -1,19 +1,19 @@
 <div class="available-certs-container">
-  <h1>Certificações Disponíveis</h1>
-  <p class="subtitle">Escolha uma certificação para ver os detalhes ou realizar a prova.</p>
+  <h1>Trilhas Disponíveis</h1>
+  <p class="subtitle">Escolha uma trilha para ver os detalhes ou realizar a prova.</p>
 </div>
 
 @if (isLoading) {
   <div class="loading-spinner">
     <mat-spinner diameter="50"></mat-spinner>
-    <p>Carregando certificações...</p>
+    <p>Carregando trilhas...</p>
   </div>
 }
 
 @if (!isLoading && errorLoading) {
   <div class="error-message">
     <mat-icon color="warn">error_outline</mat-icon>
-    <p>Não foi possível carregar as certificações. Tente novamente mais tarde.</p>
+    <p>Não foi possível carregar as trilhas. Tente novamente mais tarde.</p>
     <!-- O botão agora "toca o sininho" (retryLoad.emit) -->
     <button mat-stroked-button color="primary" (click)="retryLoad.emit()">Tentar Novamente</button>
   </div>
@@ -74,6 +74,6 @@
           </div> </mat-card> }
     </div>
   } @else {
-    <p class="no-certs">Nenhuma certificação disponível no momento.</p>
+    <p class="no-certs">Nenhuma trilha disponível no momento.</p>
   }
 }

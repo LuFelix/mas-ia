@@ -1,0 +1,1 @@
+Use Standalone Components. Evite NgModules. A estrutura segue Feature-Sliced Design. Componentes de UI devem ser burros (Dumb Components), a lógica de estado fica nos Services.

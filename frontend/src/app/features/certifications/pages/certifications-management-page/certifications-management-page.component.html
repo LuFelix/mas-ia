@@ -1,7 +1,7 @@
 <mat-card class="cert-card">
   <mat-card-header>
-    <mat-card-title>Gerenciamento de Certificações</mat-card-title>
-    <mat-card-subtitle>Crie, visualize e gerencie as certificações disponíveis</mat-card-subtitle>
+    <mat-card-title>Gerenciamento de Trilhas de Aprendizagem</mat-card-title>
+    <mat-card-subtitle>Crie, visualize e gerencie as trilhas disponíveis</mat-card-subtitle>
   </mat-card-header>
 
   <mat-card-content>
@@ -17,7 +17,7 @@
     <form [formGroup]="filterForm" class="action-bar">
       <div class="filter-group">
         <mat-form-field appearance="outline">
-          <mat-label>Título da Certificação</mat-label>
+          <mat-label>Título da Trilha</mat-label>
           <input matInput formControlName="title" placeholder="Filtrar por título">
         </mat-form-field>
 
@@ -39,7 +39,7 @@
         </button>
         <button mat-raised-button color="primary" (click)="addCertification()">
           <mat-icon>add_box</mat-icon>
-          Adicionar Certificação
+          Adicionar Trilha
         </button>
       </div>
     </form>

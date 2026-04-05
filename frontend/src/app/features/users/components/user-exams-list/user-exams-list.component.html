@@ -2,8 +2,8 @@
   
   <mat-card-header class="card-header-icon-history">
     <mat-icon mat-card-avatar>history</mat-icon>
-    <mat-card-title>Histórico de Exames</mat-card-title>
-    <mat-card-subtitle>Suas tentativas de certificação (iniciadas e finalizadas)</mat-card-subtitle>
+    <mat-card-title>Histórico de Tentativas</mat-card-title>
+    <mat-card-subtitle>Suas tentativas de conquista (iniciadas e finalizadas)</mat-card-subtitle>
   </mat-card-header>
 
   <mat-card-content class="table-container">
@@ -18,7 +18,7 @@
         <table mat-table [dataSource]="allExams" class="results-table">
           
           <ng-container matColumnDef="certificationName">
-            <th mat-header-cell *matHeaderCellDef> Certificação </th>
+            <th mat-header-cell *matHeaderCellDef> Trilha </th>
             <td mat-cell *matCellDef="let exam"> {{ exam.certification.name || exam.certificationId }} </td>
           </ng-container>
 

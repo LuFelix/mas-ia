@@ -1,0 +1,49 @@
+.arena-result-card {
+  margin-top: 16px;
+  border: 2px solid var(--mat-sys-primary);
+  border-radius: 12px;
+}
+
+.winner-icon {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-section {
+  margin-top: 16px;
+  padding: 8px;
+  background-color: rgba(var(--mat-sys-surface-variant), 0.3);
+  border-radius: 8px;
+}
+
+.profiles-grid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.profile-card {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: linear-gradient(180deg, rgba(var(--mat-sys-primary), 0.06), rgba(255, 255, 255, 0.7));
+}
+
+.profile-name {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.profile-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.profile-rate {
+  margin-top: 4px;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}

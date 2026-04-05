@@ -1,0 +1,53 @@
+.arena-page-container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-section {
+  margin-bottom: 32px;
+  text-align: center;
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+    color: var(--mat-sys-primary);
+  }
+  p {
+    color: var(--mat-sys-on-surface-variant);
+    font-size: 1.1rem;
+  }
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+
+  /* Em telas médias/grandes, divide meio a meio */
+  @media (min-width: 900px) {
+    grid-template-columns: 400px 1fr;
+  }
+}
+
+.loading-container, .empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background-color: rgba(var(--mat-sys-surface-variant), 0.3);
+  border-radius: 12px;
+  border: 2px dashed rgba(var(--mat-sys-outline), 0.3);
+  color: var(--mat-sys-outline);
+}
+
+.debug-card {
+  pre {
+    background: #1e1e1e;
+    color: #00ff00;
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+  }
+}
