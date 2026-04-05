@@ -1,0 +1,2097 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: nextend-facebook-connect\n"
+"POT-Creation-Date: 2026-02-23 09:54+0100\n"
+"PO-Revision-Date: 2026-02-23 09:54+0100\n"
+"Last-Translator: \n"
+"Language-Team: nextend-facebook-connect\n"
+"Language: hi_IN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Generator: Poedit 3.8\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_x:1,2c;esc_html_e\n"
+"X-Poedit-Flags-xgettext: --no-location\n"
+"X-Poedit-SearchPath-0: nextend-social-login-pro\n"
+"X-Poedit-SearchPath-1: nextend-facebook-connect\n"
+
+msgid "What personal data we collect and why we collect it"
+msgstr "हम कौन-कौन सा व्यक्तिगत डेटा एकत्र करते हैं और क्यों एकत्र करते हैं"
+
+#, php-format
+msgid ""
+"%1$s collects data when a visitor register, login or link the account with with any of the "
+"enabled social provider. It collects the following data: email address, name, social provider "
+"identifier and access token. Also it can collect profile picture and more fields with the Pro "
+"Addon's sync data feature."
+msgstr ""
+"%1$s आगंतुक के पंजीकरण, लॉगिन या किसी भी सक्षम सोशल प्रोवाइडर के साथ खाता लिंक करने पर डेटा एकत्र करता है। "
+"यह निम्नलिखित डेटा एकत्र करता है: ईमेल पता, नाम, सोशल प्रोवाइडर पहचानकर्ता और एक्सेस टोकन। इसके अलावा, "
+"प्रो ऐडऑन की सिंक डेटा सुविधा के साथ यह प्रोफ़ाइल चित्र और अन्य फ़ील्ड भी एकत्र कर सकता है।"
+
+msgid "Who we share your data with"
+msgstr "हम आपका डेटा किसके साथ साझा करते हैं"
+
+#, php-format
+msgid ""
+"%1$s stores the personal data on your site and does not share it with anyone except the access "
+"token which used for the authenticated communication with the social providers."
+msgstr ""
+"%1$s आपकी साइट पर व्यक्तिगत डेटा संग्रहीत करता है और इसे किसी के साथ साझा नहीं करता है, सिवाय एक्सेस टोकन के "
+"जिसका उपयोग सोशल मीडिया प्रदाताओं के साथ प्रमाणित संचार के लिए किया जाता है।"
+
+msgid "Does the plugin share personal data with third parties"
+msgstr "क्या यह प्लगइन व्यक्तिगत डेटा को तृतीय पक्षों के साथ साझा करता है"
+
+#, php-format
+msgid ""
+"%1$s use the access token what the social provider gave to communicate with the providers to "
+"verify account and securely access personal data."
+msgstr ""
+"%1$s उपयोगकर्ता सोशल मीडिया प्रदाता द्वारा दिए गए एक्सेस टोकन का उपयोग करके प्रदाताओं के साथ संवाद करते हैं, "
+"खाते को सत्यापित करते हैं और व्यक्तिगत डेटा को सुरक्षित रूप से एक्सेस करते हैं।"
+
+msgid "How long we retain your data"
+msgstr "हम आपका डेटा कितने समय तक सुरक्षित रखते हैं"
+
+#, php-format
+msgid "%1$s removes the collected personal data when the user deleted from WordPress."
+msgstr "जब उपयोगकर्ता वर्डप्रेस से अपना खाता हटाता है, तो %1$s एकत्रित व्यक्तिगत डेटा को हटा देता है।"
+
+msgid "Does the plugin use personal data collected by others?"
+msgstr "क्या यह प्लगइन दूसरों द्वारा एकत्रित व्यक्तिगत डेटा का उपयोग करता है?"
+
+#, php-format
+msgid ""
+"%1$s use the personal data collected by the social providers to create account on your site "
+"when the visitor authorize it."
+msgstr ""
+"जब आगंतुक इसकी अनुमति देता है, तो %1$s आपकी साइट पर खाता बनाने के लिए सोशल मीडिया प्रदाताओं द्वारा एकत्रित "
+"व्यक्तिगत डेटा का उपयोग करता है।"
+
+msgid "Does the plugin store things in the browser?"
+msgstr "क्या प्लगइन ब्राउज़र में डेटा स्टोर करता है?"
+
+#, php-format
+msgid ""
+"Yes, %1$s must create a cookie for visitors who use the social login authorization flow. This "
+"cookie required for every provider to secure the communication and to redirect the user back to "
+"the last location."
+msgstr ""
+"जी हां, %1$s सोशल लॉगिन ऑथराइजेशन प्रक्रिया का उपयोग करने वाले आगंतुकों के लिए कुकी बनाना अनिवार्य है। यह "
+"कुकी हर सेवा प्रदाता के लिए संचार को सुरक्षित रखने और उपयोगकर्ता को पिछली लोकेशन पर वापस भेजने के लिए आवश्यक "
+"है।"
+
+msgid "Does the plugin collect telemetry data, directly or indirectly?"
+msgstr "क्या यह प्लगइन प्रत्यक्ष या अप्रत्यक्ष रूप से टेलीमेट्री डेटा एकत्र करता है?"
+
+msgid "No"
+msgstr "नहीं"
+
+msgid "Does the plugin enqueue JavaScript, tracking pixels or embed iframes from a third party?"
+msgstr "क्या यह प्लगइन जावास्क्रिप्ट, ट्रैकिंग पिक्सल को एनक्यू करता है या किसी तीसरे पक्ष से आईफ्रेम एम्बेड करता है?"
+
+msgid "User"
+msgstr "उपयोगकर्ता"
+
+msgid "This provider doesn't support REST API calls!"
+msgstr "यह प्रदाता REST API कॉल का समर्थन नहीं करता है!"
+
+#, php-format
+msgid "%s needs json_decode function."
+msgstr "%s को json_decode फ़ंक्शन की आवश्यकता है।"
+
+msgid "Please contact your server administrator and ask for solution!"
+msgstr "कृपया अपने सर्वर एडमिनिस्ट्रेटर से संपर्क करें और समाधान पूछें!"
+
+msgid "Settings saved."
+msgstr "सेटिंग्स को सहेजा गया।"
+
+msgid "The activation was successful"
+msgstr "सक्रियण सफल रहा"
+
+msgid "Deactivate completed."
+msgstr "निष्क्रियकरण प्रक्रिया पूरी हो गई।"
+
+msgid "Settings"
+msgstr "सेटिंग्स"
+
+#, php-format
+msgid "Unexpected response: %s"
+msgstr "अप्रत्याशित प्रतिक्रिया: %s"
+
+#, php-format
+msgid ""
+"%s detected that your login url changed. You must update the Oauth redirect URIs in the related "
+"social applications."
+msgstr ""
+"%s ने पता लगाया है कि आपका लॉगिन यूआरएल बदल गया है। आपको संबंधित सोशल एप्लिकेशन में OAuth रीडायरेक्ट यूआरआई "
+"को अपडेट करना होगा।"
+
+msgid "Fix Error"
+msgstr "त्रुटि ठीक करें"
+
+msgid "Oauth Redirect URI"
+msgstr "Oauth रीडायरेक्ट यूआरआई"
+
+#, php-format
+msgid ""
+"%1$s detected that %2$s installed on your site. You need the Pro Addon to display Social Login "
+"buttons in %2$s login form!"
+msgstr ""
+"%1$s ने पता लगाया है कि %2$s आपकी साइट पर इंस्टॉल है। %2$s लॉगिन फ़ॉर्म में सोशल लॉगिन बटन प्रदर्शित करने के "
+"लिए आपको प्रो ऐडऑन की आवश्यकता है!"
+
+msgid "Dismiss and check Pro Addon"
+msgstr "प्रो ऐडऑन को बंद करें और जांचें"
+
+msgid "Dismiss"
+msgstr "समाप्त करना"
+
+#, php-format
+msgid ""
+"%1$s detected that %2$s installed on your site. You must set \"<b>Page for register flow</b>\" "
+"and \"<b>OAuth redirect uri proxy page</b>\" in %1$s to work properly."
+msgstr ""
+"%1$s ने पता लगाया है कि %2$s आपकी साइट पर स्थापित है। सही ढंग से काम करने के लिए आपको %1$s में "
+"\"<b>पंजीकरण प्रवाह के लिए पृष्ठ</b>\" और \"<b>OAuth रीडायरेक्ट यूआरआई प्रॉक्सी पृष्ठ</b>\" सेट करना होगा।"
+
+msgid "Fix now"
+msgstr "अब ठीक करें"
+
+msgid "Activate your Pro Addon"
+msgstr "अपना प्रो ऐडऑन सक्रिय करें"
+
+msgid ""
+"To be able to use the Pro features, you need to activate Nextend Social Login Pro Addon. You "
+"can do this by clicking on the Activate button below then select the related purchase."
+msgstr ""
+"प्रो सुविधाओं का उपयोग करने के लिए, आपको Nextend Social Login Pro ऐडऑन को सक्रिय करना होगा। आप नीचे "
+"दिए गए सक्रिय करें बटन पर क्लिक करके और फिर संबंधित खरीदारी का चयन करके ऐसा कर सकते हैं।"
+
+msgid "Activate"
+msgstr "सक्रिय करें"
+
+msgid "License key"
+msgstr "लाइसेंस कुंजी"
+
+msgid "OAuth proxy page"
+msgstr "OAuth प्रॉक्सी पृष्ठ"
+
+msgid "Register flow page"
+msgstr "प्रवाह पृष्ठ पंजीकृत करें"
+
+msgid "You have logged in successfully."
+msgstr "आपने सफलतापूर्वक लॉग इन कर लिया है।"
+
+msgid "Login label"
+msgstr "लॉगिन लेबल"
+
+msgid "Reset to default"
+msgstr "डिफ़ॉल्ट पर रीसेट करें"
+
+msgid "Register label"
+msgstr "रजिस्टर लेबल"
+
+msgid "Link label"
+msgstr "लिंक लेबल"
+
+msgid "Unlink label"
+msgstr "लेबल अनलिंक करें"
+
+msgid "Default button"
+msgstr "डिफ़ॉल्ट बटन"
+
+msgid "Use custom button"
+msgstr "कस्टम बटन का प्रयोग करें"
+
+#, php-format
+msgid "Use the %s in your custom button's code to make the label show up."
+msgstr "लेबल को प्रदर्शित करने के लिए अपने कस्टम बटन के कोड में %s का उपयोग करें।"
+
+msgid "Icon button"
+msgstr "चिह्न बटन"
+
+msgid "Save Changes"
+msgstr "परिवर्तन सहेजें"
+
+#, php-format
+msgid "Follow the guide at: %s"
+msgstr "इस लिंक पर दिए गए निर्देशों का पालन करें: %s"
+
+#, php-format
+msgid "I am done setting up my %s"
+msgstr "मैंने अपना %s सेटअप पूरा कर लिया है"
+
+msgctxt "Social Login App"
+msgid "App"
+msgstr "ऐप"
+
+msgid "Getting Started"
+msgstr "शुरू करना"
+
+#, php-format
+msgid ""
+"To allow your visitors to log in with their %1$s account, first you must create an App for "
+"%1$s. The following guide will help you through the %1$s App creation process. After you have "
+"created your %1$s App, head over to \"Settings\" and configure the fields with the credentials "
+"of the App you created."
+msgstr ""
+"अपने आगंतुकों को उनके %1$s खाते से लॉग इन करने की अनुमति देने के लिए, सबसे पहले आपको %1$s के लिए एक ऐप बनाना "
+"होगा। यह गाइड आपको %1$s ऐप बनाने की प्रक्रिया में मदद करेगी। %1$s ऐप बनाने के बाद, \"सेटिंग्स\" पर जाएं और "
+"अपने द्वारा बनाए गए ऐप के क्रेडेंशियल्स के साथ फ़ील्ड्स को कॉन्फ़िगर करें।"
+
+#, php-format
+msgid "How to create an App for %s: "
+msgstr "%s के लिए ऐप कैसे बनाएं: "
+
+msgid "URLs for the App creation:"
+msgstr "ऐप बनाने के लिए URL:"
+
+msgid "Buttons"
+msgstr "बटन"
+
+msgid "Sync data"
+msgstr "डेटा सिंक करें"
+
+msgid "Usage"
+msgstr "उपयोग"
+
+msgid "Other settings"
+msgstr "अन्य सेटिंग्स"
+
+msgid "Username prefix on register"
+msgstr "रजिस्टर पर उपयोगकर्ता नाम उपसर्ग"
+
+msgid "Fallback username prefix on register"
+msgstr "पंजीकरण पर फ़ॉलबैक उपयोगकर्ता नाम उपसर्ग"
+
+msgid "Used when username is invalid or not stored"
+msgstr "इसका उपयोग तब किया जाता है जब उपयोगकर्ता नाम अमान्य हो या संग्रहीत न हो"
+
+msgid "Terms and conditions"
+msgstr "नियम और शर्तें"
+
+#, php-format
+msgid "Override global \"%1$s\""
+msgstr "वैश्विक \"%1$s\" को ओवरराइड करें"
+
+msgid "PRO settings"
+msgstr "प्रो सेटिंग्स"
+
+msgid "Ask E-mail on registration"
+msgstr "पंजीकरण के समय ईमेल पूछें"
+
+msgid "Never"
+msgstr "कभी नहीं"
+
+msgid "When email is not provided or empty"
+msgstr "जब ईमेल पता उपलब्ध न हो या खाली हो"
+
+msgid "Always"
+msgstr "हमेशा"
+
+msgid "Ask Username on registration"
+msgstr "पंजीकरण के समय उपयोगकर्ता नाम पूछें"
+
+msgid "Never, generate automatically"
+msgstr "कभी नहीं, स्वचालित रूप से उत्पन्न करें"
+
+msgid "When username is empty or invalid"
+msgstr "जब उपयोगकर्ता नाम खाली या अमान्य हो"
+
+msgid "Ask Password on registration"
+msgstr "पंजीकरण पर पासवर्ड पूछें"
+
+msgid "Automatically connect the existing account upon registration"
+msgstr "पंजीकरण के बाद मौजूदा खाते को स्वचालित रूप से कनेक्ट करें"
+
+msgid "Disabled"
+msgstr "अक्षम"
+
+msgid "Automatic, based on email address"
+msgstr "स्वचालित, ईमेल पते के आधार पर"
+
+msgid "Disable login for the selected roles"
+msgstr "चयनित भूमिकाओं के लिए लॉगिन अक्षम करें"
+
+msgid "Default roles for user who registered with this provider"
+msgstr "इस प्रदाता के साथ पंजीकृत उपयोगकर्ताओं के लिए डिफ़ॉल्ट भूमिकाएँ"
+
+#, php-format
+msgid "Default (The %1$s is: %2$s)"
+msgstr "डिफ़ॉल्ट (%1$s है: %2$s)"
+
+msgid "default WordPress role"
+msgstr "डिफ़ॉल्ट वर्डप्रेस भूमिका"
+
+#, php-format
+msgid "Default (The %s.)"
+msgstr "डिफ़ॉल्ट (%s.)"
+
+msgid "Register"
+msgstr "पंजीकरण करवाना"
+
+msgid "Login"
+msgstr "लॉग इन करें"
+
+msgid "Link"
+msgstr "लिंक"
+
+msgid "Store in meta key"
+msgstr "मेटा कुंजी में संग्रहित करें"
+
+msgid "Shortcode"
+msgstr "शॉर्टकोड"
+
+msgid "Important!"
+msgstr "महत्वपूर्ण!"
+
+msgid "The shortcodes are only rendered for users who haven't logged in yet!"
+msgstr "ये शॉर्टकोड केवल उन उपयोगकर्ताओं को दिखाई देंगे जिन्होंने अभी तक लॉग इन नहीं किया है!"
+
+msgid "See the full list of shortcode parameters."
+msgstr "शॉर्टकोड पैरामीटर की पूरी सूची देखें।"
+
+msgid "Simple link"
+msgstr "सरल लिंक"
+
+msgid "Click here to login or register"
+msgstr "लॉगिन या पंजीकरण करने के लिए यहां क्लिक करें"
+
+msgid "Image button"
+msgstr "इमेज बटन"
+
+msgid "Image url"
+msgstr "इमेज यूआरएल"
+
+msgid "Debug"
+msgstr "डिबग"
+
+msgid "Test network connection with providers"
+msgstr "प्रदाताओं के साथ नेटवर्क कनेक्शन की जांच करें"
+
+msgid "You don't have cURL support, please enable it in php.ini!"
+msgstr "आपके सिस्टम में cURL सपोर्ट नहीं है, कृपया इसे php.ini में सक्षम करें!"
+
+#, php-format
+msgid "Test %1$s connection"
+msgstr "%1$s कनेक्शन का परीक्षण करें"
+
+msgid "Fix Oauth Redirect URIs"
+msgstr "OAuth रीडायरेक्ट URI को ठीक करें"
+
+msgid "Every Oauth Redirect URI seems fine"
+msgstr "सभी OAuth रीडायरेक्ट URI ठीक प्रतीत होते हैं"
+
+msgid "Got it"
+msgstr "समझ गया"
+
+msgid "Global Settings"
+msgstr "वैश्विक सेटिंग्स"
+
+msgid "General"
+msgstr "सामान्य"
+
+msgid "Privacy"
+msgstr "गोपनीयता"
+
+msgid "Login Form"
+msgstr "लॉगिन फॉर्म"
+
+msgid "Comment"
+msgstr "टिप्पणी"
+
+msgid "Custom Actions"
+msgstr "कस्टम क्रियाएँ"
+
+msgid "Docs"
+msgstr "डॉक्स"
+
+msgid "Support"
+msgstr "सहायता"
+
+msgid "Pro Addon"
+msgstr "प्रो ऐडऑन"
+
+msgid "Providers"
+msgstr "प्रदाताओं"
+
+msgid "Error"
+msgstr "त्रुटि"
+
+msgid ""
+"You don’t have sufficient permissions to install and activate plugins. Please contact your "
+"site’s administrator!"
+msgstr ""
+"आपके पास प्लगइन इंस्टॉल और एक्टिवेट करने के लिए पर्याप्त अनुमति नहीं है। कृपया अपनी साइट के एडमिनिस्ट्रेटर से संपर्क "
+"करें!"
+
+msgid "Activate Pro Addon"
+msgstr "प्रो ऐडऑन सक्रिय करें"
+
+msgid ""
+"Pro Addon is installed but not activated. To be able to use the Pro features, you need to "
+"activate it."
+msgstr ""
+"प्रो ऐडऑन इंस्टॉल तो हो गया है, लेकिन एक्टिवेट नहीं हुआ है। प्रो फीचर्स का इस्तेमाल करने के लिए आपको इसे एक्टिवेट "
+"करना होगा।"
+
+msgid "Deactivate Pro Addon"
+msgstr "प्रो ऐडऑन को निष्क्रिय करें"
+
+msgid "Pro Addon is not installed"
+msgstr "प्रो ऐडऑन इंस्टॉल नहीं है"
+
+msgid "To access the Pro features, you need to install and activate the Pro Addon."
+msgstr "प्रो फीचर्स का उपयोग करने के लिए, आपको प्रो ऐडऑन को इंस्टॉल और एक्टिवेट करना होगा।"
+
+#, php-format
+msgid "Install %s now"
+msgstr "अभी %s इंस्टॉल करें"
+
+msgid "Install Pro Addon"
+msgstr "प्रो ऐडऑन इंस्टॉल करें"
+
+msgid "Activating..."
+msgstr "सक्रिय किया जा रहा है..."
+
+msgid "Not compatible!"
+msgstr "अनुकूल नहीं है!"
+
+#, php-format
+msgid "%1$s and %2$s are not compatible. Please update %1$s to version %3$s or newer."
+msgstr "%1$s और %2$s संगत नहीं हैं। कृपया %1$s को संस्करण %3$s या उससे नए संस्करण में अपडेट करें।"
+
+#, php-format
+msgid "Update %s"
+msgstr "%s को अद्यतन करें"
+
+#, php-format
+msgid "%1$s and %2$s are not compatible. Please update %2$s to version %3$s or newer."
+msgstr "%1$s और %2$s संगत नहीं हैं। कृपया %2$s को संस्करण %3$s या उससे नए संस्करण में अपडेट करें।"
+
+msgid "Update Pro Addon"
+msgstr "प्रो ऐडऑन को अपडेट करें"
+
+msgid "Pro Addon is installed and activated"
+msgstr "प्रो ऐडऑन इंस्टॉल और एक्टिवेट हो गया है"
+
+msgid ""
+"You installed and activated the Pro Addon. If you don’t want to use it anymore, you can "
+"deactivate using the button below."
+msgstr ""
+"आपने प्रो ऐडऑन इंस्टॉल और एक्टिवेट कर लिया है। अगर आप इसे अब और इस्तेमाल नहीं करना चाहते हैं, तो नीचे दिए गए "
+"बटन का इस्तेमाल करके इसे डीएक्टिवेट कर सकते हैं।"
+
+msgid "Get Pro Addon to unlock more features"
+msgstr "अधिक सुविधाओं को अनलॉक करने के लिए प्रो ऐडऑन प्राप्त करें"
+
+#, php-format
+msgid ""
+"The features below are available in %s Pro Addon. Get it today and tweak the awesome settings."
+msgstr ""
+"नीचे दिए गए फ़ीचर्स %s Pro ऐडऑन में उपलब्ध हैं। इसे आज ही डाउनलोड करें और शानदार सेटिंग्स को अपनी पसंद के अनुसार "
+"बदलें।"
+
+msgid ""
+"If you already have a license, you can Authorize your Pro Addon. Otherwise you can purchase it "
+"using the button below."
+msgstr ""
+"यदि आपके पास पहले से लाइसेंस है, तो आप अपने प्रो ऐडऑन को अधिकृत कर सकते हैं। अन्यथा, आप नीचे दिए गए बटन का "
+"उपयोग करके इसे खरीद सकते हैं।"
+
+msgid "Buy Pro Addon"
+msgstr "प्रो ऐडऑन खरीदें"
+
+msgid "Authorize Pro Addon"
+msgstr "प्रो ऐडऑन को अधिकृत करें"
+
+msgid "Pro Addon is not activated"
+msgstr "प्रो ऐडऑन सक्रिय नहीं है"
+
+msgid ""
+"To be able to use the Pro features, you need to install and activate the Nextend Social Login "
+"Pro Addon."
+msgstr ""
+"प्रो फीचर्स का उपयोग करने के लिए, आपको Nextend Social Login Pro Addon को इंस्टॉल और एक्टिवेट करना होगा।"
+
+#, php-format
+msgid ""
+"%1$s detected that you have providers configured but none of them are enabled. To display any "
+"social buttons, please make sure you have at least one provider enabled!"
+msgstr ""
+"%1$s ने पाया है कि आपने कई प्रदाता कॉन्फ़िगर किए हैं, लेकिन उनमें से कोई भी सक्रिय नहीं है। सोशल बटन प्रदर्शित "
+"करने के लिए, कृपया सुनिश्चित करें कि आपने कम से कम एक प्रदाता सक्रिय किया हो!"
+
+msgid "Not Available"
+msgstr "उपलब्ध नहीं है"
+
+msgid "Not Configured"
+msgstr "कॉन्फ़िगर नहीं किया गया"
+
+msgid "Not Verified"
+msgstr "सत्यापित नहीं है"
+
+msgid "Enabled"
+msgstr "सक्रिय"
+
+msgid "Upgrade Now"
+msgstr "अभी अपग्रेड करें"
+
+msgid "Verify Settings"
+msgstr "सेटिंग्स सत्यापित करें"
+
+msgid "Enable"
+msgstr "सक्षम"
+
+msgid "Disable"
+msgstr "अक्षम करना"
+
+msgid "Stay Updated"
+msgstr "अपडेट रहें"
+
+msgid "Receive info on the latest plugin updates and social provider related changes."
+msgstr "नवीनतम प्लगइन अपडेट और सोशल प्रोवाइडर से संबंधित परिवर्तनों के बारे में जानकारी प्राप्त करें।"
+
+msgid "Enter your email address"
+msgstr "अपना ईमेल पता दर्ज करें"
+
+msgid "Subscribe"
+msgstr "सदस्यता लें"
+
+msgid "Saving..."
+msgstr "सहेजा जा रहा है..."
+
+msgid "Saving failed"
+msgstr "सहेजना विफल रहा"
+
+msgid "Order Saved"
+msgstr "ऑर्डर सहेजा गया"
+
+msgid "Successfully subscribed!"
+msgstr "सदस्यता सफलतापूर्वक संपन्न हुई!"
+
+msgid ""
+"We'll be bringing you all the latest news and updates about Social Login - right to your inbox."
+msgstr "हम सोशल लॉगिन से जुड़ी सभी ताजा खबरें और अपडेट सीधे आपके इनबॉक्स में भेजेंगे।"
+
+msgid "The entered email address is invalid!"
+msgstr "दर्ज किया गया ईमेल पता अमान्य है!"
+
+msgid "Rate your experience!"
+msgstr "अपने अनुभव का मूल्यांकन करें!"
+
+msgid "Hated it"
+msgstr "इस से नफरत की गई"
+
+msgid "Disliked it"
+msgstr "यह नापसंद है"
+
+msgid "It was ok"
+msgstr "ठीक था"
+
+msgid "Liked it"
+msgstr "यह पसंद है"
+
+msgid "Loved it"
+msgstr "यह बहुत पसंद आया"
+
+msgid "Please Leave a Review"
+msgstr "कृपया एक समीक्षा छोड़ें"
+
+msgid ""
+"If you are happy with <b>Nextend Social Login</b> and can take a minute please leave us a "
+"review. It will be a tremendous help for us!"
+msgstr ""
+"यदि आप <b>नेक्स्टेंड सोशल लॉगिन</b> से संतुष्ट हैं और आपके पास एक मिनट का समय है, तो कृपया हमें एक समीक्षा दें। यह "
+"हमारे लिए बहुत मददगार होगा!"
+
+msgid "Ok, you deserve it"
+msgstr "ठीक है, तुम इसके हकदार हो"
+
+msgid "Register form"
+msgstr "पंजीकरण प्रपत्र"
+
+msgid "No Connect button"
+msgstr "कोई कनेक्ट बटन नहीं"
+
+msgid "Connect button before register"
+msgstr "रजिस्टर करने से पहले कनेक्ट बटन"
+
+msgid "Action:"
+msgstr "कार्रवाई:"
+
+msgid "Connect button before account details"
+msgstr "खाता विवरण से पहले कनेक्ट बटन"
+
+msgid "Connect button after register"
+msgstr "रजिस्टर करने के बाद कनेक्ट बटन"
+
+msgid "Register button style"
+msgstr "रजिस्टर बटन शैली"
+
+msgid "Default"
+msgstr "डिफ़ॉल्ट"
+
+msgid "Fullwidth"
+msgstr "पूरी चौड़ाई"
+
+msgid "Icon"
+msgstr "आइकन"
+
+msgid "Register layout"
+msgstr "लेआउट पंजीकृत करें"
+
+msgid "Below"
+msgstr "नीचे"
+
+msgid "Below with separator"
+msgstr "नीचे विभाजक के साथ"
+
+msgid "Above"
+msgstr "ऊपर"
+
+msgid "Above with separator"
+msgstr "ऊपर विभाजक के साथ"
+
+msgid "Sidebar Login form"
+msgstr "साइडबार लॉगिन फॉर्म"
+
+msgid "Hide login buttons"
+msgstr "लॉगिन बटन छिपाएँ"
+
+msgid "Show login buttons"
+msgstr "लॉगिन बटन दिखाएँ"
+
+msgid ""
+"Some themes that use BuddyPress, display the social buttons twice in the same login form. This "
+"option can disable the one for: <b>bp_sidebar_login_form action</b>.  "
+msgstr ""
+"कुछ थीम जो BuddyPress का उपयोग करती हैं, एक ही लॉगिन फ़ॉर्म में सोशल बटन दो बार प्रदर्शित करती हैं। यह "
+"विकल्प <b>bp_sidebar_login_form action</b> के लिए एक बटन को अक्षम कर सकता है। "
+
+msgid "Login form"
+msgstr "लॉगिन फॉर्म"
+
+msgid "Login button style"
+msgstr "लॉगिन बटन शैली"
+
+msgid "Login layout"
+msgstr "लॉगिन लेआउट"
+
+msgid "Social accounts tab"
+msgstr "सामाजिक खाता टैब"
+
+msgid "Hide"
+msgstr "छिपाना"
+
+msgid "Show"
+msgstr "दिखाना"
+
+#, php-format
+msgid "Creates a new tab called %s, where the Link and Unlink buttons will be displayed."
+msgstr "%s नाम का एक नया टैब बनाता है, जहां लिंक और अनलिंक बटन प्रदर्शित होंगे।"
+
+msgid "Social Accounts"
+msgstr "सामाजिक खाते"
+
+msgid "Button alignment"
+msgstr "बटन संरेखण"
+
+msgid "Left"
+msgstr "बाएं"
+
+msgid "Center"
+msgstr "मध्य"
+
+msgid "Right"
+msgstr "दाहिने"
+
+msgid "Email template for registration"
+msgstr "पंजीकरण के लिए ईमेल टेम्पलेट"
+
+msgid "WordPress default notification"
+msgstr "वर्डप्रेस डिफ़ॉल्ट अधिसूचना"
+
+msgid "BuddyPress welcome notification"
+msgstr "बडीप्रेस स्वागत सूचना"
+
+#, php-format
+msgid ""
+"Defines whether the registration with %1$s will send the same welcome notification that %2$s "
+"does, instead of the %3$s default one."
+msgstr ""
+"यह परिभाषित करता है कि क्या %1$s के साथ पंजीकरण करने पर वही स्वागत सूचना भेजी जाएगी जो %2$s द्वारा भेजी "
+"जाती है, बजाय %3$s की डिफ़ॉल्ट सूचना के।"
+
+msgid "Login button"
+msgstr "लॉगिन बटन"
+
+#, php-format
+msgid "You need to turn on the ' %1$s > %2$s > %3$s ' for this feature to work"
+msgstr "इस फ़ीचर के काम करने के लिए आपको ' %1$s > %2$s > %3$s ' को चालू करना होगा"
+
+msgid "Discussion"
+msgstr "चर्चा"
+
+msgid "Users must be registered and logged in to comment"
+msgstr "टिप्पणी करने के लिए उपयोगकर्ताओं का पंजीकृत होना और लॉग इन करना आवश्यक है"
+
+msgid "Button style"
+msgstr "बटन शैली"
+
+#, php-format
+msgid "%1$s Add your custom actions here. One action per line."
+msgstr "%1$s यहां अपनी कस्टम क्रियाएं जोड़ें। प्रति पंक्ति एक क्रिया।"
+
+msgid "Usage:"
+msgstr "उपयोग:"
+
+#, php-format
+msgid "%1$s The HTML of the social buttons will be added at the place where the action is fired."
+msgstr "%1$s सोशल बटन का HTML उस स्थान पर जोड़ा जाएगा जहां एक्शन ट्रिगर होता है।"
+
+msgid "Important:"
+msgstr "महत्वपूर्ण:"
+
+#, php-format
+msgid ""
+"If you %1$sexperience problems%2$s because of this feature, you can disable it by defining the "
+"%3$s constant."
+msgstr ""
+"यदि आप इस सुविधा के कारण %1$s समस्याओं का अनुभव करते हैं %2$s, तो आप %3$s कॉन्स्टेंट को परिभाषित करके इसे "
+"अक्षम कर सकते हैं।"
+
+msgid "Button layout"
+msgstr "बटन लेआउट"
+
+msgid "Default with top separator"
+msgstr "शीर्ष विभाजक के साथ डिफ़ॉल्ट"
+
+msgid "Default with bottom separator"
+msgstr "नीचे विभाजक के साथ डिफ़ॉल्ट"
+
+msgid "Link/Unlink"
+msgstr "लिंक/अनलिंक करें"
+
+msgid "No Connect button in Login form"
+msgstr "लॉगिन फॉर्म में कनेक्ट बटन नहीं है"
+
+msgid "Connect button on"
+msgstr "कनेक्ट बटन चालू करें"
+
+msgid "Login form button style"
+msgstr "लॉगिन फ़ॉर्म बटन शैली"
+
+msgid "No Connect button in Register form"
+msgstr "पंजीकरण फॉर्म में कनेक्ट बटन नहीं है"
+
+msgid "Register form button style"
+msgstr "रजिस्टर फॉर्म बटन शैली"
+
+msgid "Checkout form"
+msgstr "चेकआउट फॉर्म"
+
+msgid "No Connect button in Checkout form"
+msgstr "चेकआउट फॉर्म में कनेक्ट बटन नहीं है"
+
+msgid "Checkout form button style"
+msgstr "चेकआउट फ़ॉर्म बटन शैली"
+
+msgid "Checkout layout"
+msgstr "चेकआउट लेआउट"
+
+msgid "Target window"
+msgstr "लक्ष्य विंडो"
+
+msgid "Prefer popup"
+msgstr "पॉपअप को प्राथमिकता दें"
+
+msgid "Prefer new tab"
+msgstr "नए टैब को प्राथमिकता दें"
+
+msgid "Prefer same window"
+msgstr "एक ही विंडो को प्राथमिकता दें"
+
+msgid "Registration notification sent to"
+msgstr "पंजीकरण अधिसूचना को भेजा गया"
+
+msgid "WordPress default"
+msgstr "वर्डप्रेस डिफ़ॉल्ट"
+
+msgid "Nobody"
+msgstr "कोई नहीं"
+
+msgid "Admin"
+msgstr "व्यवस्थापक"
+
+msgid "User and Admin"
+msgstr "उपयोगकर्ता और व्यवस्थापक"
+
+msgid "Unlink"
+msgstr "अनलिंक"
+
+msgid "Allow Social account unlink"
+msgstr "सोशल अकाउंट को अनलिंक करने की अनुमति दें"
+
+msgid "Show linked providers"
+msgstr "लिंक किए गए प्रदाता दिखाएं"
+
+#, php-format
+msgid "Providers linked to the account will appear in the %1$s."
+msgstr "खाते से जुड़े प्रदाता %1$s में दिखाई देंगे।"
+
+msgid "Users table"
+msgstr "उपयोगकर्ता तालिका"
+
+msgid "Disable Admin bar for roles"
+msgstr "भूमिकाओं के लिए व्यवस्थापक बार को अक्षम करें"
+
+msgid "Debug mode"
+msgstr "डिबग मोड"
+
+msgid "Bypass cache on redirect"
+msgstr "रीडायरेक्ट पर कैश को बायपास करें"
+
+#, php-format
+msgid ""
+"Enabling this option will add a GET parameter to the URL where we redirect after a successful "
+"registration or login with social login. %1$sLearn more%2$s."
+msgstr ""
+"इस विकल्प को सक्षम करने से URL में एक GET पैरामीटर जुड़ जाएगा, जहाँ सफल पंजीकरण या सोशल लॉगिन के बाद हम "
+"आपको रीडायरेक्ट करेंगे। %1$s अधिक जानें %2$s."
+
+msgid "Page for register flow"
+msgstr "रजिस्टर प्रवाह के लिए पेज"
+
+msgid "None"
+msgstr "कुछ भी नहीं"
+
+msgid ""
+"This setting is used when you request additional data from the users (such as email address) "
+"and to display the Terms and conditions."
+msgstr ""
+"इस सेटिंग का उपयोग तब किया जाता है जब आप उपयोगकर्ताओं से अतिरिक्त डेटा (जैसे ईमेल पता) का अनुरोध करते हैं और "
+"नियम एवं शर्तें प्रदर्शित करने के लिए किया जाता है।"
+
+#, php-format
+msgid ""
+"%2$s First create a new page and insert the following shortcode: %1$s then select this page "
+"above"
+msgstr "%2$s सबसे पहले एक नया पेज बनाएं और उसमें निम्नलिखित शॉर्टकोड डालें: %1$s फिर ऊपर दिए गए पेज को चुनें"
+
+#, php-format
+msgid ""
+"%1$s You won't be able to reach the selected page unless a social login/registration happens."
+msgstr "%1$s जब तक सोशल लॉगिन/पंजीकरण नहीं हो जाता, तब तक आप चयनित पृष्ठ तक नहीं पहुंच पाएंगे।"
+
+msgid "OAuth redirect uri proxy page"
+msgstr "OAuth रीडायरेक्ट यूआरआई प्रॉक्सी पेज"
+
+msgid "You can use this setting when wp-login.php page is not available to handle the OAuth flow."
+msgstr ""
+"जब OAuth प्रक्रिया को संभालने के लिए wp-login.php पेज उपलब्ध न हो, तब आप इस सेटिंग का उपयोग कर सकते हैं।"
+
+#, php-format
+msgid "%1$s First create a new page then select this page above."
+msgstr "%1$s पहले एक नया पेज बनाएं, फिर ऊपर दिए गए पेज को चुनें।"
+
+msgid "Prevent external redirect overrides"
+msgstr "बाह्य रीडायरेक्ट ओवरराइड को रोकें"
+
+msgid "Disable external redirects"
+msgstr "बाह्य रीडायरेक्ट अक्षम करें"
+
+msgid "Default redirect url"
+msgstr "डिफ़ॉल्ट रीडायरेक्ट यूआरएल"
+
+msgid "for Login"
+msgstr "लॉगिन के लिए"
+
+msgid "for Register"
+msgstr "रजिस्टर के लिए"
+
+msgid "Fixed redirect url"
+msgstr "रीडायरेक्ट यूआरएल को ठीक किया गया"
+
+msgid "Blacklisted redirects"
+msgstr "ब्लैकलिस्टेड रीडायरेक्ट"
+
+msgid "If you want to blacklist redirect url params. One pattern per line."
+msgstr ""
+"यदि आप रीडायरेक्ट यूआरएल पैरामीटर को ब्लैकलिस्ट करना चाहते हैं, तो प्रति पंक्ति एक ही पैटर्न का उपयोग करें।"
+
+msgid "Support login restrictions"
+msgstr "लॉगिन प्रतिबंधों का समर्थन करें"
+
+#, php-format
+msgid "Please visit to our %1$s to check what plugins are supported!"
+msgstr "कृपया यह देखने के लिए हमारे पेज पर जाएं %1$s कि कौन से प्लगइन समर्थित हैं!"
+
+msgid "Display avatars in \"All media items\""
+msgstr "\"सभी मीडिया आइटम\" में अवतार प्रदर्शित करें"
+
+msgid "Enabling this option can speed up loading images in Media Library - Grid view!"
+msgstr "इस विकल्प को सक्षम करने से मीडिया लाइब्रेरी - ग्रिड व्यू में छवियों को लोड करने की गति तेज हो सकती है!"
+
+msgid "Membership"
+msgstr "सदस्यता"
+
+msgid "Allow registration with Social login."
+msgstr "सोशल लॉगिन के साथ पंजीकरण की अनुमति दें।"
+
+msgid "Custom label for register buttons"
+msgstr "रजिस्टर बटन के लिए कस्टम लेबल"
+
+#, php-format
+msgid ""
+"Set a custom label for the social buttons in registration forms and for shortcodes with %1$s "
+"parameter set to %2$s.<br>The register specific labels can be modified at the Buttons tab of "
+"each provider.<br>This option also allows the use of register specific %3$s options."
+msgstr ""
+"पंजीकरण फॉर्म में सोशल बटन और %1$s पैरामीटर को %2$s पर सेट करके शॉर्टकोड के लिए कस्टम लेबल सेट करें।"
+"<br>पंजीकरण विशिष्ट लेबल को प्रत्येक प्रदाता के बटन टैब पर संशोधित किया जा सकता है।<br>यह विकल्प पंजीकरण "
+"विशिष्ट %3$s विकल्पों के उपयोग की भी अनुमति देता है।"
+
+msgid "Redirect overlay"
+msgstr "ओवरले को पुनर्निर्देशित करें"
+
+msgid "No overlay"
+msgstr "कोई ओवरले नहीं"
+
+msgid "Display overlay"
+msgstr "ओवरले प्रदर्शित करें"
+
+msgid "Display overlay with spinner"
+msgstr "स्पिनर के साथ डिस्प्ले ओवरले"
+
+msgid "Display overlay with spinner and message"
+msgstr "स्पिनर और संदेश के साथ डिस्प्ले ओवरले"
+
+msgid ""
+"You can display an overlay on your site when we start the redirect after the authentication."
+msgstr "प्रमाणीकरण के बाद जब हम रीडायरेक्ट शुरू करते हैं, तो आप अपनी साइट पर एक ओवरले प्रदर्शित कर सकते हैं।"
+
+#, php-format
+msgid "%1$s The overlay won't be displayed if the %2$s setting is set to %3$s!"
+msgstr "%1$s यदि %2$s सेटिंग को %3$s पर सेट किया गया है तो ओवरले प्रदर्शित नहीं होगा!"
+
+msgid "Note:"
+msgstr "टिप्पणी:"
+
+msgid "Unsupported WebView behavior"
+msgstr "असमर्थित वेबव्यू व्यवहार"
+
+msgid "Remove button"
+msgstr "बटन हटाएँ"
+
+msgid "Disable button"
+msgstr "अक्षम करें बटन"
+
+#, php-format
+msgid "Some %1$sproviders%2$s don't support embedded browsers."
+msgstr "कुछ %1$s प्रदाता %2$s एम्बेडेड ब्राउज़रों का समर्थन नहीं करते हैं।"
+
+msgid ""
+"This setting defines if we should remove or disable the related buttons in WebView environments."
+msgstr "यह सेटिंग परिभाषित करती है कि क्या हमें वेबव्यू वातावरण में संबंधित बटनों को हटाना या अक्षम करना चाहिए।"
+
+msgid "Below and floating"
+msgstr "नीचे और तैर रहा है"
+
+msgid "Embedded Login form button style"
+msgstr "एम्बेडेड लॉगिन फ़ॉर्म बटन शैली"
+
+msgid "Embedded Login layout"
+msgstr "एम्बेडेड लॉगिन लेआउट"
+
+msgid "Embedded login form button alignment"
+msgstr "एम्बेडेड लॉगिन फ़ॉर्म बटन संरेखण"
+
+msgid "Registration Form"
+msgstr "पंजीकरण फॉर्म"
+
+msgid "Embedded login form"
+msgstr "अंतर्निहित लॉगिन फ़ॉर्म"
+
+msgid "Sign Up form"
+msgstr "साइन अप फॉर्म"
+
+msgid "No Connect button in Sign Up form"
+msgstr "साइन अप फॉर्म में कनेक्ट बटन नहीं है"
+
+msgid "Sign Up form button style"
+msgstr "साइन अप फॉर्म बटन शैली"
+
+msgid "Sign Up layout"
+msgstr "साइन अप लेआउट"
+
+msgid "Account details"
+msgstr "खाता विवरण"
+
+msgid "No link buttons"
+msgstr "कोई लिंक बटन नहीं"
+
+msgid "Link buttons after account details"
+msgstr "खाता विवरण के बाद लिंक बटन"
+
+msgid "Store"
+msgstr "दुकान"
+
+msgid "First and last name"
+msgstr "पहला और आखिरी नाम"
+
+msgid "When not enabled, username will be randomly generated."
+msgstr "जब सक्षम नहीं किया जाता है, तो उपयोगकर्ता नाम यादृच्छिक रूप से उत्पन्न किया जाएगा।"
+
+msgid "Email"
+msgstr "ईमेल"
+
+msgid "When not enabled, email will be empty."
+msgstr "जब यह विकल्प चालू नहीं होगा, तो ईमेल खाली रहेगा।"
+
+msgid "Avatar"
+msgstr "अवतार"
+
+msgid "Access token"
+msgstr "एक्सेस टोकन"
+
+msgid "Register Form"
+msgstr "रजिस्टर फॉर्म"
+
+msgid "No Connect button in login form"
+msgstr "लॉगिन फॉर्म में कनेक्ट बटन नहीं है"
+
+msgid "No Connect button in register form"
+msgstr "पंजीकरण फॉर्म में कनेक्ट बटन नहीं है"
+
+msgid "Billing form"
+msgstr "बिलिंग प्रपत्र"
+
+msgid "No Connect button in billing form"
+msgstr "बिलिंग फॉर्म में कनेक्ट बटन नहीं है"
+
+msgid "Billing layout"
+msgstr "बिलिंग लेआउट"
+
+msgid "Default with separator"
+msgstr "विभाजक के साथ डिफ़ॉल्ट"
+
+msgid "No Connect buttons in account details form"
+msgstr "खाता विवरण फ़ॉर्म में कनेक्ट बटन नहीं है"
+
+msgid "Link buttons on"
+msgstr "लिंक बटन चालू"
+
+msgid "WooCommerce registration notification"
+msgstr "WooCommerce पंजीकरण अधिसूचना"
+
+#, php-format
+msgid ""
+"Defines whether the registration with %1$s will send the same registration notification that "
+"%2$s does, instead of the %3$s default one."
+msgstr ""
+"यह परिभाषित करता है कि क्या %1$s के साथ पंजीकरण करने पर वही पंजीकरण सूचना भेजी जाएगी जो %2$s द्वारा भेजी "
+"जाती है, बजाय %3$s की डिफ़ॉल्ट सूचना के।"
+
+#, php-format
+msgid "Network connection successful: %1$s"
+msgstr "नेटवर्क कनेक्शन सफल: %1$s"
+
+#, php-format
+msgid "Network connection failed: %1$s"
+msgstr "नेटवर्क कनेक्शन विफल: %1$s"
+
+msgid ""
+"Please contact with your hosting provider to resolve the network issue between your server and "
+"the provider."
+msgstr "कृपया अपने होस्टिंग प्रदाता से संपर्क करके अपने सर्वर और प्रदाता के बीच नेटवर्क समस्या का समाधान करें।"
+
+msgid "Manage Avatar"
+msgstr "अवतार प्रबंधित करें"
+
+#, php-format
+msgid "Avatar <span class=\"count\">(%s)</span>"
+msgid_plural "Avatar <span class=\"count\">(%s)</span>"
+msgstr[0] "अवतार <span class=\"count\">(%s)</span>"
+msgstr[1] "अवतार <span class=\"count\">(%s)</span>"
+
+#, php-format
+msgid "%1$s &lsaquo; %2$s &#8212; WordPress"
+msgstr "%1$s &lsaquo; %2$s &#8212; WordPress"
+
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+msgid "Powered by WordPress"
+msgstr "वर्डप्रेस द्वारा संचालित"
+
+#, php-format
+msgctxt "site"
+msgid "&larr; Back to %s"
+msgstr "&larr; वापस %s पर"
+
+msgid "Your configuration needs to be verified"
+msgstr "आपके कॉन्फ़िगरेशन को सत्यापित करने की आवश्यकता है"
+
+msgid ""
+"Before you can start letting your users register with your app it needs to be tested. This test "
+"makes sure that no users will have troubles with the login and registration process. <br> If "
+"you see error message in the popup check the copied ID and secret or the app itself. Otherwise "
+"your settings are fine."
+msgstr ""
+"अपने ऐप पर उपयोगकर्ताओं को पंजीकरण करने की अनुमति देने से पहले, इसका परीक्षण करना आवश्यक है। यह परीक्षण "
+"सुनिश्चित करता है कि उपयोगकर्ताओं को लॉगिन और पंजीकरण प्रक्रिया में कोई समस्या न हो। <br> यदि आपको पॉपअप में "
+"त्रुटि संदेश दिखाई देता है, तो कॉपी की गई आईडी और गुप्त पासवर्ड या ऐप की ही जाँच करें। अन्यथा, आपकी सेटिंग्स "
+"ठीक हैं।"
+
+msgid "Please save your changes to verify settings."
+msgstr "कृपया सेटिंग्स की पुष्टि करने के लिए अपने बदलावों को सेव करें।"
+
+msgid "Works Fine"
+msgstr "बढ़िया काम करता है"
+
+#, php-format
+msgid ""
+"This provider is currently disabled, which means that users can’t register or login via their "
+"%s account."
+msgstr ""
+"यह सेवा प्रदाता वर्तमान में निष्क्रिय है, जिसका अर्थ है कि उपयोगकर्ता अपने %s खाते के माध्यम से पंजीकरण या लॉगिन "
+"नहीं कर सकते हैं।"
+
+#, php-format
+msgid ""
+"This provider works fine, but you can test it again. If you don’t want to let users register or "
+"login with %s anymore you can disable it."
+msgstr ""
+"यह सेवा प्रदाता ठीक से काम कर रहा है, लेकिन आप इसे दोबारा जांच सकते हैं। यदि आप नहीं चाहते कि उपयोगकर्ता %s "
+"का उपयोग करके पंजीकरण या लॉगिन करें, तो आप इसे अक्षम कर सकते हैं।"
+
+#, php-format
+msgid ""
+"This provider is currently enabled, which means that users can register or login via their %s "
+"account."
+msgstr ""
+"यह सेवा प्रदाता वर्तमान में सक्रिय है, जिसका अर्थ है कि उपयोगकर्ता अपने %s खाते के माध्यम से पंजीकरण या लॉगिन "
+"कर सकते हैं।"
+
+msgid "Verify Settings Again"
+msgstr "सेटिंग्स दोबारा सत्यापित करें"
+
+msgid "Please save your changes before verifying settings."
+msgstr "कृपया सेटिंग्स सत्यापित करने से पहले अपने परिवर्तनों को सहेज लें।"
+
+msgid "Error: Email verification status is not checked in this provider!"
+msgstr "त्रुटि: इस प्रदाता में ईमेल सत्यापन स्थिति की जाँच नहीं की गई है!"
+
+msgid "Authentication successful"
+msgstr "प्रमाणीकरण सफल"
+
+msgid "Authentication error"
+msgstr "प्रमाणीकरण त्रुटि"
+
+msgid "Unlink successful."
+msgstr "अनलिंक सफल."
+
+msgid "Unlink is not allowed!"
+msgstr "अनलिंक की अनुमति नहीं है!"
+
+msgid "Unlink failed: nonce is invalid"
+msgstr "अनलिंक विफल: नॉनस अमान्य है"
+
+#, php-format
+msgid "You are attempting to unlink your WordPress account from %s."
+msgstr "आप अपने वर्डप्रेस खाते को %s से अनलिंक करने का प्रयास कर रहे हैं।"
+
+#, php-format
+msgid "Do you really want to %1$s unlink %2$s it?"
+msgstr "क्या आप वाकई इसे %1$s अनलिंक %2$s करना चाहते हैं?"
+
+msgid "The test was successful"
+msgstr "परीक्षण सफल रहा"
+
+msgid "Authentication failed"
+msgstr "प्रमाणीकरण विफल हुआ"
+
+msgid "Identifier"
+msgstr "पहचानकर्ता"
+
+msgid "Profile Picture"
+msgstr "प्रोफ़ाइल फोटो"
+
+#, php-format
+msgid ""
+"Your %1$s account is successfully linked with your account. Now you can sign in with %2$s "
+"easily."
+msgstr ""
+"आपका %1$s खाता आपके खाते से सफलतापूर्वक लिंक हो गया है। अब आप %2$s खाते से आसानी से साइन इन कर सकते हैं।"
+
+#, php-format
+msgid ""
+"You have already linked a(n) %s account. Please unlink the current and then you can link "
+"another %s account."
+msgstr ""
+"आपने पहले ही एक %s खाता लिंक कर रखा है। कृपया वर्तमान खाते को अनलिंक करें और फिर आप दूसरा %s खाता लिंक कर "
+"सकते हैं।"
+
+#, php-format
+msgid "This %s account is already linked to another user."
+msgstr "यह %s खाता पहले से ही किसी अन्य उपयोगकर्ता से जुड़ा हुआ है।"
+
+msgid "User registration is currently not allowed."
+msgstr "वर्तमान में उपयोगकर्ता पंजीकरण की अनुमति नहीं है।"
+
+#, php-format
+msgid ""
+"We found a user with your %1$s email address but it looks like its email address is not "
+"verified.%2$sPlease login to your existing account using your password and link your %1$s "
+"account to it manually!"
+msgstr ""
+"हमने आपके %1$s ईमेल पते के साथ एक उपयोगकर्ता पाया है, लेकिन ऐसा लगता है कि इसका ईमेल पता सत्यापित नहीं है।"
+"%2$s कृपया अपने मौजूदा खाते में अपना पासवर्ड डालकर लॉगिन करें और अपने %1$s खाते को उसमें मैन्युअली लिंक करें!"
+
+#, php-format
+msgid ""
+"We found a user with your %1$s email address. Unfortunately, it belongs to a different account, "
+"so we are unable to log you in. Please use the linked account or log in with your password!"
+msgstr ""
+"हमने आपके %1$s ईमेल पते के साथ एक उपयोगकर्ता पाया है। दुर्भाग्यवश, यह किसी अन्य खाते से संबंधित है, इसलिए हम "
+"आपको लॉग इन नहीं कर सकते। कृपया लिंक किए गए खाते का उपयोग करें या अपने पासवर्ड से लॉग इन करें!"
+
+msgid "Register For This Site"
+msgstr "इस साइट के लिए रजिस्टर"
+
+#, php-format
+msgid "%1$s requires PHP version %2$s+, plugin is currently NOT ACTIVE."
+msgstr "%1$s को PHP संस्करण %2$s+ की आवश्यकता है, प्लगइन वर्तमान में सक्रिय नहीं है।"
+
+#, php-format
+msgid ""
+"%1$s requires WordPress version %2$s+. Because you are using an earlier version, the plugin is "
+"currently NOT ACTIVE."
+msgstr ""
+"%1$s को वर्डप्रेस संस्करण %2$s+ की आवश्यकता है। चूंकि आप एक पुराने संस्करण का उपयोग कर रहे हैं, यह प्लगइन वर्तमान "
+"में सक्रिय नहीं है।"
+
+#, php-format
+msgid "Please update %1$s to version %2$s or newer."
+msgstr "कृपया %1$s को संस्करण %2$s या नए संस्करण में अपडेट करें।"
+
+msgid "Update now!"
+msgstr "अभी अपडेट करें!"
+
+msgid ""
+"By clicking Register, you accept our <a href=\"#privacy_policy_url\" target=\"_blank\">Privacy "
+"Policy</a>"
+msgstr ""
+"रजिस्टर पर क्लिक करके, आप हमारी गोपनीयता नीति स्वीकार करते हैं। <a href=\"#privacy_policy_url\" "
+"target=\"_blank\">Privacy Policy</a>"
+
+msgid "Hold On"
+msgstr "रुको"
+
+msgid "You are being redirected to another page,<br>it may take a few seconds."
+msgstr "आपको दूसरी पृष्ठ पर भेजा जा रहा है,<br>इसमें कुछ सेकंड लग सकते हैं।"
+
+msgid "The selected provider doesn't support embedded browsers!"
+msgstr "चयनित प्रदाता एम्बेडेड ब्राउज़र का समर्थन नहीं करता है!"
+
+msgid "Social Login"
+msgstr "सामाजिक लॉगिन"
+
+msgid "Button skin"
+msgstr "बटन त्वचा"
+
+msgid "Dark"
+msgstr "अँधेरा"
+
+msgid "Light"
+msgstr "रोशनी"
+
+msgid "Black"
+msgstr "काला"
+
+msgid "White"
+msgstr "सफ़ेद"
+
+#, php-format
+msgid ""
+"%1$s allows HTTPS OAuth Redirects only. You must move your site to HTTPS in order to allow "
+"login with %1$s."
+msgstr ""
+"%1$s केवल HTTPS OAuth रीडायरेक्ट की अनुमति देता है। %1$s के साथ लॉगिन की अनुमति देने के लिए आपको अपनी साइट "
+"को HTTPS पर स्थानांतरित करना होगा।"
+
+msgid "How to get SSL for my WordPress site?"
+msgstr "मुझे अपनी वर्डप्रेस साइट के लिए SSL कैसे मिलेगा?"
+
+msgid "App ID"
+msgstr "ऐप आईडी"
+
+msgid "Required"
+msgstr "आवश्यक"
+
+#, php-format
+msgid ""
+"If you are not sure what is your %1$s, please head over to <a href=\"%2$s\">Getting Started</a>"
+msgstr ""
+"यदि आपको यह नहीं पता कि आपका %1$s क्या है, तो कृपया  <a href=\"%2$s\">Getting Started</a> पर जाएं"
+
+msgid "App Secret"
+msgstr "ऐप सीक्रेट"
+
+#, php-format
+msgid ""
+"By replacing your existing %1$s App, users with linked %1$s accounts will no longer be able to "
+"login with %1$s."
+msgstr ""
+"आपके मौजूदा %1$s ऐप को बदलने से, लिंक किए गए %1$s खातों वाले उपयोगकर्ता अब %1$s के साथ लॉगिन नहीं कर पाएंगे।"
+
+msgid "Find out why?"
+msgstr "जानिए क्यों?"
+
+msgid "Profile image size"
+msgstr "प्रोफ़ाइल छवि का आकार"
+
+msgid "Small"
+msgstr "छोटा"
+
+msgid "Medium"
+msgstr "मध्यम"
+
+msgid "Large"
+msgstr "बड़ा"
+
+msgid "Extra Large"
+msgstr "अतिरिक्त बड़ा"
+
+msgid "Continue with <b>Facebook</b>"
+msgstr "<b>Facebook</b> पर जारी रखें"
+
+msgid "Sign up with <b>Facebook</b>"
+msgstr "<b>Facebook</b> पर साइन अप करें"
+
+msgid "Link account with <b>Facebook</b>"
+msgstr "अपने खाते को <b>Facebook</b> से लिंक करें"
+
+msgid "Unlink account from <b>Facebook</b>"
+msgstr "अपने खाते को <b>Facebook</b> से अनलिंक करें"
+
+#, php-format
+msgid "The %1$s entered did not appear to be a valid. Please enter a valid %2$s."
+msgstr "दर्ज की गई %1$s मान्य नहीं प्रतीत होती है। कृपया मान्य %2$s दर्ज करें।"
+
+#, php-format
+msgid "Required scope: %1$s"
+msgstr "आवश्यक दायरा: %1$s"
+
+msgid "Neutral"
+msgstr "तटस्थ"
+
+msgid "Client ID"
+msgstr "क्लाइंट आईडी"
+
+msgid "Client Secret"
+msgstr "क्लाइंट सीक्रेट"
+
+msgid "Select account on each login"
+msgstr "प्रत्येक लॉगिन पर खाता चुनें"
+
+msgid "Disable, when you don't want to see the account select prompt on each login."
+msgstr "यदि आप प्रत्येक लॉगिन पर खाता चयन प्रॉम्प्ट नहीं देखना चाहते हैं, तो इसे अक्षम करें।"
+
+msgid "Original"
+msgstr "वास्तविक"
+
+msgid "Continue with <b>Google</b>"
+msgstr "<b>Google</b> के साथ जारी रखें"
+
+msgid "Sign up with <b>Google</b>"
+msgstr "<b>Google</b> के साथ साइन अप करें"
+
+msgid "Link account with <b>Google</b>"
+msgstr "अपने खाते को <b>Google</b> से लिंक करें"
+
+msgid "Unlink account from <b>Google</b>"
+msgstr "अपने खाते को <b>Google</b> से अनलिंक करें"
+
+#, php-format
+msgid "Required API: %1$s"
+msgstr "आवश्यक एपीआई: %1$s"
+
+msgid "X"
+msgstr "X"
+
+msgid "Legacy"
+msgstr "विरासत"
+
+msgid "API version"
+msgstr "एपीआई संस्करण"
+
+msgid "v1.1"
+msgstr "v1.1"
+
+msgid "v2"
+msgstr "v2"
+
+msgid "API Key"
+msgstr "एपीआई कुंजी"
+
+msgid "API Key Secret"
+msgstr "एपीआई कुंजी गुप्त"
+
+msgid "Continue with <b>X</b>"
+msgstr "<b>X</b> के साथ जारी रखें"
+
+msgid "Sign up with <b>X</b>"
+msgstr "<b>X</b> के साथ साइन अप करें"
+
+msgid "Link account with <b>X</b>"
+msgstr "<b>X</b> के साथ खाता लिंक करें"
+
+msgid "Unlink account from <b>X</b>"
+msgstr "<b>X</b> से खाता अनलिंक करें"
+
+msgctxt "Register form submit button label"
+msgid "Register"
+msgstr "पंजीकरण"
+
+#, php-format
+msgid "%s Buttons"
+msgstr "%s बटन"
+
+msgid "Title:"
+msgstr "शीर्षक:"
+
+msgid "Button style:"
+msgstr "बटन शैली:"
+
+msgid "Button align:"
+msgstr "बटन संरेखण:"
+
+msgid "Show link buttons"
+msgstr "लिंक बटन दिखाएँ"
+
+msgid "Show unlink buttons"
+msgstr "अनलिंक बटन दिखाएँ"
+
+msgid "Social login is not allowed with this role!"
+msgstr "इस भूमिका के साथ सोशल लॉगिन की अनुमति नहीं है!"
+
+msgid "Please enter a username."
+msgstr "कृपया अपना उपयोगकर्ता नाम दर्ज करें।"
+
+msgid ""
+"This username is invalid because it uses illegal characters. Please enter a valid username."
+msgstr ""
+"यह उपयोगकर्ता नाम अमान्य है क्योंकि इसमें अवैध वर्णों का उपयोग किया गया है। कृपया एक वैध उपयोगकर्ता नाम दर्ज "
+"करें।"
+
+msgid "<strong>Error</strong>: This username is already registered. Please choose another one."
+msgstr "<strong>Error</strong>: यह उपयोगकर्ता नाम पहले से पंजीकृत है। कृपया कोई अन्य नाम चुनें।"
+
+msgid "<strong>Error</strong>: Sorry, that username is not allowed."
+msgstr "<strong>Error</strong>: क्षमा करें, वह उपयोगकर्ता नाम अनुमति नहीं है।"
+
+msgid "<strong>Error</strong>: Please enter an email address."
+msgstr "<strong>Error</strong>: कृपया एक ईमेल पता दें।"
+
+msgid "<strong>Error</strong>: The email address isn&#8217;t correct."
+msgstr "<strong>Error</strong>: ईमेल पता सही नहीं है।"
+
+msgid "<strong>Error</strong>: This email is already registered. Please choose another one."
+msgstr "<strong>Error</strong>: यह ईमेल पता पहले से ही पंजीकृत है। कृपया कोई दूसरा ईमेल पता चुनें।"
+
+msgid "<strong>Error</strong>: Please enter a password."
+msgstr "<strong>Error</strong>: कृपया पासवर्ड दर्ज करें।"
+
+msgid "<strong>Error</strong>: Passwords may not contain the character \"\\\"."
+msgstr "<strong>Error</strong>: पासवर्ड में \"\\\" अक्षर नहीं होना चाहिए।"
+
+msgid ""
+"<strong>Error</strong>: Passwords don&#8217;t match. Please enter the same password in both "
+"password fields."
+msgstr "<strong>Error</strong>: पासवर्ड मेल नहीं खाते। कृपया दोनों पासवर्ड फ़ील्ड में एक ही पासवर्ड दर्ज करें।"
+
+#, php-format
+msgid "This email is already registered, please login in to your account to link with %1$s."
+msgstr "यह ईमेल पहले से ही पंजीकृत है, कृपया %1$s से लिंक करने के लिए अपने खाते में लॉग इन करें।"
+
+msgid "Unexpected response: The provider didn't return the Authorization URL!"
+msgstr "अप्रत्याशित प्रतिक्रिया: प्रदाता ने प्राधिकरण यूआरएल वापस नहीं किया!"
+
+msgid "Unexpected response: Authentication has been cancelled!"
+msgstr "अप्रत्याशित प्रतिक्रिया: प्रमाणीकरण रद्द कर दिया गया है!"
+
+msgid "Unexpected response: Immediate request failed - Setup Needed!"
+msgstr "अप्रत्याशित प्रतिक्रिया: तत्काल अनुरोध विफल - सेटअप आवश्यक है!"
+
+msgid "Unexpected response: The targeted OpenID server is not authorized to verify this request!"
+msgstr "अप्रत्याशित प्रतिक्रिया: लक्षित ओपनआईडी सर्वर इस अनुरोध को सत्यापित करने के लिए अधिकृत नहीं है!"
+
+msgid "Unexpected response: OpenID Verification failed!"
+msgstr "अप्रत्याशित प्रतिक्रिया: ओपनआईडी सत्यापन विफल!"
+
+#, php-format
+msgid "Please install and activate %1$s to use the %2$s"
+msgstr "%2$s का उपयोग करने के लिए कृपया %1$s को इंस्टॉल और सक्रिय करें"
+
+msgid "Network Activate"
+msgstr "नेटवर्क सक्रिय करें"
+
+msgid "Install now!"
+msgstr "अभी इंस्टॉल करें!"
+
+msgid "Social Providers"
+msgstr "सामाजिक प्रदाता"
+
+#, php-format
+msgid ""
+"The Facebook Sync data needs an approved %1$s and your App must use the latest %2$s version!"
+msgstr ""
+"फेसबुक सिंक डेटा के लिए एक स्वीकृत %1$s की आवश्यकता है और आपके ऐप को नवीनतम %2$s संस्करण का उपयोग करना "
+"चाहिए!"
+
+#, php-format
+msgid ""
+"Most of these information can only be retrieved, when the field is marked as Public on the "
+"user's %s page!"
+msgstr ""
+"इनमें से अधिकांश जानकारी केवल तभी प्राप्त की जा सकती है, जब उपयोगकर्ता के %s पृष्ठ पर फ़ील्ड को सार्वजनिक के रूप "
+"में चिह्नित किया गया हो!"
+
+#, php-format
+msgid ""
+"Most of these information can only be retrieved, when the field is filled on the user's %s page!"
+msgstr ""
+"इनमें से अधिकांश जानकारी केवल तभी प्राप्त की जा सकती है, जब उपयोगकर्ता के %s पृष्ठ पर संबंधित फ़ील्ड भरी गई हो!"
+
+#, php-format
+msgid ""
+"Most of these information can only be retrieved, when the field is filled on the user's %s "
+"page! For the campaigns, the user must have a public campaign!"
+msgstr ""
+"इनमें से अधिकांश जानकारी तभी प्राप्त की जा सकती है, जब उपयोगकर्ता के %s पेज पर संबंधित फ़ील्ड भरी हो! कैंपेन के "
+"लिए, उपयोगकर्ता के पास एक सार्वजनिक कैंपेन होना आवश्यक है!"
+
+#, php-format
+msgid "The Spotify Sync data requires the %1$s with the necessary scopes enabled!"
+msgstr "Spotify सिंक डेटा के लिए आवश्यक स्कोप सक्षम के साथ %1$s की आवश्यकता होती है!"
+
+#, php-format
+msgid "The TikTok Sync data requires the %1$s with the necessary scopes enabled!"
+msgstr "TikTok सिंक डेटा के लिए आवश्यक स्कोप सक्षम के साथ %1$s की आवश्यकता होती है!"
+
+msgid "Continue with <b>Amazon</b>"
+msgstr "<b>Amazon</b> के साथ जारी रखें"
+
+msgid "Sign up with <b>Amazon</b>"
+msgstr "<b>Amazon</b> के साथ साइन अप करें"
+
+msgid "Link account with <b>Amazon</b>"
+msgstr "अपने खाते को <b>Amazon</b> से लिंक करें"
+
+msgid "Unlink account from <b>Amazon</b>"
+msgstr "अपने खाते को <b>Amazon</b> से अनलिंक करें"
+
+msgid "Delete credentials"
+msgstr "क्रेडेंशियल हटाएँ"
+
+msgid "Private Key ID"
+msgstr "प्राइवेट की आईडी"
+
+msgid "Private Key"
+msgstr "प्राइवेट की"
+
+msgid "Team Identifier"
+msgstr "टीम पहचानकर्ता"
+
+msgid "Service Identifier"
+msgstr "सेवा पहचानकर्ता"
+
+msgid "Generate Token"
+msgstr "टोकन जनरेट करें"
+
+msgid "Continue with <b>Apple</b>"
+msgstr "<b>Apple</b> के साथ जारी रखें"
+
+msgid "Sign up with <b>Apple</b>"
+msgstr "<b>Apple</b> के साथ साइन अप करें"
+
+msgid "Link account with <b>Apple</b>"
+msgstr "खाता <b>Apple</b> से लिंक करें"
+
+msgid "Unlink account from <b>Apple</b>"
+msgstr "खाता <b>Apple</b> से अलग करें"
+
+#, php-format
+msgid "An error occurred when storing of the expiration timestamp : %1$s"
+msgstr "समाप्ति समयस्टैम्प को संग्रहीत करते समय एक त्रुटि हुई: %1$s"
+
+#, php-format
+msgid "Token generation failed: %1$s"
+msgstr "टोकन जनरेशन विफल: %1$s"
+
+msgid "Please check your credentials!"
+msgstr "कृपया अपनी क्रेडेंशियल जांचें!"
+
+msgid "Private key format is not valid!"
+msgstr "निजी कुंजी का प्रारूप मान्य नहीं है!"
+
+#, php-format
+msgid ""
+"%s detected that your Apple credentials have expired. Please delete the current credentials and "
+"generate new one!"
+msgstr ""
+"%s ने पाया है कि आपके Apple क्रेडेंशियल्स की समय सीमा समाप्त हो गई है। कृपया वर्तमान क्रेडेंशियल्स को हटा दें और "
+"नए क्रेडेंशियल्स जनरेट करें!"
+
+msgid "Apple Credentials"
+msgstr "एप्पल क्रेडेंशियल्स"
+
+msgid "Force reauthorization on each login"
+msgstr "प्रत्येक लॉगिन पर पुनः प्रमाणीकरण अनिवार्य करें"
+
+msgid "Enable, when you want to see the consent screen on each login."
+msgstr "जब आप प्रत्येक लॉगिन पर सहमति स्क्रीन देखना चाहते हैं, तो इसे सक्षम करें।"
+
+msgid "Continue with <b>Discord</b>"
+msgstr "<b>Discord</b> के साथ जारी रखें"
+
+msgid "Sign up with <b>Discord</b>"
+msgstr "<b>Discord</b> के साथ साइन अप करें"
+
+msgid "Link account with <b>Discord</b>"
+msgstr "खाता को <b>Discord</b> से लिंक करें"
+
+msgid "Unlink account from <b>Discord</b>"
+msgstr "खाता <b>Discord</b> से अनलिंक करें"
+
+msgid "API Secret"
+msgstr "एपीआई सीक्रेट"
+
+#, php-format
+msgid "We detected that your %1$s is probably overridden over the %2$s filter!"
+msgstr "हमें पता चला है कि आपका %1$s फ़िल्टर संभवतः %2$s फ़िल्टर पर हावी हो गया है!"
+
+#, php-format
+msgid "We detected that your %1$s has been overridden over the %2$s filter!"
+msgstr "हमें पता चला है कि आपके %1$s फ़िल्टर को %2$s फ़िल्टर से ओवरराइड कर दिया गया है!"
+
+msgid "Continue with <b>Disqus</b>"
+msgstr "<b>Disqus</b> के साथ जारी रखें"
+
+msgid "Sign up with <b>Disqus</b>"
+msgstr "<b>Disqus</b> के साथ साइन अप करें"
+
+msgid "Link account with <b>Disqus</b>"
+msgstr "खाता <b>Disqus</b> से लिंक करें"
+
+msgid "Unlink account from <b>Disqus</b>"
+msgstr "खाता <b>Disqus</b> से अलग करें"
+
+msgid "Continue with <b>GitHub</b>"
+msgstr "<b>GitHub</b> के साथ जारी रखें"
+
+msgid "Sign up with <b>GitHub</b>"
+msgstr "<b>GitHub</b> के साथ साइन अप करें"
+
+msgid "Link account with <b>GitHub</b>"
+msgstr "खाता <b>GitHub</b> से लिंक करें"
+
+msgid "Unlink account from <b>GitHub</b>"
+msgstr "खाता <b>GitHub</b> से अलग करें"
+
+msgid "REST API Key"
+msgstr "REST एपीआई कुंजी"
+
+msgid "Client Secret Code"
+msgstr "क्लाइंट सीक्रेट कोड"
+
+msgid "Authorization Prompt"
+msgstr "प्राधिकरण संकेत"
+
+msgid "Display account select modal"
+msgstr "खाता चयन मॉडल प्रदर्शित करें"
+
+msgid "Force user to enter login credentials on each login"
+msgstr "उपयोगकर्ता को हर लॉगिन पर लॉगिन क्रेडेंशियल दर्ज करने के लिए बाध्य करें"
+
+msgid "Start the authentication with the Kakao Account sign-up page."
+msgstr "Kakao अकाउंट साइन-अप पेज से प्रमाणीकरण शुरू करें।"
+
+msgid "Email scope"
+msgstr "ईमेल का दायरा"
+
+msgid "Disable, when you have no rights for email address."
+msgstr "जब आपके पास ईमेल पते के लिए कोई अधिकार न हो, तो इसे अक्षम करें।"
+
+msgid "Mini"
+msgstr "मिनी"
+
+msgid "Continue with <b>Kakao</b>"
+msgstr "<b>Kakao</b> के साथ जारी रखें"
+
+msgid "Sign up with <b>Kakao</b>"
+msgstr "<b>Kakao</b> के साथ साइन अप करें"
+
+msgid "Link account with <b>Kakao</b>"
+msgstr "अपने खाते को <b>Kakao</b> से लिंक करें"
+
+msgid "Unlink account from <b>Kakao</b>"
+msgstr "अपने खाते को <b>Kakao</b> से अलग करें"
+
+msgid "Channel ID"
+msgstr "चैनल आईडी"
+
+msgid "Channel Secret"
+msgstr "चैनल रहस्य"
+
+msgid "Add LINE Official Account as a friend"
+msgstr "LINE के आधिकारिक खाते को मित्र के रूप में जोड़ें"
+
+msgid "Don't display"
+msgstr "प्रदर्शित न करें"
+
+msgid "Display the add friend option in the consent screen"
+msgstr "सहमति स्क्रीन में मित्र जोड़ने का विकल्प प्रदर्शित करें"
+
+msgid "Opens a new screen with the add friend option after the consent screen"
+msgstr "सहमति स्क्रीन के बाद मित्र जोड़ने के विकल्प के साथ एक नई स्क्रीन खुलती है"
+
+#, php-format
+msgid ""
+"If you have a LINE Official Account, people can add it as a friend when they authorize your "
+"App. %1$sLearn more%2$s."
+msgstr ""
+"यदि आपके पास एक LINE आधिकारिक खाता है, तो लोग आपके ऐप को अधिकृत करते समय इसे मित्र के रूप में जोड़ सकते हैं। "
+"%1$sऔर जानें%2$s।"
+
+msgid "Initial Login method"
+msgstr "प्रारंभिक लॉगिन विधि"
+
+msgid "Email and Password"
+msgstr "ईमेल और पासवर्ड"
+
+msgid "QR code"
+msgstr "क्यूआर कोड"
+
+msgid ""
+"The selected value defines whether the Email and Password or the QR code login option will be "
+"presented in the LINE authentication screen by default."
+msgstr ""
+"चुना गया मान यह निर्धारित करता है कि LINE प्रमाणीकरण स्क्रीन में डिफ़ॉल्ट रूप से ईमेल और पासवर्ड या क्यूआर कोड "
+"लॉगिन विकल्प प्रस्तुत किया जाएगा या नहीं।"
+
+msgid "Force initial login method"
+msgstr "आरंभिक लॉगिन विधि को बाध्य करें"
+
+msgid ""
+"Enable, if you want to offer only the selected Initial Login method in the LINE authentication "
+"screen."
+msgstr ""
+"यदि आप LINE प्रमाणीकरण स्क्रीन में केवल चयनित प्रारंभिक लॉगिन विधि का विकल्प देना चाहते हैं, तो इसे सक्षम करें।"
+
+msgid "Allow Auto login"
+msgstr "स्वतः लॉगिन की अनुमति दें"
+
+#, php-format
+msgid ""
+"Having the Auto login enabled could make the login fail in certain cases. %1$sLearn more%2$s."
+msgstr "ऑटो लॉगिन सक्षम होने पर कुछ मामलों में लॉगिन विफल हो सकता है। %1$sअधिक जानें%2$s."
+
+msgid "Continue with <b>Line</b>"
+msgstr "<b>Line</b> के साथ जारी रखें"
+
+msgid "Sign up with <b>Line</b>"
+msgstr "<b>Line</b> के साथ साइन अप करें"
+
+msgid "Link account with <b>Line</b>"
+msgstr "खाता <b>Line</b> से लिंक करें"
+
+msgid "Unlink account from <b>Line</b>"
+msgstr "खाता को <b>Line</b> से अलग करें"
+
+msgid "Continue with <b>LinkedIn</b>"
+msgstr "<b>LinkedIn</b> के साथ जारी रखें"
+
+msgid "Sign up with <b>LinkedIn</b>"
+msgstr "<b>LinkedIn</b> के साथ साइन अप करें"
+
+msgid "Link account with <b>LinkedIn</b>"
+msgstr "अपने खाते को <b>LinkedIn</b> से जोड़ें"
+
+msgid "Unlink account from <b>LinkedIn</b>"
+msgstr "खाता <b>LinkedIn</b> से अनलिंक करें"
+
+msgid "Application (client) ID"
+msgstr "एप्लिकेशन (क्लाइंट) आईडी"
+
+msgid "Client secret"
+msgstr "क्लाइंट सीक्रेट"
+
+msgid "Audience"
+msgstr "श्रोता"
+
+msgid "Accounts in any organizational directory (Any Azure AD directory - Multitenant)"
+msgstr "किसी भी संगठनात्मक निर्देशिका में खाते (कोई भी Azure AD निर्देशिका - मल्टीटेनेंट)"
+
+msgid ""
+"Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal "
+"Microsoft accounts (e.g. Skype, Xbox)"
+msgstr ""
+"किसी भी संगठनात्मक निर्देशिका (कोई भी Azure AD निर्देशिका - मल्टीटेनेंट) में मौजूद खाते और व्यक्तिगत Microsoft "
+"खाते (जैसे Skype, Xbox)"
+
+msgid "Personal Microsoft accounts only"
+msgstr "केवल व्यक्तिगत Microsoft खाते"
+
+msgid "Only users in an organizational directory from a particular Azure AD tenant:"
+msgstr "किसी विशेष Azure AD टेनेंट की संगठनात्मक निर्देशिका में मौजूद उपयोगकर्ता ही:"
+
+#, php-format
+msgid "The selected value will define the supported account types. %1$sLearn more.%2$s"
+msgstr "चयनित मान समर्थित खाता प्रकारों को परिभाषित करेगा। %1$sऔर जानें।%2$s"
+
+msgid "Display authorization and authentication dialog only when necessary"
+msgstr "आवश्यकता पड़ने पर ही प्राधिकरण और प्रमाणीकरण संवाद प्रदर्शित करें"
+
+msgid "Continue with <b>Microsoft</b>"
+msgstr "<b>Microsoft</b> के साथ जारी रखें"
+
+msgid "Sign up with <b>Microsoft</b>"
+msgstr "<b>Microsoft</b> के साथ साइन अप करें"
+
+msgid "Link account with <b>Microsoft</b>"
+msgstr "अपने खाते को <b>Microsoft</b> से लिंक करें"
+
+msgid "Unlink account from <b>Microsoft</b>"
+msgstr "अपने खाते को <b>Microsoft</b> से अनलिंक करें"
+
+msgid "Continue with <b>Patreon</b>"
+msgstr "<b>Patreon</b> के साथ जारी रखें"
+
+msgid "Sign up with <b>Patreon</b>"
+msgstr "<b>Patreon</b> के साथ साइन अप करें"
+
+msgid "Link account with <b>Patreon</b>"
+msgstr "अपने खाते को <b>Patreon</b> से लिंक करें"
+
+msgid "Unlink account from <b>Patreon</b>"
+msgstr "अपने खाते को <b>Patreon</b> से अनलिंक करें"
+
+msgid "Secret"
+msgstr "गुप्त"
+
+msgid "Continue with <b>PayPal</b>"
+msgstr "<b>PayPal</b> के साथ जारी रखें"
+
+msgid "Sign up with <b>PayPal</b>"
+msgstr "<b>PayPal</b> के साथ साइन अप करें"
+
+msgid "Link account with <b>PayPal</b>"
+msgstr "खाता <b>PayPal</b> से लिंक करें"
+
+msgid "Unlink account from <b>PayPal</b>"
+msgstr "खाता <b>PayPal</b> से अनलिंक करें"
+
+msgid "Continue with <b>Reddit</b>"
+msgstr "<b>Reddit</b> के साथ जारी रखें"
+
+msgid "Sign up with <b>Reddit</b>"
+msgstr "<b>Reddit</b> के साथ साइन अप करें"
+
+msgid "Link account with <b>Reddit</b>"
+msgstr "अपने खाते को <b>Reddit</b> से लिंक करें"
+
+msgid "Unlink account from <b>Reddit</b>"
+msgstr "खाता <b>Reddit</b> से अनलिंक करें"
+
+msgid "Slack Team ID"
+msgstr "स्लैक टीम आईडी"
+
+msgid "Optional"
+msgstr "वैकल्पिक"
+
+#, php-format
+msgid "The Team ID of a workspace to attempt to restrict to. %1$sLearn more.%2$s"
+msgstr "प्रतिबंधित करने के लिए कार्यक्षेत्र की टीम आईडी। %1$sअधिक जानें।%2$s"
+
+msgid "72x72"
+msgstr "72x72"
+
+msgid "192x192"
+msgstr "192x192"
+
+msgid "512x512"
+msgstr "512x512"
+
+msgid "1024x1024"
+msgstr "1024x1024"
+
+msgid "Sign in with <b>Slack</b>"
+msgstr "<b>Slack</b> से लॉग इन करें"
+
+msgid "Sign up with <b>Slack</b>"
+msgstr "<b>Slack</b> के साथ साइन अप करें"
+
+msgid "Link account with <b>Slack</b>"
+msgstr "अपने खाते को <b>Slack</b> से लिंक करें"
+
+msgid "Unlink account from <b>Slack</b>"
+msgstr "अपने खाते को <b>Slack</b> से अनलिंक करें"
+
+msgid "Green"
+msgstr "हरा"
+
+msgid "Continue with <b>Spotify</b>"
+msgstr "<b>Spotify</b> के साथ जारी रखें"
+
+msgid "Sign up with <b>Spotify</b>"
+msgstr "<b>Spotify</b> के साथ साइन अप करें"
+
+msgid "Link account with <b>Spotify</b>"
+msgstr "अपने खाते को <b>Spotify</b> से लिंक करें"
+
+msgid "Unlink account from <b>Spotify</b>"
+msgstr "अपने खाते को <b>Spotify</b> से अनलिंक करें"
+
+msgid "Web API Key"
+msgstr "वेब एपीआई कुंजी"
+
+msgid "Continue with <b>Steam</b>"
+msgstr "<b>Steam</b> के साथ जारी रखें"
+
+msgid "Sign up with <b>Steam</b>"
+msgstr "<b>Steam</b> के साथ साइन अप करें"
+
+msgid "Link account with <b>Steam</b>"
+msgstr "अपने खाते को <b>Steam</b> से लिंक करें"
+
+msgid "Unlink account from <b>Steam</b>"
+msgstr "अपने खाते को <b>Steam</b> से अनलिंक करें"
+
+msgid "Error: The 64-bit SteamID can not be retrieved for this user!"
+msgstr "त्रुटि: इस उपयोगकर्ता के लिए 64-बिट स्टीमआईडी प्राप्त नहीं की जा सकती!"
+
+msgid "Client key"
+msgstr "क्लाइंट की"
+
+msgid "Continue with <b>TikTok</b>"
+msgstr "<b>TikTok</b> के साथ जारी रखें"
+
+msgid "Sign up with <b>TikTok</b>"
+msgstr "<b>TikTok</b> के साथ साइन अप करें"
+
+msgid "Link account with <b>TikTok</b>"
+msgstr "अपने खाते को <b>TikTok</b> से लिंक करें"
+
+msgid "Unlink account from <b>TikTok</b>"
+msgstr "अपने खाते को <b>TikTok</b> से अनलिंक करें"
+
+msgid "Continue with <b>Twitch</b>"
+msgstr "<b>Twitch</b> के साथ जारी रखें"
+
+msgid "Sign up with <b>Twitch</b>"
+msgstr "<b>Twitch</b> के साथ साइन अप करें"
+
+msgid "Link account with <b>Twitch</b>"
+msgstr "अपने खाते को <b>Twitch</b> से लिंक करें"
+
+msgid "Unlink account from <b>Twitch</b>"
+msgstr "अपने खाते को <b>Twitch</b> से लिंक करें"
+
+msgid "Secure key"
+msgstr "सुरक्षित कुंजी"
+
+msgid "Continue with <b>VK</b>"
+msgstr "<b>VK</b> के साथ जारी रखें"
+
+msgid "Sign up with <b>VK</b>"
+msgstr "<b>VK</b> के साथ साइन अप करें"
+
+msgid "Link account with <b>VK</b>"
+msgstr "अपने खाते को <b>VK</b> से लिंक करें"
+
+msgid "Unlink account from <b>VK</b>"
+msgstr "अपने खाते को <b>VK</b> से अनलिंक करें"
+
+#, php-format
+msgid ""
+"%1$s: %2$s introduced new App types and modified their endpoints which are not compatible with "
+"the old Apps.%3$sWe detected that, you are currently using an old %2$s App, so we had to "
+"disable your %2$s configuration. To resolve the problem, please create a new App based on our "
+"%4$s guide, and replace the credentials on the %5$s tab with your new App credentials."
+msgstr ""
+"%1$s: %2$s ने नए ऐप प्रकार पेश किए हैं और उनके एंडपॉइंट्स को संशोधित किया है जो पुराने ऐप्स के साथ संगत नहीं हैं। "
+"%3$sहमने पाया है कि आप वर्तमान में एक पुराने %2$s ऐप का उपयोग कर रहे हैं, इसलिए हमें आपका %2$s कॉन्फ़िगरेशन "
+"निष्क्रिय करना पड़ा। समस्या के समाधान के लिए, कृपया हमारे %4$s गाइड के आधार पर एक नया ऐप बनाएं और %5$s टैब "
+"पर क्रेडेंशियल्स को अपने नए ऐप क्रेडेंशियल्स से बदलें।"
+
+msgid "VKontakte"
+msgstr "वीकॉन्टैक्ट"
+
+#, php-format
+msgid "Open %1$s - %2$s"
+msgstr "%1$s - %2$s खोलें"
+
+msgid "Continue with <b>WordPress.com</b>"
+msgstr "<b>WordPress.com</b> के साथ जारी रखें"
+
+msgid "Sign up with <b>WordPress.com</b>"
+msgstr "<b>WordPress.com</b> के साथ साइन अप करें"
+
+msgid "Link account with <b>WordPress.com</b>"
+msgstr "अपने खाते को <b>WordPress.com</b> से लिंक करें"
+
+msgid "Unlink account from <b>WordPress.com</b>"
+msgstr "अपने खाते को <b>WordPress.com</b> से अनलिंक करें"
+
+msgid "Continue with <b>Yahoo</b>"
+msgstr "<b>Yahoo</b> के साथ जारी रखें"
+
+msgid "Sign up with <b>Yahoo</b>"
+msgstr "<b>Yahoo</b> के साथ साइन अप करें"
+
+msgid "Link account with <b>Yahoo</b>"
+msgstr "अपने खाते को <b>Yahoo</b> से लिंक करें"
+
+msgid "Unlink account from <b>Yahoo</b>"
+msgstr "अपने खाते को <b>Yahoo</b> से अनलिंक करें"
+
+#, php-format
+msgid "Required permission: %1$s"
+msgstr "आवश्यक अनुमति: %1$s"
+
+msgid "OR"
+msgstr "या"
+
+msgid "Social accounts"
+msgstr "सामाजिक खाते"
+
+msgid "Registration confirmation will be emailed to you."
+msgstr "पंजीकरण की पुष्टि आपको ईमेल द्वारा भेजी जाएगी।"
+
+msgid "Password"
+msgstr "पासवर्ड"
+
+msgid "Hide password"
+msgstr "पासवर्ड छिपाएं"
+
+msgid "Strength indicator"
+msgstr "शक्ति सूचक"
+
+msgid "Confirm use of weak password"
+msgstr "कमजोर पासवर्ड के उपयोग की पुष्टि करें"
+
+msgid "Confirm password"
+msgstr "पासवर्ड की पुष्टि कीजिये"
+
+msgid "Username"
+msgstr "उपयोगकर्ता नाम"

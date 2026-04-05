@@ -23,8 +23,8 @@ async function bootstrap() {
   );
 
   const config = new DocumentBuilder()
-    .setTitle('TechSolutions API')
-    .setDescription('Documentação da API com Swagger para o projeto TechSolutions')
+    .setTitle('TIWEB - API')
+    .setDescription('Documentação da API com Swagger')
     .setVersion('1.0')
     .addBearerAuth()
     .build();

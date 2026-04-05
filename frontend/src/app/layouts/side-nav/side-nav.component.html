@@ -20,14 +20,23 @@
   @if (authService.hasPermission('READ_USERS')) {
     
     <a mat-list-item (click)="layoutService.toggleLayout()" class="layout-toggle-button">
-      
       @if (layoutService.layout() === 'moderno') {
-        <mat-icon matListItemIcon>view_list</mat-icon>
-        <span matListItemTitle>Mudar p/ Layout Clássico</span>
+        <ng-container matListItemIcon>
+          <mat-icon>view_list</mat-icon>
+        </ng-container>
       } @else {
-        <mat-icon matListItemIcon>grid_view</mat-icon>
-        <span matListItemTitle>Mudar p/ Layout Moderno</span>
+        <ng-container matListItemIcon>
+          <mat-icon>grid_view</mat-icon>
+        </ng-container>
       }
+
+      <span matListItemTitle>
+        @if (layoutService.layout() === 'moderno') {
+          Mudar p/ Layout Clássico
+        } @else {
+          Mudar p/ Layout Moderno
+        }
+      </span>
     </a>
   }
 </mat-nav-list>

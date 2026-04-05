@@ -6,10 +6,11 @@ import { FindManyOptions, ILike, Like, Repository } from 'typeorm';
 import { CreateUserDto } from './dto/user.dto';
 import * as bcrypt from 'bcrypt';
 import { Role } from 'src/roles/entities/role.entity';
-import { UserFilterDto } from 'src/admin/dto/userfilter.dto';
 import * as XLSX from 'xlsx';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { RolesService } from 'src/roles/roles.service';
+import { UserFilterDto } from 'src/admin/dto/userfilter.dto';
+
 
 @Injectable()
 export class UsersService {
@@ -23,40 +24,56 @@ export class UsersService {
         private readonly rolesService: RolesService,
     ) { }
 
-    /**
-     * Cria um novo usuário com a role "colaborador".
+   /**
+     * Cria um novo usuário. Suporta atribuição dinâmica de roles (para Admins) 
+     * ou fallback para a role padrão (para auto-cadastro público).
      *
      * @param {CreateUserDto} createUserDto - DTO com dados do usuário.
-     * @throws {BadRequestException} Se o CPF já existir ou a role estiver ausente.
+     * @throws {BadRequestException} Se o E-mail/CPF já existir ou a role for inválida.
      * @returns {Promise<User>} O usuário criado.
      */
     async create(createUserDto: CreateUserDto): Promise<User> {
-        const { cpf, password } = createUserDto;
+        // Agora extraímos também o e-mail e possivelmente a role que o Admin quer passar
+        const { email, cpf, password, role_id } = createUserDto; 
 
-        const exists = await this.usersRepository.findOne({ where: { cpf } });
-        if (exists) {
-            throw new BadRequestException('User with this CPF already exists');
+        // 1. Validação de E-mail (Nova Regra de Ouro)
+        const emailExists = await this.usersRepository.findOne({ where: { email } });
+        if (emailExists) {
+            throw new BadRequestException('Usuário com este e-mail já existe');
+        }
+
+        // 2. Validação de CPF (Condicional)
+        if (cpf) {
+            const cpfExists = await this.usersRepository.findOne({ where: { cpf } });
+            if (cpfExists) {
+                throw new BadRequestException('Usuário com este CPF já existe');
+            }
         }
 
         const hashedPassword = await bcrypt.hash(password, 10);
 
-        const colaboradorRole = await this.rolesRepository.findOne({
-            where: { name: 'colaborador' },
-        });
+        // 3. Lógica Dinâmica de Roles
+        let assignedRole;
+        if (role_id) {
+            // Se vier um role_id no DTO (ex: Admin criando outro usuário via painel)
+            assignedRole = await this.rolesRepository.findOne({ where: { id: role_id } });
+        } else {
+            // Fallback: Cadastro público via AuthService assume a role padrão
+            assignedRole = await this.rolesRepository.findOne({ where: { name: 'colaborador' } });
+        }
 
-        if (!colaboradorRole) {
-            throw new BadRequestException('Role "colaborador" does not exist');
+        if (!assignedRole) {
+            throw new BadRequestException('Role especificada não existe');
         }
 
         const user = this.usersRepository.create({
             ...createUserDto,
             password: hashedPassword,
-            role: colaboradorRole,
+            role: assignedRole, // Atribui a role resolvida
         });
 
         return this.usersRepository.save(user);
     }
-
     async updateRole(userId: number, roleName: string): Promise<User> {
         const user = await this.usersRepository.findOneBy({ id: userId });
         if (!user) {
@@ -125,7 +142,7 @@ export class UsersService {
             skip: skip,
             take: limit ?? undefined,
             where: where,
-            select: ['id', 'name', 'email', 'cpf'],
+            select: ['id', 'name', 'email', 'cpf','isVerified'],   
         };
 
         const [data, total] = await this.usersRepository.findAndCount(findOptions);
@@ -134,25 +151,6 @@ export class UsersService {
             data,
             total,
         };
-    }
-
-    async exportToExcel(filters: UserFilterDto): Promise<{ buffer: Buffer; fileName: string }> {
-        const users = await this.findAll(undefined, undefined, filters.name, filters.email, filters.cpf).then(res => res.data);
-
-        const mappedData = users.map(user => ({
-            'Nome': user.name,
-            'E-mail': user.email,
-            'CPF': user.cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4'),
-        }));
-
-        const worksheet = XLSX.utils.json_to_sheet(mappedData);
-        const workbook = XLSX.utils.book_new();
-        XLSX.utils.book_append_sheet(workbook, worksheet, 'Usuários');
-
-        const buffer = XLSX.write(workbook, { bookType: 'xlsx', type: 'buffer' });
-        const fileName = `Relatorio_Usuarios_${new Date().toISOString().split('T')[0]}.xlsx`;
-
-        return { buffer, fileName };
     }
 
     async update(id: number, updateUserDto: UpdateUserDto): Promise<User> {
@@ -192,4 +190,73 @@ export class UsersService {
 
         return this.usersRepository.save(updatedUser);
     }
+
+    /**
+     * Injeta o código de verificação e a data de expiração no usuário.
+     * Chamado logo após a criação da conta.
+     */
+    async setVerificationData(userId: number, code: string, expires: Date): Promise<void> {
+        await this.usersRepository.update(userId, {
+            verificationCode: code,
+            verificationExpires: expires,
+        });
+    }
+
+    /**
+     * Marca o e-mail do usuário como verificado e limpa os dados temporários.
+     * Chamado quando o usuário acerta o código enviado por e-mail.
+     */
+    async markEmailAsVerified(userId: number): Promise<void> {
+        await this.usersRepository.update(userId, {
+            isVerified: true,
+            verificationCode: null,
+            verificationExpires: null,
+        });
+    }
+    
+    async findByEmail(email: string): Promise<User | null> {
+        return this.usersRepository.findOne({ 
+        where: { email }, 
+        relations: ['role'] 
+  });
+}
+/**
+     * Remove um usuário do sistema pelo ID.
+     * * @param {number} id - ID do usuário a ser removido.
+     * @throws {NotFoundException} Se o usuário não existir.
+     * @returns {Promise<{ message: string }>} Mensagem de sucesso.
+     */
+    async remove(id: number): Promise<{ message: string }> {
+        const user = await this.usersRepository.findOneBy({ id });
+        
+        if (!user) {
+            throw new NotFoundException(`Usuário com ID ${id} não encontrado.`);
+        }
+
+        // Deleta o usuário do banco de dados
+        await this.usersRepository.delete(id);
+
+        return { message: `Usuário com ID ${id} foi removido com sucesso.` };
+    }
+
+    async exportToExcel(filters: UserFilterDto): Promise<{ buffer: Buffer; fileName: string }> {
+            const users = await this.findAll(undefined, undefined, filters.name, filters.email, filters.cpf).then(res => res.data);
+    
+            const mappedData = users.map(user => ({
+                'Nome': user.name,
+                'E-mail': user.email,
+                'CPF': user.cpf ? user.cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4') : null,
+            }));
+    
+            const worksheet = XLSX.utils.json_to_sheet(mappedData);
+            const workbook = XLSX.utils.book_new();
+            XLSX.utils.book_append_sheet(workbook, worksheet, 'Usuários');
+    
+            const buffer = XLSX.write(workbook, { bookType: 'xlsx', type: 'buffer' });
+            const fileName = `Relatorio_Usuarios_${new Date().toISOString().split('T')[0]}.xlsx`;
+    
+            return { buffer, fileName };
+        }
+    
+
 }

@@ -1,0 +1,99 @@
+<mat-card class="register-card">
+  <div class="logo">
+    <img src="logo2.png" alt="Logo" />
+  </div>
+
+  @if (!isRegistered()) {
+    <header>
+      <h2>Criar Conta</h2>
+      <p>Preencha os campos para se cadastrar</p>
+    </header>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="outline">
+        <mat-label>Nome Completo</mat-label>
+        <input matInput formControlName="name" placeholder="Ex: Luciano Felix" />
+        @if (form.get('name')?.hasError('required') && form.get('name')?.touched) {
+          <mat-error>O nome é obrigatório</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>E-mail</mat-label>
+        <input matInput formControlName="email" type="email" placeholder="seu@email.com" />
+        @if (form.get('email')?.hasError('email') && form.get('email')?.touched) {
+          <mat-error>E-mail inválido</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Senha</mat-label>
+        <input matInput formControlName="password" [type]="hidePassword() ? 'password' : 'text'" />
+        <button mat-icon-button matSuffix type="button" (click)="togglePasswordVisibility($event)">
+          <mat-icon>{{ hidePassword() ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
+        <mat-hint>Mínimo 8 caracteres, maiúsculas, minúsculas e símbolos.</mat-hint>
+      </mat-form-field>
+
+      <button mat-flat-button color="primary" class="submit-btn" [disabled]="form.invalid || isSubmitting()">
+        @if (isSubmitting()) {
+          <mat-spinner [diameter]="24"></mat-spinner>
+        } @else {
+          Cadastrar
+        }
+      </button>
+    </form>
+
+    <footer>
+      <span>Já tem uma conta? <a routerLink="/login">Faça o Login</a></span>
+    </footer>
+
+  } @else {
+    <div class="success-message">
+      <mat-icon color="primary" class="main-icon">mark_email_unread</mat-icon>
+      <h3>Verifique seu e-mail</h3>
+      <p>Enviamos um código de confirmação para:<br><strong>{{ registeredEmail() }}</strong></p>
+      
+      <div class="code-container">
+        <mat-form-field appearance="outline">
+          <mat-label>Código de 6 dígitos</mat-label>
+          <input matInput 
+                 #codeInput
+                 placeholder="000000" 
+                 maxlength="6" 
+                 inputmode="numeric"
+                 style="text-align: center; letter-spacing: 8px; font-size: 20px; font-weight: bold;">
+          <mat-icon matSuffix>lock</mat-icon>
+        </mat-form-field>
+        
+        <button mat-flat-button color="accent" 
+                [disabled]="codeInput.value.length < 6 || isSubmitting()"
+                (click)="verifyCode(codeInput.value)">
+          @if (isSubmitting()) {
+            <mat-spinner [diameter]="20"></mat-spinner>
+          } @else {
+            Validar Conta
+          }
+        </button>
+      </div>
+
+      <div class="divider">
+        <span>ou</span>
+      </div>
+
+      <div class="actions">
+        <button mat-button color="primary" (click)="resendConfirmationCode()" [disabled]="isSubmitting()">
+          @if (isSubmitting()) {
+            <mat-spinner [diameter]="18"></mat-spinner>
+          } @else {
+           <ng-container>
+            <mat-icon>refresh</mat-icon>
+              <span>Reenviar Código</span>
+            </ng-container>
+          }
+        </button>
+        
+        <button mat-button routerLink="/login">Voltar para o Login</button>
+      </div>
+    </div>
+  }

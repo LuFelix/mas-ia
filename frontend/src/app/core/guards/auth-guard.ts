@@ -2,7 +2,7 @@ import { inject } from '@angular/core';
 import { 
   CanActivateFn, 
   Router, 
-  ActivatedRouteSnapshot, // Precisamos disso para ler os 'data'
+  ActivatedRouteSnapshot, 
   UrlTree 
 } from '@angular/router';
 import { AuthService } from '../services/auth.service';

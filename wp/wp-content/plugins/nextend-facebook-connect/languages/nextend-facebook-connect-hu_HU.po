@@ -1,0 +1,4421 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: nextend-facebook-connect\n"
+"POT-Creation-Date: 2026-02-23 09:54+0100\n"
+"PO-Revision-Date: 2026-02-23 09:54+0100\n"
+"Last-Translator: \n"
+"Language-Team: nextend-facebook-connect\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.8\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_x:1,2c;esc_html_e\n"
+"X-Poedit-Flags-xgettext: --no-location\n"
+"X-Poedit-SearchPath-0: nextend-social-login-pro\n"
+"X-Poedit-SearchPath-1: nextend-facebook-connect\n"
+"X-Poedit-SearchPathExcluded-0: nextend-facebook-connect/providers/twitter/"
+"compat\n"
+"X-Poedit-SearchPathExcluded-1: nextend-facebook-connect/providers/google/"
+"compat\n"
+"X-Poedit-SearchPathExcluded-2: nextend-facebook-connect/providers/facebook/"
+"compat\n"
+
+msgid "What personal data we collect and why we collect it"
+msgstr "Milyen személyes adatokat gyüjtünk, és miért gyüjtjük"
+
+#, php-format
+msgid ""
+"%1$s collects data when a visitor register, login or link the account with "
+"with any of the enabled social provider. It collects the following data: "
+"email address, name, social provider identifier and access token. Also it "
+"can collect profile picture and more fields with the Pro Addon's sync data "
+"feature."
+msgstr ""
+"%1$s adatot gyüjt amikor a látogató regisztrál, bejelentkezik vagy linkeli a "
+"fiókját bármely engedélyezett social providerhez. A következő adatok lesznek "
+"begyüjtve: email address, name, social provider identifier and access token. "
+"Ezenkívül még begyüjthető a profil kép és más mezők amelyek a Pro Addon sync "
+"data funkciójából származik."
+
+msgid "Who we share your data with"
+msgstr "Kivel osztjuk meg az adataid"
+
+#, php-format
+msgid ""
+"%1$s stores the personal data on your site and does not share it with anyone "
+"except the access token which used for the authenticated communication with "
+"the social providers."
+msgstr ""
+
+msgid "Does the plugin share personal data with third parties"
+msgstr ""
+
+#, php-format
+msgid ""
+"%1$s use the access token what the social provider gave to communicate with "
+"the providers to verify account and securely access personal data."
+msgstr ""
+
+msgid "How long we retain your data"
+msgstr ""
+
+#, php-format
+msgid ""
+"%1$s removes the collected personal data when the user deleted from "
+"WordPress."
+msgstr ""
+
+msgid "Does the plugin use personal data collected by others?"
+msgstr ""
+
+#, php-format
+msgid ""
+"%1$s use the personal data collected by the social providers to create "
+"account on your site when the visitor authorize it."
+msgstr ""
+
+msgid "Does the plugin store things in the browser?"
+msgstr ""
+
+#, php-format
+msgid ""
+"Yes, %1$s must create a cookie for visitors who use the social login "
+"authorization flow. This cookie required for every provider to secure the "
+"communication and to redirect the user back to the last location."
+msgstr ""
+
+msgid "Does the plugin collect telemetry data, directly or indirectly?"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid ""
+"Does the plugin enqueue JavaScript, tracking pixels or embed iframes from a "
+"third party?"
+msgstr ""
+
+msgid "User"
+msgstr "Felhasználó"
+
+msgid "This provider doesn't support REST API calls!"
+msgstr ""
+
+#, php-format
+msgid "%s needs json_decode function."
+msgstr "A %s-nak szüksége van a json_decode függvényre."
+
+msgid "Please contact your server administrator and ask for solution!"
+msgstr ""
+"Kérlek lépj kapcsolatba a szerveradminisztrátorral és kérj tőle segítséget!"
+
+msgid "Settings saved."
+msgstr "Beállítások elmentve."
+
+msgid "The activation was successful"
+msgstr "Az aktiváció sikeres volt"
+
+msgid "Deactivate completed."
+msgstr "A deaktiválás befejeződött."
+
+msgid "Settings"
+msgstr "Beállítások"
+
+#, php-format
+msgid "Unexpected response: %s"
+msgstr "Nem várt válasz: %s"
+
+#, php-format
+msgid ""
+"%s detected that your login url changed. You must update the Oauth redirect "
+"URIs in the related social applications."
+msgstr ""
+"%s érzékelte hogy a bejelentkezési url megváltozott. Frissitened kell az "
+"\"Oauth redirect URIs\" értékeket a konfigurált alkalmazásaidban."
+
+msgid "Fix Error"
+msgstr "Hiba javítása"
+
+msgid "Oauth Redirect URI"
+msgstr "Oauth Redirect URI"
+
+#, php-format
+msgid ""
+"%1$s detected that %2$s installed on your site. You need the Pro Addon to "
+"display Social Login buttons in %2$s login form!"
+msgstr ""
+"%1$s érzékelte hogy a(z) %2$s telepítve van az oldaladon. Ahoz, hogy a "
+"social login gombok megjelenjenek a(z)  %2$s login formokban, a Pro Addon-ra "
+"van szükséged!"
+
+msgid "Dismiss and check Pro Addon"
+msgstr "Eltüntent és Pro Addon ellenörzése."
+
+msgid "Dismiss"
+msgstr "Eltüntet"
+
+#, php-format
+msgid ""
+"%1$s detected that %2$s installed on your site. You must set \"<b>Page for "
+"register flow</b>\" and \"<b>OAuth redirect uri proxy page</b>\" in %1$s to "
+"work properly."
+msgstr ""
+
+msgid "Fix now"
+msgstr "Javítás most"
+
+msgid "Activate your Pro Addon"
+msgstr "Pro Addon aktiválása"
+
+#, fuzzy
+#| msgid ""
+#| "To be able to use the Pro features, you need to activate Nextend Social "
+#| "Connect Pro Addon. You can do this by clicking on the Activate button "
+#| "below then select the related purchase."
+msgid ""
+"To be able to use the Pro features, you need to activate Nextend Social "
+"Login Pro Addon. You can do this by clicking on the Activate button below "
+"then select the related purchase."
+msgstr ""
+"A Pro funkciók használatához  aktiválnod kell a Nextend Social Login  Pro "
+"Addon-t.  Ezt megteheted az Activate gombra való kattintással és a társított "
+"vásárlás kiválasztásával."
+
+msgid "Activate"
+msgstr "Aktiválás"
+
+msgid "License key"
+msgstr "Licensz kulcs"
+
+msgid "OAuth proxy page"
+msgstr "OAuth proxy page"
+
+msgid "Register flow page"
+msgstr "Register flow page"
+
+msgid "You have logged in successfully."
+msgstr "Sikeresen bejelentkeztél"
+
+msgid "Login label"
+msgstr "Bejelentkezés felirat"
+
+msgid "Reset to default"
+msgstr "Alapbeállítás visszaállítása"
+
+#, fuzzy
+#| msgid "Login layout"
+msgid "Register label"
+msgstr "Login elrendezése"
+
+msgid "Link label"
+msgstr "Profil összekapcsolás felirat"
+
+msgid "Unlink label"
+msgstr "Profile szétkapcsolás felirat"
+
+msgid "Default button"
+msgstr "Alap gomb"
+
+msgid "Use custom button"
+msgstr "Egyedi gomb használata"
+
+#, php-format
+msgid "Use the %s in your custom button's code to make the label show up."
+msgstr "Használd a %s azonosítót, hogy megfelenjen a gomb felirat."
+
+msgid "Icon button"
+msgstr "Ikon gomb"
+
+msgid "Save Changes"
+msgstr "Változtatások Mentése"
+
+#, php-format
+msgid "Follow the guide at: %s"
+msgstr ""
+
+#, php-format
+msgid "I am done setting up my %s"
+msgstr "Befejeztem a %s appom elkészítését"
+
+#, fuzzy
+#| msgid "App ID"
+msgctxt "Social Login App"
+msgid "App"
+msgstr "App ID"
+
+msgid "Getting Started"
+msgstr "Első Lépések"
+
+#, fuzzy, php-format
+#| msgid ""
+#| "To allow your visitors to log in with their %1$s account, first you must "
+#| "create an %1$s App. The following guide will help you through the %1$s "
+#| "App creation process. After you have created your %1$s App, head over to "
+#| "\"Settings\" and configure the given \"%2$s\" and \"%3$s\" according to "
+#| "your %1$s App."
+msgid ""
+"To allow your visitors to log in with their %1$s account, first you must "
+"create an App for %1$s. The following guide will help you through the %1$s "
+"App creation process. After you have created your %1$s App, head over to "
+"\"Settings\" and configure the fields with the credentials of the App you "
+"created."
+msgstr ""
+"Ahhoz. hogy a felhasználók beléphessenek a %1$s fiókjukkal, először létre "
+"kell hoznod egy %1$s Appot. Az alábbi útmutató végig vezet a %1$s App "
+"létrehozás folyamatán. Miután a(z) %1$s fiókod elkészült, menj a "
+"\"Beállítások\" fülre és állítsd be a \"%2$s\"-t és \"%3$s\"-t a %1$s Appod "
+"alapján."
+
+#, php-format
+msgid "How to create an App for %s: "
+msgstr ""
+
+msgid "URLs for the App creation:"
+msgstr ""
+
+msgid "Buttons"
+msgstr "Gombok"
+
+msgid "Sync data"
+msgstr "Sync data"
+
+msgid "Usage"
+msgstr "Használat"
+
+msgid "Other settings"
+msgstr "Egyéb beállítások"
+
+msgid "Username prefix on register"
+msgstr "Felhasználónév előtag regisztrációkor"
+
+msgid "Fallback username prefix on register"
+msgstr "Fallback felhasználónév előtag regisztrácókor"
+
+msgid "Used when username is invalid or not stored"
+msgstr "Akkor van használva ha a felhasználónév helytelen vagy nincs tárolva."
+
+msgid "Terms and conditions"
+msgstr "Felhasználási feltételek"
+
+#, php-format
+msgid "Override global \"%1$s\""
+msgstr "Globális \"%1$s\" felülírása."
+
+msgid "PRO settings"
+msgstr "PRO beállítások"
+
+msgid "Ask E-mail on registration"
+msgstr "E-mail kérésére regisztrációkor"
+
+msgid "Never"
+msgstr "Soha"
+
+msgid "When email is not provided or empty"
+msgstr "Amikor a e-mail cím nincs biztosítva vagy nem üres"
+
+msgid "Always"
+msgstr "Mindig"
+
+msgid "Ask Username on registration"
+msgstr "Felhasználónév kérése regisztrációkor"
+
+msgid "Never, generate automatically"
+msgstr "Soha, automata generálás"
+
+msgid "When username is empty or invalid"
+msgstr "Amikor a felhasználónév nincs biztosítva vagy nem üres"
+
+msgid "Ask Password on registration"
+msgstr "Jelszó kérése regisztrációkor"
+
+msgid "Automatically connect the existing account upon registration"
+msgstr "Fiók csatlakoztatása, ha regisztráció esetén már létezik a fiók"
+
+msgid "Disabled"
+msgstr "Kikapcsolva"
+
+msgid "Automatic, based on email address"
+msgstr "Automatán, e-mail cím egyezés esetén"
+
+msgid "Disable login for the selected roles"
+msgstr "Bejelntkezés kikapcsolása a kijelölt szerepköröknek"
+
+msgid "Default roles for user who registered with this provider"
+msgstr "Alap szerepkör, aki ezzel a szolgáltatóval registrál"
+
+#, fuzzy, php-format
+#| msgid "Click on the Create button"
+msgid "Default (The %1$s is: %2$s)"
+msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy
+#| msgid "Default redirect url"
+msgid "default WordPress role"
+msgstr "Alapértelmezett átirányítási url"
+
+#, php-format
+msgid "Default (The %s.)"
+msgstr ""
+
+msgid "Register"
+msgstr "Regisztráció"
+
+msgid "Login"
+msgstr "Bejelentkezés"
+
+msgid "Link"
+msgstr "Összekapcsolás"
+
+msgid "Store in meta key"
+msgstr "Tárolás a meta kulcsban"
+
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#, fuzzy
+#| msgid "Important:"
+msgid "Important!"
+msgstr "Fontos:"
+
+msgid "The shortcodes are only rendered for users who haven't logged in yet!"
+msgstr ""
+
+msgid "See the full list of shortcode parameters."
+msgstr ""
+
+msgid "Simple link"
+msgstr "Egyszerű link"
+
+msgid "Click here to login or register"
+msgstr "Kattints ide a belépéshez vagy a regisztrációhoz"
+
+msgid "Image button"
+msgstr "Gomb képpel"
+
+msgid "Image url"
+msgstr "Kép URL"
+
+msgid "Debug"
+msgstr "Debug mód"
+
+msgid "Test network connection with providers"
+msgstr "Hálózati kapcsolat tesztelése szolgáltatókkal"
+
+msgid "You don't have cURL support, please enable it in php.ini!"
+msgstr "Nincs cURL támogatásod, kérlek engedélyezd a php.ini fájlban."
+
+#, php-format
+msgid "Test %1$s connection"
+msgstr "%1$s kapcsolat tesztelése"
+
+msgid "Fix Oauth Redirect URIs"
+msgstr "Oauth Redirect URIs javítása"
+
+msgid "Every Oauth Redirect URI seems fine"
+msgstr "Minden Every Oauth Redirect URI jónak tűnik"
+
+msgid "Got it"
+msgstr "Értettem"
+
+msgid "Global Settings"
+msgstr "Általános beállítások"
+
+msgid "General"
+msgstr "Általános"
+
+msgid "Privacy"
+msgstr "Privacy"
+
+msgid "Login Form"
+msgstr "Bejelentkezési form"
+
+msgid "Comment"
+msgstr "Komment"
+
+msgid "Custom Actions"
+msgstr ""
+
+msgid "Docs"
+msgstr "Dokumentáció"
+
+msgid "Support"
+msgstr "Támogatás"
+
+msgid "Pro Addon"
+msgstr "Pro Kiegészítő"
+
+msgid "Providers"
+msgstr "Providerek"
+
+msgid "Error"
+msgstr "Hiba"
+
+msgid ""
+"You don’t have sufficient permissions to install and activate plugins. "
+"Please contact your site’s administrator!"
+msgstr ""
+"Nincs megfelelő jogosultságod ahhoz, hogy telepíts és bekapcsolj pluginokat. "
+"Lépj kapcsolatba az oldalad adminisztrátorával a további teendőkkel "
+"kapcsolatban!"
+
+msgid "Activate Pro Addon"
+msgstr "Pro Addon aktiválása"
+
+msgid ""
+"Pro Addon is installed but not activated. To be able to use the Pro "
+"features, you need to activate it."
+msgstr ""
+"A Pro Kiegészítő telepítve van, de nincs aktiválva. Ahhoz, hogy használjasd "
+"a Pro funkciókat aktiválnod kell a Pro Kiegészítőt."
+
+msgid "Deactivate Pro Addon"
+msgstr "Pro Addon deaktiválása"
+
+msgid "Pro Addon is not installed"
+msgstr "A Pro Kiegészítő nincs telepítve"
+
+msgid ""
+"To access the Pro features, you need to install and activate the Pro Addon."
+msgstr ""
+"Ahhoz, hogy hozzáférj a Pro funkciókhoz fel kell telepítened és aktiválnod "
+"kell a Pro Kiegészítőt."
+
+#, php-format
+msgid "Install %s now"
+msgstr "%s  telepítése most"
+
+msgid "Install Pro Addon"
+msgstr "Pro Kiegészítő telepítése"
+
+msgid "Activating..."
+msgstr "Aktiválás..."
+
+#, fuzzy
+#| msgid "Not Available"
+msgid "Not compatible!"
+msgstr "Nem elérhető"
+
+#, php-format
+msgid ""
+"%1$s and %2$s are not compatible. Please update %1$s to version %3$s or "
+"newer."
+msgstr ""
+
+#, fuzzy, php-format
+#| msgctxt "App creation"
+#| msgid "Create %s"
+msgid "Update %s"
+msgstr "%s létrehozása"
+
+#, php-format
+msgid ""
+"%1$s and %2$s are not compatible. Please update %2$s to version %3$s or "
+"newer."
+msgstr ""
+
+#, fuzzy
+#| msgid "Activate Pro Addon"
+msgid "Update Pro Addon"
+msgstr "Pro Addon aktiválása"
+
+msgid "Pro Addon is installed and activated"
+msgstr "A Pro Kiegészítő telepítve és aktiválva"
+
+msgid ""
+"You installed and activated the Pro Addon. If you don’t want to use it "
+"anymore, you can deactivate using the button below."
+msgstr ""
+"A Pro Kiegészítő fel van telepítve és aktiválva van. Ha nem akarod tovább "
+"használni, visszavonhatod az aktiválást a lenti gombra kattintva."
+
+msgid "Get Pro Addon to unlock more features"
+msgstr "Vásárold meg a Pro Kiegészítőt, hogy még több funkcióhoz juss"
+
+#, php-format
+msgid ""
+"The features below are available in %s Pro Addon. Get it today and tweak the "
+"awesome settings."
+msgstr ""
+"Az alábbi funkciók a %s Pro Kiegészítőben érhetőek el. Vásárold meg még ma, "
+"hogy hozzáférj a fantasztikus új beállításokhoz."
+
+msgid ""
+"If you already have a license, you can Authorize your Pro Addon. Otherwise "
+"you can purchase it using the button below."
+msgstr ""
+"Ha már van licenszed engedélyezheted a Pro Kiegészítődet. Ha nincs licenszed "
+"vásárolhatsz a lenti gombra kattintva. "
+
+msgid "Buy Pro Addon"
+msgstr "Vedd meg a Pro Kiegészítőt"
+
+msgid "Authorize Pro Addon"
+msgstr "Pro Kiegészítő aktiválása"
+
+msgid "Pro Addon is not activated"
+msgstr "A Pro Kiegészítő nincs aktiválva"
+
+#, fuzzy
+#| msgid ""
+#| "To be able to use the Pro features, you need to install and activate the "
+#| "Nextend Social Connect Pro Addon."
+msgid ""
+"To be able to use the Pro features, you need to install and activate the "
+"Nextend Social Login Pro Addon."
+msgstr ""
+"A Pro funkciók használatához  aktiválnod kell a Nextend Social Login  Pro "
+"Addon-t.  Ezt megteheted az Activate gombra való kattintással és a társított "
+"vásárlás kiválasztásával."
+
+#, php-format
+msgid ""
+"%1$s detected that you have providers configured but none of them are "
+"enabled. To display any social buttons, please make sure you have at least "
+"one provider enabled!"
+msgstr ""
+
+msgid "Not Available"
+msgstr "Nem elérhető"
+
+msgid "Not Configured"
+msgstr "Nincs beállítva"
+
+msgid "Not Verified"
+msgstr "Nincs hitelesítve"
+
+msgid "Enabled"
+msgstr "Bekapcsolva"
+
+msgid "Upgrade Now"
+msgstr "Upgradelés most"
+
+msgid "Verify Settings"
+msgstr "Beállítások hitelesítése"
+
+msgid "Enable"
+msgstr "Bekapcsolás"
+
+msgid "Disable"
+msgstr "Kikapcsolás"
+
+msgid "Stay Updated"
+msgstr "Légy naprakész"
+
+msgid ""
+"Receive info on the latest plugin updates and social provider related "
+"changes."
+msgstr ""
+"Értesítést kérek a legutóbbi frissítésekről és a szolgáltatók változásáról."
+
+msgid "Enter your email address"
+msgstr "Add meg az email címed"
+
+msgid "Subscribe"
+msgstr "Feliratkozás"
+
+msgid "Saving..."
+msgstr "Mentés..."
+
+msgid "Saving failed"
+msgstr "A mentés nem sikerült"
+
+msgid "Order Saved"
+msgstr "Sorrend elmentve"
+
+msgid "Successfully subscribed!"
+msgstr "Sikeresen feliratkozva."
+
+msgid ""
+"We'll be bringing you all the latest news and updates about Social Login - "
+"right to your inbox."
+msgstr ""
+
+msgid "The entered email address is invalid!"
+msgstr "A beírt email cím helytelen!"
+
+msgid "Rate your experience!"
+msgstr "Értékelj!"
+
+msgid "Hated it"
+msgstr "Gyülölöm"
+
+msgid "Disliked it"
+msgstr "Nem tetszik"
+
+msgid "It was ok"
+msgstr "Ok"
+
+msgid "Liked it"
+msgstr "Szeretem"
+
+msgid "Loved it"
+msgstr "Imádom"
+
+msgid "Please Leave a Review"
+msgstr "Kérem hagyjon értékelést!"
+
+msgid ""
+"If you are happy with <b>Nextend Social Login</b> and can take a minute "
+"please leave us a review. It will be a tremendous help for us!"
+msgstr ""
+"Ha tetszett a <b>Nextend Social Login</b> plugin és van egy pár szabad "
+"perce, kérem értékeljen minket. Nekünk ez hatalmas segítséget jelent!"
+
+msgid "Ok, you deserve it"
+msgstr "Rendben, megérdemlitek."
+
+msgid "Register form"
+msgstr "Regisztrációs form"
+
+msgid "No Connect button"
+msgstr "Ne legyen connect gomb"
+
+msgid "Connect button before register"
+msgstr "Connect gomb a regisztráció előtt."
+
+msgid "Action:"
+msgstr "Action:"
+
+msgid "Connect button before account details"
+msgstr "Connect gomb a fiók adatai részleg előtt"
+
+msgid "Connect button after register"
+msgstr "Connect gomb a regisztrációs form után"
+
+msgid "Register button style"
+msgstr "Regisztrációs gomb stílusa"
+
+msgid "Default"
+msgstr "Alapbeállítás"
+
+msgid "Fullwidth"
+msgstr ""
+
+msgid "Icon"
+msgstr "Ikon"
+
+#, fuzzy
+#| msgid "Login layout"
+msgid "Register layout"
+msgstr "Login elrendezése"
+
+msgid "Below"
+msgstr "Alul"
+
+msgid "Below with separator"
+msgstr "Alul, elválasztóval"
+
+msgid "Above"
+msgstr "Felül"
+
+msgid "Above with separator"
+msgstr "Felül, elválasztóval"
+
+#, fuzzy
+#| msgid "Login layout"
+msgid "Sidebar Login form"
+msgstr "Login elrendezése"
+
+msgid "Hide login buttons"
+msgstr ""
+
+msgid "Show login buttons"
+msgstr ""
+
+msgid ""
+"Some themes that use BuddyPress, display the social buttons twice in the "
+"same login form. This option can disable the one for: "
+"<b>bp_sidebar_login_form action</b>.  "
+msgstr ""
+
+#, fuzzy
+#| msgid "Login layout"
+msgid "Login form"
+msgstr "Login elrendezése"
+
+#, fuzzy
+#| msgid "Login form button style"
+msgid "Login button style"
+msgstr "Login gomb stílusa"
+
+msgid "Login layout"
+msgstr "Login elrendezése"
+
+#, fuzzy
+#| msgid "Social accounts"
+msgid "Social accounts tab"
+msgstr "Közösségi fiókok"
+
+msgid "Hide"
+msgstr "Elrejt"
+
+msgid "Show"
+msgstr "Megjelenít"
+
+#, php-format
+msgid ""
+"Creates a new tab called %s, where the Link and Unlink buttons will be "
+"displayed."
+msgstr ""
+
+msgid "Social Accounts"
+msgstr ""
+
+msgid "Button alignment"
+msgstr "Gombok igazítása"
+
+msgid "Left"
+msgstr "Bal"
+
+msgid "Center"
+msgstr "Közép"
+
+msgid "Right"
+msgstr "Jobb"
+
+#, fuzzy
+#| msgid "Ask E-mail on registration"
+msgid "Email template for registration"
+msgstr "E-mail kérésére regisztrációkor"
+
+#, fuzzy
+#| msgid "WordPress default"
+msgid "WordPress default notification"
+msgstr "WordPress alapértelmezett"
+
+#, fuzzy
+#| msgid "WordPress default"
+msgid "BuddyPress welcome notification"
+msgstr "WordPress alapértelmezett"
+
+#, php-format
+msgid ""
+"Defines whether the registration with %1$s will send the same welcome "
+"notification that %2$s does, instead of the %3$s default one."
+msgstr ""
+
+msgid "Login button"
+msgstr "Login gomb"
+
+#, php-format
+msgid "You need to turn on the ' %1$s > %2$s > %3$s ' for this feature to work"
+msgstr ""
+"Ahhoz, hogy ez a funkció működjön, be kell kapcsolnod a ' %1$s > %2$s > %3$s "
+"'-t."
+
+msgid "Discussion"
+msgstr "Értekezés"
+
+msgid "Users must be registered and logged in to comment"
+msgstr "A felhasználóknak be kell jelentkezve lenniük a kommenteléshez."
+
+msgid "Button style"
+msgstr "Gomb stílus:"
+
+#, php-format
+msgid "%1$s Add your custom actions here. One action per line."
+msgstr ""
+
+msgid "Usage:"
+msgstr "Használat"
+
+#, php-format
+msgid ""
+"%1$s The HTML of the social buttons will be added at the place where the "
+"action is fired."
+msgstr ""
+
+msgid "Important:"
+msgstr "Fontos:"
+
+#, php-format
+msgid ""
+"If you %1$sexperience problems%2$s because of this feature, you can disable "
+"it by defining the %3$s constant."
+msgstr ""
+
+#, fuzzy
+#| msgid "Login layout"
+msgid "Button layout"
+msgstr "Login elrendezése"
+
+#, fuzzy
+#| msgid "Below with separator"
+msgid "Default with top separator"
+msgstr "Alul, elválasztóval"
+
+#, fuzzy
+#| msgid "Below with separator"
+msgid "Default with bottom separator"
+msgstr "Alul, elválasztóval"
+
+#, fuzzy
+#| msgid "Unlink"
+msgid "Link/Unlink"
+msgstr "Szétkapcsolás "
+
+#, fuzzy
+#| msgid "No Connect button in login form"
+msgid "No Connect button in Login form"
+msgstr "Ne legyen összekapcsoló gomb a belépő űrlapnál"
+
+#, fuzzy
+#| msgid "No Connect button in login form"
+msgid "Connect button on"
+msgstr "Ne legyen összekapcsoló gomb a belépő űrlapnál"
+
+msgid "Login form button style"
+msgstr "Login gomb stílusa"
+
+#, fuzzy
+#| msgid "No Connect button in login form"
+msgid "No Connect button in Register form"
+msgstr "Ne legyen összekapcsoló gomb a belépő űrlapnál"
+
+#, fuzzy
+#| msgid "Login form button style"
+msgid "Register form button style"
+msgstr "Login gomb stílusa"
+
+msgid "Checkout form"
+msgstr ""
+
+#, fuzzy
+#| msgid "No Connect button in login form"
+msgid "No Connect button in Checkout form"
+msgstr "Ne legyen összekapcsoló gomb a belépő űrlapnál"
+
+#, fuzzy
+#| msgid "Login form button style"
+msgid "Checkout form button style"
+msgstr "Login gomb stílusa"
+
+#, fuzzy
+#| msgid "Login layout"
+msgid "Checkout layout"
+msgstr "Login elrendezése"
+
+msgid "Target window"
+msgstr "Célablak"
+
+msgid "Prefer popup"
+msgstr "Felugró ablak"
+
+msgid "Prefer new tab"
+msgstr "Új tab"
+
+msgid "Prefer same window"
+msgstr "Ugyanazon ablak"
+
+msgid "Registration notification sent to"
+msgstr "Regisztrációról értesítést kap"
+
+msgid "WordPress default"
+msgstr "WordPress alapértelmezett"
+
+msgid "Nobody"
+msgstr "Senki"
+
+msgid "Admin"
+msgstr "Admin"
+
+msgid "User and Admin"
+msgstr "Felhasználó és Admin"
+
+msgid "Unlink"
+msgstr "Szétkapcsolás "
+
+msgid "Allow Social account unlink"
+msgstr "Szétkapcsolás engedélyezése"
+
+msgid "Show linked providers"
+msgstr ""
+
+#, php-format
+msgid "Providers linked to the account will appear in the %1$s."
+msgstr ""
+
+#, fuzzy
+#| msgid "Test to Enable"
+msgid "Users table"
+msgstr "Tesztelés az Engedélyezéshez"
+
+#, fuzzy
+#| msgid "Disable login for the selected roles"
+msgid "Disable Admin bar for roles"
+msgstr "Bejelntkezés kikapcsolása a kijelölt szerepköröknek"
+
+msgid "Debug mode"
+msgstr "Debug mód"
+
+msgid "Bypass cache on redirect"
+msgstr ""
+
+#, php-format
+msgid ""
+"Enabling this option will add a GET parameter to the URL where we redirect "
+"after a successful registration or login with social login. %1$sLearn "
+"more%2$s."
+msgstr ""
+
+msgid "Page for register flow"
+msgstr "Page for register flow"
+
+msgid "None"
+msgstr "Semmi"
+
+msgid ""
+"This setting is used when you request additional data from the users (such "
+"as email address) and to display the Terms and conditions."
+msgstr ""
+"Ez a beállítás akkor használatos, ha további adatokat kérsz a felhasználótól "
+"( mint például email címet  ) illetve a Felhasználói feltételek "
+"megjelenítéséhez."
+
+#, php-format
+msgid ""
+"%2$s First create a new page and insert the following shortcode: %1$s then "
+"select this page above"
+msgstr ""
+"%2$s Előszőr hozz létre egy új oldalt, majd másold be a következő shortcode-"
+"ot: %1$s majd válaszd ki azt az oldal itt."
+
+#, php-format
+msgid ""
+"%1$s You won't be able to reach the selected page unless a social login/"
+"registration happens."
+msgstr ""
+"%1$s A kiválasztott csak a login és regisztráció folyamat számára less "
+"elérhető."
+
+msgid "OAuth redirect uri proxy page"
+msgstr "OAuth redirect uri proxy page"
+
+msgid ""
+"You can use this setting when wp-login.php page is not available to handle "
+"the OAuth flow."
+msgstr ""
+"Ez a beállítás akkor használatos ha a wp-login.php oldal nem elérhető, hogy "
+"kezelje az OAauth folyamatot."
+
+#, php-format
+msgid "%1$s First create a new page then select this page above."
+msgstr "%1$s Előszőr hozz létre egy új oldal majd válaszd ki azt az oldal itt."
+
+msgid "Prevent external redirect overrides"
+msgstr "Külső átirányítások felülírása"
+
+msgid "Disable external redirects"
+msgstr "Külső átirányítások letiltása"
+
+msgid "Default redirect url"
+msgstr "Alapértelmezett átirányítási url"
+
+msgid "for Login"
+msgstr "Loginkor"
+
+msgid "for Register"
+msgstr "Regisztrációkor"
+
+msgid "Fixed redirect url"
+msgstr "Fix átirányítási link"
+
+msgid "Blacklisted redirects"
+msgstr "Tiltott átirányítások"
+
+msgid "If you want to blacklist redirect url params. One pattern per line."
+msgstr ""
+
+msgid "Support login restrictions"
+msgstr ""
+
+#, php-format
+msgid "Please visit to our %1$s to check what plugins are supported!"
+msgstr ""
+
+msgid "Display avatars in \"All media items\""
+msgstr ""
+
+msgid ""
+"Enabling this option can speed up loading images in Media Library - Grid "
+"view!"
+msgstr ""
+
+msgid "Membership"
+msgstr ""
+
+msgid "Allow registration with Social login."
+msgstr ""
+
+#, fuzzy
+#| msgid "Page for register flow"
+msgid "Custom label for register buttons"
+msgstr "Page for register flow"
+
+#, php-format
+msgid ""
+"Set a custom label for the social buttons in registration forms and for "
+"shortcodes with %1$s parameter set to %2$s.<br>The register specific labels "
+"can be modified at the Buttons tab of each provider.<br>This option also "
+"allows the use of register specific %3$s options."
+msgstr ""
+
+msgid "Redirect overlay"
+msgstr ""
+
+msgid "No overlay"
+msgstr ""
+
+msgid "Display overlay"
+msgstr ""
+
+msgid "Display overlay with spinner"
+msgstr ""
+
+msgid "Display overlay with spinner and message"
+msgstr ""
+
+msgid ""
+"You can display an overlay on your site when we start the redirect after the "
+"authentication."
+msgstr ""
+
+#, php-format
+msgid "%1$s The overlay won't be displayed if the %2$s setting is set to %3$s!"
+msgstr ""
+
+msgid "Note:"
+msgstr ""
+
+msgid "Unsupported WebView behavior"
+msgstr ""
+
+#, fuzzy
+#| msgid "Image button"
+msgid "Remove button"
+msgstr "Gomb képpel"
+
+#, fuzzy
+#| msgid "Default button"
+msgid "Disable button"
+msgstr "Alap gomb"
+
+#, php-format
+msgid "Some %1$sproviders%2$s don't support embedded browsers."
+msgstr ""
+
+msgid ""
+"This setting defines if we should remove or disable the related buttons in "
+"WebView environments."
+msgstr ""
+
+msgid "Below and floating"
+msgstr "Alul lebegve"
+
+msgid "Embedded Login form button style"
+msgstr ""
+
+msgid "Embedded Login layout"
+msgstr ""
+
+#, fuzzy
+#| msgid "Login form button style"
+msgid "Embedded login form button alignment"
+msgstr "Login gomb stílusa"
+
+msgid "Registration Form"
+msgstr ""
+
+msgid "Embedded login form"
+msgstr ""
+
+msgid "Sign Up form"
+msgstr ""
+
+#, fuzzy
+#| msgid "No Connect button in login form"
+msgid "No Connect button in Sign Up form"
+msgstr "Ne legyen összekapcsoló gomb a belépő űrlapnál"
+
+#, fuzzy
+#| msgid "Login form button style"
+msgid "Sign Up form button style"
+msgstr "Login gomb stílusa"
+
+#, fuzzy
+#| msgid "Login layout"
+msgid "Sign Up layout"
+msgstr "Login elrendezése"
+
+#, fuzzy
+#| msgid "WooCommerce account details"
+msgid "Account details"
+msgstr "WooCommerce fiók részletes beállítások"
+
+msgid "No link buttons"
+msgstr ""
+
+msgid "Link buttons after account details"
+msgstr "Összekapcsoló gombok a profil részletes beállításai után"
+
+msgid "Store"
+msgstr ""
+
+msgid "First and last name"
+msgstr ""
+
+msgid "When not enabled, username will be randomly generated."
+msgstr ""
+
+msgid "Email"
+msgstr "Email"
+
+msgid "When not enabled, email will be empty."
+msgstr ""
+
+msgid "Avatar"
+msgstr ""
+
+msgid "Access token"
+msgstr ""
+
+msgid "Register Form"
+msgstr ""
+
+msgid "No Connect button in login form"
+msgstr "Ne legyen összekapcsoló gomb a belépő űrlapnál"
+
+msgid "No Connect button in register form"
+msgstr ""
+
+#, fuzzy
+#| msgid "WooCommerce billing form"
+msgid "Billing form"
+msgstr "WooCommerce számlázási űrlap"
+
+msgid "No Connect button in billing form"
+msgstr "Ne legyen összekapcsoló gomb a számlázási űrlapnál"
+
+#, fuzzy
+#| msgid "Login layout"
+msgid "Billing layout"
+msgstr "Login elrendezése"
+
+#, fuzzy
+#| msgid "Below with separator"
+msgid "Default with separator"
+msgstr "Alul, elválasztóval"
+
+#, fuzzy
+#| msgid "No Connect button in login form"
+msgid "No Connect buttons in account details form"
+msgstr "Ne legyen összekapcsoló gomb a belépő űrlapnál"
+
+#, fuzzy
+#| msgid "Icon button"
+msgid "Link buttons on"
+msgstr "Ikon gomb"
+
+#, fuzzy
+#| msgid "Registration notification sent to"
+msgid "WooCommerce registration notification"
+msgstr "Regisztrációról értesítést kap"
+
+#, php-format
+msgid ""
+"Defines whether the registration with %1$s will send the same registration "
+"notification that %2$s does, instead of the %3$s default one."
+msgstr ""
+
+#, fuzzy, php-format
+#| msgid "Authentication successful"
+msgid "Network connection successful: %1$s"
+msgstr "Hitelesítés sikeres"
+
+#, php-format
+msgid "Network connection failed: %1$s"
+msgstr ""
+
+msgid ""
+"Please contact with your hosting provider to resolve the network issue "
+"between your server and the provider."
+msgstr ""
+
+msgid "Manage Avatar"
+msgstr ""
+
+#, php-format
+msgid "Avatar <span class=\"count\">(%s)</span>"
+msgid_plural "Avatar <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#, php-format
+msgid "%1$s &lsaquo; %2$s &#8212; WordPress"
+msgstr ""
+
+msgid "https://wordpress.org/"
+msgstr ""
+
+msgid "Powered by WordPress"
+msgstr ""
+
+#, php-format
+msgctxt "site"
+msgid "&larr; Back to %s"
+msgstr ""
+
+msgid "Your configuration needs to be verified"
+msgstr ""
+
+msgid ""
+"Before you can start letting your users register with your app it needs to "
+"be tested. This test makes sure that no users will have troubles with the "
+"login and registration process. <br> If you see error message in the popup "
+"check the copied ID and secret or the app itself. Otherwise your settings "
+"are fine."
+msgstr ""
+"Mielőtt a felhasználók beléphetnének az oldaladra az appodat le kell "
+"tesztelni. Ez a teszt segít abban, hogy a felhasználók gond nélkül tudjanak "
+"belépni és regisztrálni az oldaladra.<br> Ha valamilyen hibaüzenetet látsz a "
+"felugró ablakban, nézd meg az appodat vagy a kimásolt hitelesítő adatokat. "
+"Ha nincs hibaüzenet, az azt jelenti, hogy minden rendben van."
+
+msgid "Please save your changes to verify settings."
+msgstr ""
+
+msgid "Works Fine"
+msgstr "Megfelelően Működik"
+
+#, php-format
+msgid ""
+"This provider is currently disabled, which means that users can’t register "
+"or login via their %s account."
+msgstr ""
+"Ez a provider jelenleg nincs bekapcsolva, ami azt jelenti, hogy a "
+"felhasználók nem tudnak regisztrálni vagy belépni a %s fiókjukkal."
+
+#, php-format
+msgid ""
+"This provider works fine, but you can test it again. If you don’t want to "
+"let users register or login with %s anymore you can disable it."
+msgstr ""
+"A provider megfelelően működik, de újra letesztelheted. Ha nem a "
+"továbbiakban nem akarod, hogy regisztráljanak vagy belépjenek a %s "
+"fiókjukkal kikapcsolhatod a providertt."
+
+#, php-format
+msgid ""
+"This provider is currently enabled, which means that users can register or "
+"login via their %s account."
+msgstr ""
+"Ez a provider jelenleg be vankapcsolva, ami azt jelenti, hogy a felhasználók "
+"regisztrálhatnak és beléphetnek a %s fiókjukkal."
+
+msgid "Verify Settings Again"
+msgstr ""
+
+msgid "Please save your changes before verifying settings."
+msgstr ""
+
+msgid "Error: Email verification status is not checked in this provider!"
+msgstr ""
+
+msgid "Authentication successful"
+msgstr "Hitelesítés sikeres"
+
+msgid "Authentication error"
+msgstr "Hitelesítési hiba"
+
+msgid "Unlink successful."
+msgstr "Szétkapcsolás sikeres"
+
+msgid "Unlink is not allowed!"
+msgstr ""
+
+msgid "Unlink failed: nonce is invalid"
+msgstr ""
+
+#, php-format
+msgid "You are attempting to unlink your WordPress account from %s."
+msgstr ""
+
+#, php-format
+msgid "Do you really want to %1$s unlink %2$s it?"
+msgstr ""
+
+msgid "The test was successful"
+msgstr "A teszt sikeres volt"
+
+msgid "Authentication failed"
+msgstr "Hitelesítés sikertelen"
+
+msgid "Identifier"
+msgstr ""
+
+msgid "Profile Picture"
+msgstr ""
+
+#, php-format
+msgid ""
+"Your %1$s account is successfully linked with your account. Now you can sign "
+"in with %2$s easily."
+msgstr ""
+"A(z) %1$s fiók sikeresen össze lett kapcsolva a fiókoddal. Már könnyedén be "
+"tudsz lépni a %2$s fiókoddal is."
+
+#, php-format
+msgid ""
+"You have already linked a(n) %s account. Please unlink the current and then "
+"you can link another %s account."
+msgstr ""
+
+#, fuzzy, php-format
+#| msgid ""
+#| "This %s account is already linked with other account. Linking process "
+#| "failed!"
+msgid "This %s account is already linked to another user."
+msgstr ""
+"Az %s fiók már haszálva van egy másik közösségi fiókkal. Az összekapcsolási "
+"folyamat sikertelen!"
+
+msgid "User registration is currently not allowed."
+msgstr ""
+
+#, php-format
+msgid ""
+"We found a user with your %1$s email address but it looks like its email "
+"address is not verified.%2$sPlease login to your existing account using your "
+"password and link your %1$s account to it manually!"
+msgstr ""
+
+#, php-format
+msgid ""
+"We found a user with your %1$s email address. Unfortunately, it belongs to a "
+"different account, so we are unable to log you in. Please use the linked "
+"account or log in with your password!"
+msgstr ""
+
+#, fuzzy
+#| msgid "Register button style"
+msgid "Register For This Site"
+msgstr "Regisztrációs gomb stílusa"
+
+#, php-format
+msgid "%1$s requires PHP version %2$s+, plugin is currently NOT ACTIVE."
+msgstr ""
+
+#, php-format
+msgid ""
+"%1$s requires WordPress version %2$s+. Because you are using an earlier "
+"version, the plugin is currently NOT ACTIVE."
+msgstr ""
+
+#, php-format
+msgid "Please update %1$s to version %2$s or newer."
+msgstr ""
+
+msgid "Update now!"
+msgstr ""
+
+msgid ""
+"By clicking Register, you accept our <a href=\"#privacy_policy_url\" "
+"target=\"_blank\">Privacy Policy</a>"
+msgstr ""
+
+msgid "Hold On"
+msgstr "Egy kis türelmet kérünk..."
+
+msgid "You are being redirected to another page,<br>it may take a few seconds."
+msgstr "Átirányítás folyamatban,<br> ez eltarthat néhány másodpercig."
+
+msgid "The selected provider doesn't support embedded browsers!"
+msgstr ""
+
+msgid "Social Login"
+msgstr "Közösségi belépés"
+
+msgid "Button skin"
+msgstr "Gomb skin"
+
+msgid "Dark"
+msgstr ""
+
+msgid "Light"
+msgstr ""
+
+msgid "Black"
+msgstr ""
+
+msgid "White"
+msgstr ""
+
+#, php-format
+msgid ""
+"%1$s allows HTTPS OAuth Redirects only. You must move your site to HTTPS in "
+"order to allow login with %1$s."
+msgstr ""
+
+msgid "How to get SSL for my WordPress site?"
+msgstr ""
+
+msgid "App ID"
+msgstr "App ID"
+
+msgid "Required"
+msgstr "Kötelező"
+
+#, php-format
+msgid ""
+"If you are not sure what is your %1$s, please head over to <a "
+"href=\"%2$s\">Getting Started</a>"
+msgstr ""
+"Ha nem vagy benne biztos, hogy mit kell írnod a(z) %1$s mezőbe, menj vissza "
+"az <a href=\"%2$s\">Első lépések</a> fülre."
+
+msgid "App Secret"
+msgstr "App Secret"
+
+#, php-format
+msgid ""
+"By replacing your existing %1$s App, users with linked %1$s accounts will no "
+"longer be able to login with %1$s."
+msgstr ""
+
+msgid "Find out why?"
+msgstr ""
+
+msgid "Profile image size"
+msgstr ""
+
+msgid "Small"
+msgstr ""
+
+msgid "Medium"
+msgstr ""
+
+msgid "Large"
+msgstr ""
+
+msgid "Extra Large"
+msgstr ""
+
+msgid "Continue with <b>Facebook</b>"
+msgstr "Folytatás a <b>Facebook</b>-kal"
+
+msgid "Sign up with <b>Facebook</b>"
+msgstr "Regisztrálás a <b>Facebook</b>-kal"
+
+msgid "Link account with <b>Facebook</b>"
+msgstr "Fiók összekapcsolása a <b>Facebook</b>-kal"
+
+msgid "Unlink account from <b>Facebook</b>"
+msgstr "Szétkapcsolás <b>Facebook</b>-tól"
+
+#, php-format
+msgid ""
+"The %1$s entered did not appear to be a valid. Please enter a valid %2$s."
+msgstr ""
+"A megadott %1$s nem tűnik helyesnek. Győződj meg róla, hogy a beírt %2$s "
+"helyes."
+
+#, php-format
+msgid "Required scope: %1$s"
+msgstr ""
+
+msgid "Neutral"
+msgstr ""
+
+msgid "Client ID"
+msgstr "Client ID"
+
+msgid "Client Secret"
+msgstr "Client Secret"
+
+msgid "Select account on each login"
+msgstr ""
+
+msgid ""
+"Disable, when you don't want to see the account select prompt on each login."
+msgstr ""
+
+msgid "Original"
+msgstr ""
+
+msgid "Continue with <b>Google</b>"
+msgstr "Folytatás a <b>Google</b>-lel"
+
+msgid "Sign up with <b>Google</b>"
+msgstr "Regisztrálás a <b>Google</b>-lel"
+
+msgid "Link account with <b>Google</b>"
+msgstr "Fiók összekapcsolása a <b>Google</b>-lel"
+
+msgid "Unlink account from <b>Google</b>"
+msgstr "Szétkapcsolás <b>Google</b>-től"
+
+#, php-format
+msgid "Required API: %1$s"
+msgstr "Szükséges API: %1$s"
+
+msgid "X"
+msgstr ""
+
+msgid "Legacy"
+msgstr "Örökölt"
+
+msgid "API version"
+msgstr ""
+
+msgid "v1.1"
+msgstr ""
+
+msgid "v2"
+msgstr ""
+
+msgid "API Key"
+msgstr ""
+
+#, fuzzy
+#| msgid "API Secret"
+msgid "API Key Secret"
+msgstr "API Secret"
+
+#, fuzzy
+#| msgid "Continue with <b>VK</b>"
+msgid "Continue with <b>X</b>"
+msgstr "Folytatás a <b>VK</b>-val"
+
+#, fuzzy
+#| msgid "Sign up with <b>VK</b>"
+msgid "Sign up with <b>X</b>"
+msgstr "Regisztrálás a <b>VK</b>-val"
+
+#, fuzzy
+#| msgid "Link account with <b>VK</b>"
+msgid "Link account with <b>X</b>"
+msgstr "Fiók összekapcsolása a <b>VK</b>-val"
+
+#, fuzzy
+#| msgid "Unlink account from <b>VK</b>"
+msgid "Unlink account from <b>X</b>"
+msgstr "Szétkapcsolás <b>VK</b>-tól"
+
+#, fuzzy
+#| msgid "Register"
+msgctxt "Register form submit button label"
+msgid "Register"
+msgstr "Regisztráció"
+
+#, php-format
+msgid "%s Buttons"
+msgstr "%s Gombok"
+
+msgid "Title:"
+msgstr ""
+
+msgid "Button style:"
+msgstr "Gomb stílus:"
+
+msgid "Button align:"
+msgstr "Gombok igazítása"
+
+msgid "Show link buttons"
+msgstr ""
+
+msgid "Show unlink buttons"
+msgstr ""
+
+msgid "Social login is not allowed with this role!"
+msgstr ""
+"A közösségi fiókkal való belépés nem engedélyezett erre a felhasználói "
+"szintre."
+
+msgid "Please enter a username."
+msgstr ""
+
+msgid ""
+"This username is invalid because it uses illegal characters. Please enter a "
+"valid username."
+msgstr ""
+
+msgid ""
+"<strong>Error</strong>: This username is already registered. Please choose "
+"another one."
+msgstr ""
+
+msgid "<strong>Error</strong>: Sorry, that username is not allowed."
+msgstr ""
+
+msgid "<strong>Error</strong>: Please enter an email address."
+msgstr ""
+
+msgid "<strong>Error</strong>: The email address isn&#8217;t correct."
+msgstr ""
+
+msgid ""
+"<strong>Error</strong>: This email is already registered. Please choose "
+"another one."
+msgstr ""
+
+msgid "<strong>Error</strong>: Please enter a password."
+msgstr ""
+
+msgid "<strong>Error</strong>: Passwords may not contain the character \"\\\"."
+msgstr ""
+
+msgid ""
+"<strong>Error</strong>: Passwords don&#8217;t match. Please enter the same "
+"password in both password fields."
+msgstr ""
+
+#, php-format
+msgid ""
+"This email is already registered, please login in to your account to link "
+"with %1$s."
+msgstr ""
+
+msgid "Unexpected response: The provider didn't return the Authorization URL!"
+msgstr ""
+
+msgid "Unexpected response: Authentication has been cancelled!"
+msgstr ""
+
+msgid "Unexpected response: Immediate request failed - Setup Needed!"
+msgstr ""
+
+msgid ""
+"Unexpected response: The targeted OpenID server is not authorized to verify "
+"this request!"
+msgstr ""
+
+msgid "Unexpected response: OpenID Verification failed!"
+msgstr ""
+
+#, php-format
+msgid "Please install and activate %1$s to use the %2$s"
+msgstr ""
+
+msgid "Network Activate"
+msgstr ""
+
+msgid "Install now!"
+msgstr ""
+
+#, fuzzy
+#| msgid "Providers"
+msgid "Social Providers"
+msgstr "Providerek"
+
+#, php-format
+msgid ""
+"The Facebook Sync data needs an approved %1$s and your App must use the "
+"latest %2$s version!"
+msgstr ""
+
+#, php-format
+msgid ""
+"Most of these information can only be retrieved, when the field is marked as "
+"Public on the user's %s page!"
+msgstr ""
+
+#, php-format
+msgid ""
+"Most of these information can only be retrieved, when the field is filled on "
+"the user's %s page!"
+msgstr ""
+
+#, php-format
+msgid ""
+"Most of these information can only be retrieved, when the field is filled on "
+"the user's %s page! For the campaigns, the user must have a public campaign!"
+msgstr ""
+
+#, php-format
+msgid ""
+"The Spotify Sync data requires the %1$s with the necessary scopes enabled!"
+msgstr ""
+
+#, php-format
+msgid ""
+"The TikTok Sync data requires the %1$s with the necessary scopes enabled!"
+msgstr ""
+
+msgid "Continue with <b>Amazon</b>"
+msgstr "Folytatás az <b>Amazon</b>-nal"
+
+msgid "Sign up with <b>Amazon</b>"
+msgstr "Regisztrálás az <b>Amazon</b>-nal"
+
+msgid "Link account with <b>Amazon</b>"
+msgstr "Fiók összekapcsolása az <b>Amazon</b>-nal"
+
+msgid "Unlink account from <b>Amazon</b>"
+msgstr "Szétkapcsolás <b>Amazon</b>-tól"
+
+msgid "Delete credentials"
+msgstr ""
+
+msgid "Private Key ID"
+msgstr ""
+
+#, fuzzy
+#| msgid "Privacy"
+msgid "Private Key"
+msgstr "Privacy"
+
+msgid "Team Identifier"
+msgstr ""
+
+msgid "Service Identifier"
+msgstr ""
+
+msgid "Generate Token"
+msgstr ""
+
+msgid "Continue with <b>Apple</b>"
+msgstr "Folytatás az <b>Apple</b>-lel"
+
+msgid "Sign up with <b>Apple</b>"
+msgstr "Regisztrálás az <b>Apple</b>-lel"
+
+msgid "Link account with <b>Apple</b>"
+msgstr "Fiók összekapcsolása az <b>Apple</b>-lel"
+
+msgid "Unlink account from <b>Apple</b>"
+msgstr "Szétkapcsolás <b>Apple</b>-től"
+
+#, php-format
+msgid "An error occurred when storing of the expiration timestamp : %1$s"
+msgstr ""
+
+#, php-format
+msgid "Token generation failed: %1$s"
+msgstr ""
+
+msgid "Please check your credentials!"
+msgstr ""
+
+msgid "Private key format is not valid!"
+msgstr ""
+
+#, php-format
+msgid ""
+"%s detected that your Apple credentials have expired. Please delete the "
+"current credentials and generate new one!"
+msgstr ""
+
+msgid "Apple Credentials"
+msgstr ""
+
+msgid "Force reauthorization on each login"
+msgstr ""
+
+msgid "Enable, when you want to see the consent screen on each login."
+msgstr ""
+
+#, fuzzy
+#| msgid "Continue with <b>Disqus</b>"
+msgid "Continue with <b>Discord</b>"
+msgstr "Folytatás a <b>Disqus</b>-szal"
+
+#, fuzzy
+#| msgid "Sign up with <b>Disqus</b>"
+msgid "Sign up with <b>Discord</b>"
+msgstr "Regisztrálás a <b>Disqus</b>-szal"
+
+#, fuzzy
+#| msgid "Link account with <b>Disqus</b>"
+msgid "Link account with <b>Discord</b>"
+msgstr "Fiók összekapcsolása a <b>Disqus</b>-szal"
+
+#, fuzzy
+#| msgid "Unlink account from <b>Disqus</b>"
+msgid "Unlink account from <b>Discord</b>"
+msgstr "Szétkapcsolás <b>Disqus</b>-tól"
+
+msgid "API Secret"
+msgstr "API Secret"
+
+#, php-format
+msgid "We detected that your %1$s is probably overridden over the %2$s filter!"
+msgstr ""
+
+#, php-format
+msgid "We detected that your %1$s has been overridden over the %2$s filter!"
+msgstr ""
+
+msgid "Continue with <b>Disqus</b>"
+msgstr "Folytatás a <b>Disqus</b>-szal"
+
+msgid "Sign up with <b>Disqus</b>"
+msgstr "Regisztrálás a <b>Disqus</b>-szal"
+
+msgid "Link account with <b>Disqus</b>"
+msgstr "Fiók összekapcsolása a <b>Disqus</b>-szal"
+
+msgid "Unlink account from <b>Disqus</b>"
+msgstr "Szétkapcsolás <b>Disqus</b>-tól"
+
+msgid "Continue with <b>GitHub</b>"
+msgstr "Folytatás a <b>GitHub</b>-bal"
+
+msgid "Sign up with <b>GitHub</b>"
+msgstr "Regisztrálás a <b>GitHub</b>-bal"
+
+msgid "Link account with <b>GitHub</b>"
+msgstr "Fiók összekapcsolása a <b>GitHub</b>-bal"
+
+msgid "Unlink account from <b>GitHub</b>"
+msgstr "Szétkapcsolás <b>GitHub</b>-tól"
+
+msgid "REST API Key"
+msgstr ""
+
+#, fuzzy
+#| msgid "Client Secret"
+msgid "Client Secret Code"
+msgstr "Client Secret"
+
+#, fuzzy
+#| msgid "Authentication error"
+msgid "Authorization Prompt"
+msgstr "Hitelesítési hiba"
+
+msgid "Display account select modal"
+msgstr ""
+
+msgid "Force user to enter login credentials on each login"
+msgstr ""
+
+msgid "Start the authentication with the Kakao Account sign-up page."
+msgstr ""
+
+msgid "Email scope"
+msgstr "Email scope"
+
+msgid "Disable, when you have no rights for email address."
+msgstr ""
+
+msgid "Mini"
+msgstr ""
+
+#, fuzzy
+#| msgid "Continue with <b>VK</b>"
+msgid "Continue with <b>Kakao</b>"
+msgstr "Folytatás a <b>VK</b>-val"
+
+#, fuzzy
+#| msgid "Sign up with <b>VK</b>"
+msgid "Sign up with <b>Kakao</b>"
+msgstr "Regisztrálás a <b>VK</b>-val"
+
+#, fuzzy
+#| msgid "Link account with <b>VK</b>"
+msgid "Link account with <b>Kakao</b>"
+msgstr "Fiók összekapcsolása a <b>VK</b>-val"
+
+#, fuzzy
+#| msgid "Unlink account from <b>VK</b>"
+msgid "Unlink account from <b>Kakao</b>"
+msgstr "Szétkapcsolás <b>VK</b>-tól"
+
+msgid "Channel ID"
+msgstr ""
+
+#, fuzzy
+#| msgid "Consumer Secret"
+msgid "Channel Secret"
+msgstr "Consumer Secret"
+
+msgid "Add LINE Official Account as a friend"
+msgstr ""
+
+msgid "Don't display"
+msgstr ""
+
+msgid "Display the add friend option in the consent screen"
+msgstr ""
+
+msgid "Opens a new screen with the add friend option after the consent screen"
+msgstr ""
+
+#, php-format
+msgid ""
+"If you have a LINE Official Account, people can add it as a friend when they "
+"authorize your App. %1$sLearn more%2$s."
+msgstr ""
+
+msgid "Initial Login method"
+msgstr ""
+
+msgid "Email and Password"
+msgstr ""
+
+msgid "QR code"
+msgstr ""
+
+msgid ""
+"The selected value defines whether the Email and Password or the QR code "
+"login option will be presented in the LINE authentication screen by default."
+msgstr ""
+
+msgid "Force initial login method"
+msgstr ""
+
+msgid ""
+"Enable, if you want to offer only the selected Initial Login method in the "
+"LINE authentication screen."
+msgstr ""
+
+msgid "Allow Auto login"
+msgstr ""
+
+#, php-format
+msgid ""
+"Having the Auto login enabled could make the login fail in certain cases. "
+"%1$sLearn more%2$s."
+msgstr ""
+
+#, fuzzy
+#| msgid "Continue with <b>LinkedIn</b>"
+msgid "Continue with <b>Line</b>"
+msgstr "Folytatás a <b>LinkedIn</b>-nel"
+
+#, fuzzy
+#| msgid "Sign up with <b>LinkedIn</b>"
+msgid "Sign up with <b>Line</b>"
+msgstr "Folytatás a <b>LinkedIn</b>-nel"
+
+#, fuzzy
+#| msgid "Link account with <b>LinkedIn</b>"
+msgid "Link account with <b>Line</b>"
+msgstr "Fiók összekapcsolása a <b>LinkedIn</b>-nel"
+
+#, fuzzy
+#| msgid "Unlink account from <b>LinkedIn</b>"
+msgid "Unlink account from <b>Line</b>"
+msgstr "Szétkapcsolás <b>LinkedIn</b>-től"
+
+msgid "Continue with <b>LinkedIn</b>"
+msgstr "Folytatás a <b>LinkedIn</b>-nel"
+
+msgid "Sign up with <b>LinkedIn</b>"
+msgstr "Folytatás a <b>LinkedIn</b>-nel"
+
+msgid "Link account with <b>LinkedIn</b>"
+msgstr "Fiók összekapcsolása a <b>LinkedIn</b>-nel"
+
+msgid "Unlink account from <b>LinkedIn</b>"
+msgstr "Szétkapcsolás <b>LinkedIn</b>-től"
+
+msgid "Application (client) ID"
+msgstr ""
+
+#, fuzzy
+#| msgid "Client Secret"
+msgid "Client secret"
+msgstr "Client Secret"
+
+msgid "Audience"
+msgstr ""
+
+msgid ""
+"Accounts in any organizational directory (Any Azure AD directory - "
+"Multitenant)"
+msgstr ""
+
+msgid ""
+"Accounts in any organizational directory (Any Azure AD directory - "
+"Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)"
+msgstr ""
+
+msgid "Personal Microsoft accounts only"
+msgstr ""
+
+msgid ""
+"Only users in an organizational directory from a particular Azure AD tenant:"
+msgstr ""
+
+#, php-format
+msgid ""
+"The selected value will define the supported account types. %1$sLearn more."
+"%2$s"
+msgstr ""
+
+msgid "Display authorization and authentication dialog only when necessary"
+msgstr ""
+
+#, fuzzy
+#| msgid "Continue with <b>Yahoo</b>"
+msgid "Continue with <b>Microsoft</b>"
+msgstr "Folytatás a <b>Yahoo</b>-val"
+
+#, fuzzy
+#| msgid "Sign up with <b>Yahoo</b>"
+msgid "Sign up with <b>Microsoft</b>"
+msgstr "Regisztrálás a <b>Yahool</b>-val"
+
+#, fuzzy
+#| msgid "Link account with <b>Yahoo</b>"
+msgid "Link account with <b>Microsoft</b>"
+msgstr "Fiók összekapcsolása a <b>Yahoo</b>-val"
+
+#, fuzzy
+#| msgid "Unlink account from <b>Yahoo</b>"
+msgid "Unlink account from <b>Microsoft</b>"
+msgstr "Szétkapcsolás <b>Yahoo</b>-tól"
+
+#, fuzzy
+#| msgid "Continue with <b>Amazon</b>"
+msgid "Continue with <b>Patreon</b>"
+msgstr "Folytatás az <b>Amazon</b>-nal"
+
+#, fuzzy
+#| msgid "Sign up with <b>Amazon</b>"
+msgid "Sign up with <b>Patreon</b>"
+msgstr "Regisztrálás az <b>Amazon</b>-nal"
+
+#, fuzzy
+#| msgid "Link account with <b>Amazon</b>"
+msgid "Link account with <b>Patreon</b>"
+msgstr "Fiók összekapcsolása az <b>Amazon</b>-nal"
+
+#, fuzzy
+#| msgid "Unlink account from <b>Amazon</b>"
+msgid "Unlink account from <b>Patreon</b>"
+msgstr "Szétkapcsolás <b>Amazon</b>-tól"
+
+msgid "Secret"
+msgstr "Secret"
+
+msgid "Continue with <b>PayPal</b>"
+msgstr "Folytatás a <b>PayPal</b>-al"
+
+msgid "Sign up with <b>PayPal</b>"
+msgstr "Regisztrálás a <b>PayPal</b>-al"
+
+msgid "Link account with <b>PayPal</b>"
+msgstr "Fiók összekapcsolása a <b>PayPal</b>-al"
+
+msgid "Unlink account from <b>PayPal</b>"
+msgstr "Szétkapcsolás <b>PayPal</b>-tól"
+
+#, fuzzy
+#| msgid "Continue with <b>VK</b>"
+msgid "Continue with <b>Reddit</b>"
+msgstr "Folytatás a <b>VK</b>-val"
+
+#, fuzzy
+#| msgid "Sign up with <b>VK</b>"
+msgid "Sign up with <b>Reddit</b>"
+msgstr "Regisztrálás a <b>VK</b>-val"
+
+#, fuzzy
+#| msgid "Link account with <b>VK</b>"
+msgid "Link account with <b>Reddit</b>"
+msgstr "Fiók összekapcsolása a <b>VK</b>-val"
+
+#, fuzzy
+#| msgid "Unlink account from <b>VK</b>"
+msgid "Unlink account from <b>Reddit</b>"
+msgstr "Szétkapcsolás <b>VK</b>-tól"
+
+msgid "Slack Team ID"
+msgstr ""
+
+msgid "Optional"
+msgstr ""
+
+#, php-format
+msgid ""
+"The Team ID of a workspace to attempt to restrict to. %1$sLearn more.%2$s"
+msgstr ""
+
+msgid "72x72"
+msgstr ""
+
+msgid "192x192"
+msgstr ""
+
+msgid "512x512"
+msgstr ""
+
+msgid "1024x1024"
+msgstr ""
+
+#, fuzzy
+#| msgid "Sign up with <b>Facebook</b>"
+msgid "Sign in with <b>Slack</b>"
+msgstr "Regisztrálás a <b>Facebook</b>-kal"
+
+#, fuzzy
+#| msgid "Sign up with <b>Facebook</b>"
+msgid "Sign up with <b>Slack</b>"
+msgstr "Regisztrálás a <b>Facebook</b>-kal"
+
+#, fuzzy
+#| msgid "Link account with <b>Facebook</b>"
+msgid "Link account with <b>Slack</b>"
+msgstr "Fiók összekapcsolása a <b>Facebook</b>-kal"
+
+#, fuzzy
+#| msgid "Unlink account from <b>Facebook</b>"
+msgid "Unlink account from <b>Slack</b>"
+msgstr "Szétkapcsolás <b>Facebook</b>-tól"
+
+msgid "Green"
+msgstr ""
+
+#, fuzzy
+#| msgid "Continue with <b>LinkedIn</b>"
+msgid "Continue with <b>Spotify</b>"
+msgstr "Folytatás a <b>LinkedIn</b>-nel"
+
+#, fuzzy
+#| msgid "Sign up with <b>Facebook</b>"
+msgid "Sign up with <b>Spotify</b>"
+msgstr "Regisztrálás a <b>Facebook</b>-kal"
+
+#, fuzzy
+#| msgid "Link account with <b>Facebook</b>"
+msgid "Link account with <b>Spotify</b>"
+msgstr "Fiók összekapcsolása a <b>Facebook</b>-kal"
+
+#, fuzzy
+#| msgid "Unlink account from <b>Facebook</b>"
+msgid "Unlink account from <b>Spotify</b>"
+msgstr "Szétkapcsolás <b>Facebook</b>-tól"
+
+msgid "Web API Key"
+msgstr ""
+
+#, fuzzy
+#| msgid "Continue with <b>LinkedIn</b>"
+msgid "Continue with <b>Steam</b>"
+msgstr "Folytatás a <b>LinkedIn</b>-nel"
+
+#, fuzzy
+#| msgid "Sign up with <b>Facebook</b>"
+msgid "Sign up with <b>Steam</b>"
+msgstr "Regisztrálás a <b>Facebook</b>-kal"
+
+#, fuzzy
+#| msgid "Link account with <b>Facebook</b>"
+msgid "Link account with <b>Steam</b>"
+msgstr "Fiók összekapcsolása a <b>Facebook</b>-kal"
+
+#, fuzzy
+#| msgid "Unlink account from <b>Facebook</b>"
+msgid "Unlink account from <b>Steam</b>"
+msgstr "Szétkapcsolás <b>Facebook</b>-tól"
+
+msgid "Error: The 64-bit SteamID can not be retrieved for this user!"
+msgstr ""
+
+#, fuzzy
+#| msgid "Client ID"
+msgid "Client key"
+msgstr "Client ID"
+
+#, fuzzy
+#| msgid "Continue with <b>LinkedIn</b>"
+msgid "Continue with <b>TikTok</b>"
+msgstr "Folytatás a <b>LinkedIn</b>-nel"
+
+#, fuzzy
+#| msgid "Sign up with <b>LinkedIn</b>"
+msgid "Sign up with <b>TikTok</b>"
+msgstr "Folytatás a <b>LinkedIn</b>-nel"
+
+#, fuzzy
+#| msgid "Link account with <b>LinkedIn</b>"
+msgid "Link account with <b>TikTok</b>"
+msgstr "Fiók összekapcsolása a <b>LinkedIn</b>-nel"
+
+#, fuzzy
+#| msgid "Unlink account from <b>LinkedIn</b>"
+msgid "Unlink account from <b>TikTok</b>"
+msgstr "Szétkapcsolás <b>LinkedIn</b>-től"
+
+#, fuzzy
+#| msgid "Continue with <b>Twitter</b>"
+msgid "Continue with <b>Twitch</b>"
+msgstr "Folytatás a <b>Twitter</b>-rel"
+
+#, fuzzy
+#| msgid "Sign up with <b>Twitter</b>"
+msgid "Sign up with <b>Twitch</b>"
+msgstr "Regisztrálás a <b>Twitter</b>-rel"
+
+#, fuzzy
+#| msgid "Link account with <b>Twitter</b>"
+msgid "Link account with <b>Twitch</b>"
+msgstr "Fiók összekapcsolása a <b>Twitter</b>-rel"
+
+#, fuzzy
+#| msgid "Unlink account from <b>Twitter</b>"
+msgid "Unlink account from <b>Twitch</b>"
+msgstr "Szétkapcsolás <b>Twitter</b>-től"
+
+msgid "Secure key"
+msgstr ""
+
+msgid "Continue with <b>VK</b>"
+msgstr "Folytatás a <b>VK</b>-val"
+
+msgid "Sign up with <b>VK</b>"
+msgstr "Regisztrálás a <b>VK</b>-val"
+
+msgid "Link account with <b>VK</b>"
+msgstr "Fiók összekapcsolása a <b>VK</b>-val"
+
+msgid "Unlink account from <b>VK</b>"
+msgstr "Szétkapcsolás <b>VK</b>-tól"
+
+#, php-format
+msgid ""
+"%1$s: %2$s introduced new App types and modified their endpoints which are "
+"not compatible with the old Apps.%3$sWe detected that, you are currently "
+"using an old %2$s App, so we had to disable your %2$s configuration. To "
+"resolve the problem, please create a new App based on our %4$s guide, and "
+"replace the credentials on the %5$s tab with your new App credentials."
+msgstr ""
+
+msgid "VKontakte"
+msgstr ""
+
+#, fuzzy, php-format
+#| msgid "Click on the Create button"
+msgid "Open %1$s - %2$s"
+msgstr "Kattints a \"Create\" gombra"
+
+msgid "Continue with <b>WordPress.com</b>"
+msgstr "Folytatás a <b>WordPress.com</b>-al"
+
+msgid "Sign up with <b>WordPress.com</b>"
+msgstr "Regisztrálás a <b>WordPress.com</b>-al"
+
+msgid "Link account with <b>WordPress.com</b>"
+msgstr "Fiók összekapcsolása a <b>WordPress.com</b>-al"
+
+msgid "Unlink account from <b>WordPress.com</b>"
+msgstr "Szétkapcsolás <b>WordPress.com</b>-tól"
+
+msgid "Continue with <b>Yahoo</b>"
+msgstr "Folytatás a <b>Yahoo</b>-val"
+
+msgid "Sign up with <b>Yahoo</b>"
+msgstr "Regisztrálás a <b>Yahool</b>-val"
+
+msgid "Link account with <b>Yahoo</b>"
+msgstr "Fiók összekapcsolása a <b>Yahoo</b>-val"
+
+msgid "Unlink account from <b>Yahoo</b>"
+msgstr "Szétkapcsolás <b>Yahoo</b>-tól"
+
+#, fuzzy, php-format
+#| msgid "Required API: %1$s"
+msgid "Required permission: %1$s"
+msgstr "Szükséges API: %1$s"
+
+msgid "OR"
+msgstr "VAGY"
+
+msgid "Social accounts"
+msgstr "Közösségi fiókok"
+
+msgid "Registration confirmation will be emailed to you."
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Hide password"
+msgstr ""
+
+msgid "Strength indicator"
+msgstr ""
+
+msgid "Confirm use of weak password"
+msgstr ""
+
+msgid "Confirm password"
+msgstr ""
+
+msgid "Username"
+msgstr ""
+
+#, fuzzy, php-format
+#~| msgid "Navigate to %s"
+#~ msgid "Navigate to <b>%s</b>"
+#~ msgstr "Látogasd meg ezt az oldalt: %s"
+
+#, php-format
+#~ msgid "Log in with your %s credentials if you are not logged in"
+#~ msgstr "Lépj be a %s fiókoddal ha még nem vagy belépve."
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Press the %1$s option that you can find below the %2$s section."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Add the following URL to the \"Live Return URL\" field <b>%s</b> "
+#~ msgid "Add the following URL to the %s field:"
+#~ msgstr "Tedd a következő linket az \"Live Return URL\" mezőbe: <b>%s</b>"
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Click on the %1$s button."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy
+#~| msgid ""
+#~| "Click on the \"Credentials\" in the left hand menu to create new API "
+#~| "credentials"
+#~ msgid "Click on the \"<b>Credentials</b>\" in the left hand menu"
+#~ msgstr ""
+#~ "Kattints a \"Credentials\" feliratra a bal oldali menüben hogy új API "
+#~ "adatokat készíts"
+
+#, fuzzy, php-format
+#~| msgid "Make sure that the \"%1$s\" field contains %2$s"
+#~ msgid ""
+#~ "Under the \"<b>%1$s</b>\" section click \"<b>%2$s</b>\" and add the "
+#~ "following URL:"
+#~ msgstr "Győződj meg róla, hogy a \"%1$s\" mező tartalmazza: %2$s"
+
+#, fuzzy
+#~| msgid "Click on \"Save\""
+#~ msgid "Click on \"<b>Save</b>\""
+#~ msgstr "Kattints a \"Save\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Click on the %1$s button at %2$s."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Make sure that the \"%1$s\" field contains %2$s"
+#~ msgid "Make sure the %1$s field contains the following URL: %2$s"
+#~ msgstr "Győződj meg róla, hogy a \"%1$s\" mező tartalmazza: %2$s"
+
+#, fuzzy, php-format
+#~| msgid "Click on \"Save\""
+#~ msgid "Click on %s"
+#~ msgstr "Kattints a \"Save\" gombra"
+
+#, php-format
+#~ msgid ""
+#~ "To allow your visitors to log in with their %1$s account, first you must "
+#~ "create an %1$s App. The following guide will help you through the %1$s "
+#~ "App creation process. After you have created your %1$s App, head over to "
+#~ "\"Settings\" and configure the given \"%2$s\" and \"%3$s\" according to "
+#~ "your %1$s App."
+#~ msgstr ""
+#~ "Ahhoz. hogy a felhasználók beléphessenek a %1$s fiókjukkal, először létre "
+#~ "kell hoznod egy %1$s Appot. Az alábbi útmutató végig vezet a %1$s App "
+#~ "létrehozás folyamatán. Miután a(z) %1$s fiókod elkészült, menj a "
+#~ "\"Beállítások\" fülre és állítsd be a \"%2$s\"-t és \"%3$s\"-t a %1$s "
+#~ "Appod alapján."
+
+#, php-format
+#~ msgid "Navigate to %s"
+#~ msgstr "Látogasd meg ezt az oldalt: %s"
+
+#, php-format
+#~ msgid "Visit %s"
+#~ msgstr "Látogass el ide: %s."
+
+#, fuzzy, php-format
+#~| msgid "Add the following URL to the \"Live Return URL\" field <b>%s</b> "
+#~ msgid "Add the following URL to the %s field: "
+#~ msgstr "Tedd a következő linket az \"Live Return URL\" mezőbe: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "Click on the name of your %s App."
+#~ msgid "Click on the name of your service."
+#~ msgstr "Kattints az %s Appod nevére."
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Fill the \"Base domain\" field with your domain, probably: <b>%s</b>"
+#~ msgid ""
+#~ "Fill the \"<b>Domains and Subdomains</b>\" field with your domain name "
+#~ "probably: <b>%s</b>"
+#~ msgstr ""
+#~ "Írd be a weboldalad főoldalának címét a \"Base domain\" mezőbe. "
+#~ "Valószínűleg ez lesz az: <b>%s</b>"
+
+#, fuzzy, php-format
+#~| msgid "Add the following URL to the \"Live Return URL\" field <b>%s</b> "
+#~ msgid "Add the following URL in the %s field:"
+#~ msgstr "Tedd a következő linket az \"Live Return URL\" mezőbe: <b>%s</b>"
+
+#, php-format
+#~ msgid "Log in with your %s credentials if you are not logged in."
+#~ msgstr "Lépj be a %s fiókoddal ha még nem vagy belépve."
+
+#, php-format
+#~ msgid "Click on the name of your %s App."
+#~ msgstr "Kattints az %s Appod nevére."
+
+#, fuzzy
+#~| msgid ""
+#~| "Select \"Read only\" at Default Access under the Authentication section."
+#~ msgid ""
+#~ "Select the \"<b>Settings</b>\" tab and scroll down to the Authentication "
+#~ "section!"
+#~ msgstr ""
+#~ "Válaszd ki a \"Read only\"-t a Default Access-nél az Authentication "
+#~ "szekcióban."
+
+#, fuzzy
+#~| msgid "Click on the \"Save Changes\" button."
+#~ msgid "Click on the \"<b>Save Changes</b>\" button."
+#~ msgstr "Kattints a \"Save Changes\" gombra."
+
+#, fuzzy, php-format
+#~| msgid "Click on the name of your %s App."
+#~ msgid "Click on the name of the App you configured %s with."
+#~ msgstr "Kattints az %s Appod nevére."
+
+#, fuzzy, php-format
+#~| msgid "Add the following URL to the \"Live Return URL\" field <b>%s</b> "
+#~ msgid "Make sure the <b>Homepage URL</b> matches with: <b>%s</b>"
+#~ msgstr "Tedd a következő linket az \"Live Return URL\" mezőbe: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "Hit update to save the changes"
+#~ msgid "Press the <b>Update application</b> button to save the changes."
+#~ msgstr "Kattints az \"update\" gombra és mentsd el a beállításaidat."
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Select \"Read only\" at Default Access under the Authentication section."
+#~ msgid "Select the %1$s tab on the left and scroll down to the %2$s section!"
+#~ msgstr ""
+#~ "Válaszd ki a \"Read only\"-t a Default Access-nél az Authentication "
+#~ "szekcióban."
+
+#, fuzzy, php-format
+#~| msgid "Click on \"Save\""
+#~ msgid "Click on %s."
+#~ msgstr "Kattints a \"Save\" gombra"
+
+#, fuzzy
+#~| msgid "Add the following URL to the \"Live Return URL\" field <b>%s</b> "
+#~ msgid "Add the following URL:"
+#~ msgstr "Tedd a következő linket az \"Live Return URL\" mezőbe: <b>%s</b>"
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Click on the %s button."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Navigate to %s"
+#~ msgid "Navigate to your %s"
+#~ msgstr "Látogasd meg ezt az oldalt: %s"
+
+#, fuzzy, php-format
+#~| msgid "Add the following URL to the \"Callback URLs\" field: <b>%s</b>"
+#~ msgid "Change your URL in the %s field:"
+#~ msgstr "Tedd a következő linket az \"Callback URL\" mezőbe: <b>%s</b>"
+
+#, fuzzy, php-format
+#~| msgid "Add the following URL to the \"Live Return URL\" field <b>%s</b> "
+#~ msgid "Add the following URL at %s:"
+#~ msgstr "Tedd a következő linket az \"Live Return URL\" mezőbe: <b>%s</b>"
+
+#, fuzzy, php-format
+#~| msgid "Hit update to save the changes"
+#~ msgid "Click on %s to save the changes"
+#~ msgstr "Kattints az \"update\" gombra és mentsd el a beállításaidat."
+
+#, fuzzy, php-format
+#~| msgid "Log in with your %s credentials if you are not logged in yet"
+#~ msgid "Log in with your %s credentials if you are not logged in yet."
+#~ msgstr "Lépj be a %s fiókoddal ha még nem vagy belépve."
+
+#, fuzzy
+#~| msgid "Add the following URL to the \"Redirect URLs\" field <b>%s</b> "
+#~ msgid "Click on the link next to the Redirect URIs label."
+#~ msgstr "Tedd a következő linket az \"Redirect URLs:\" mezőbe: <b>%s</b>"
+
+#, fuzzy, php-format
+#~| msgid "Click on the name of your %s App."
+#~ msgid "Click on the pencil/edit icon next to the name of your %s App."
+#~ msgstr "Kattints az %s Appod nevére."
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Scroll down to the %s field."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Click on the %s button"
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Click on the name of your %s App."
+#~ msgid "Click on the name of your %s App, under the REST API apps section."
+#~ msgstr "Kattints az %s Appod nevére."
+
+#, fuzzy, php-format
+#~| msgid "Make sure that the \"%1$s\" field contains %2$s"
+#~ msgid ""
+#~ "Scroll down to %1$s section, find the %2$s feature and and click on the "
+#~ "%3$s link."
+#~ msgstr "Győződj meg róla, hogy a \"%1$s\" mező tartalmazza: %2$s"
+
+#, fuzzy, php-format
+#~| msgid "Add the following URL to the \"Live Return URL\" field <b>%s</b> "
+#~ msgid "Add the following URL to the %s field and press %2$s:"
+#~ msgstr "Tedd a következő linket az \"Live Return URL\" mezőbe: <b>%s</b>"
+
+#, fuzzy, php-format
+#~| msgid "Click on the name of your %s App."
+#~ msgid "Click on %1$s in the bottom left corner of your %2$s App."
+#~ msgstr "Kattints az %s Appod nevére."
+
+#, fuzzy, php-format
+#~| msgid "Select your app."
+#~ msgid "Select your %s App."
+#~ msgstr "Válaszd ki az appodat."
+
+#, fuzzy
+#~| msgid "Click on the \"Save Changes\" button."
+#~ msgid "Click on the \"<b>Add</b>\" and \"<b>Save URLs</b>\" button."
+#~ msgstr "Kattints a \"Save Changes\" gombra."
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Select \"Read only\" at Default Access under the Authentication section."
+#~ msgid ""
+#~ "Find the %1$s button on the top right and scroll down to the %2$s button, "
+#~ "and click on it!"
+#~ msgstr ""
+#~ "Válaszd ki a \"Read only\"-t a Default Access-nél az Authentication "
+#~ "szekcióban."
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Finally, click on the %s button at the bottom."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Log in with your %s credentials if you are not logged in yet"
+#~ msgid "Log in to your %s developer account, if you are not logged in yet."
+#~ msgstr "Lépj be a %s fiókoddal ha még nem vagy belépve."
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Scroll down to the %s section."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Enter your domain name to the App Domains"
+#~ msgid ""
+#~ "If the URLs don't match, enter the URL of your website into the %1$s "
+#~ "field, probably: %2$s"
+#~ msgstr "Írd be a domain neved az \"App Domains\" mezőbe"
+
+#, fuzzy, php-format
+#~| msgid "Enter your domain name to the App Domains"
+#~ msgid "Add the following URL to the %s field, if it is not added already: "
+#~ msgstr "Írd be a domain neved az \"App Domains\" mezőbe"
+
+#, fuzzy
+#~| msgid "Click on the name of your %s App."
+#~ msgid "Click on the card associated with your App."
+#~ msgstr "Kattints az %s Appod nevére."
+
+#, fuzzy, php-format
+#~| msgid "Hit update to save the changes"
+#~ msgid "Click on %s button to save the changes."
+#~ msgstr "Kattints az \"update\" gombra és mentsd el a beállításaidat."
+
+#, fuzzy
+#~| msgid "Hit update to save the changes"
+#~ msgid "Click on \"<b>Update</b>\" to save the changes"
+#~ msgstr "Kattints az \"update\" gombra és mentsd el a beállításaidat."
+
+#, php-format
+#~ msgid ""
+#~ "To allow your visitors to log in with their %1$s account, first you must "
+#~ "create a %1$s App. The following guide will help you through the %1$s App "
+#~ "creation process. After you have created your %1$s App, head over to "
+#~ "\"Settings\" and configure the given \"%2$s\" and \"%3$s\" according to "
+#~ "your %1$s App."
+#~ msgstr ""
+#~ "Ahhoz. hogy a felhasználók beléphessenek a %1$s fiókjukkal, először létre "
+#~ "kell hoznod egy %1$s Appot. Az alábbi útmutató végig vezet a %1$s App "
+#~ "létrehozás folyamatán. Miután a(z) %1$s fiókod elkészült, menj a "
+#~ "\"Beállítások\" fülre és állítsd be a \"%2$s\"-t és \"%3$s\"-t a %1$s "
+#~ "Appod alapján."
+
+#, php-format
+#~ msgctxt "App creation"
+#~ msgid "Create %s"
+#~ msgstr "%s létrehozása"
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid ""
+#~ "Fill the %1$s and %2$s fields. The specified app name will appear on your "
+#~ "%3$s!"
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Click on the %1$s button and choose the %2$s option!"
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid ""
+#~ "Click on the %1$s button, read the documents listed below the "
+#~ "requirements, then click %1$s again."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Name your project and then click on the Create button again"
+#~ msgid ""
+#~ "Below the %1$s section, find the %2$s permission and click on the %3$s "
+#~ "button."
+#~ msgstr "Adj nevet a projektnek és kattints a \"Create\" gombra újra."
+
+#, fuzzy, php-format
+#~| msgid "Click the \"Create App\" button."
+#~ msgid ""
+#~ "Click on the %1$s button. (If you receive a blank page after you pressed "
+#~ "the %1$s button, you might need to refresh the page.)"
+#~ msgstr "Kattints a \"Create App\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Name your project and then click on the Create button again"
+#~ msgid ""
+#~ "On the left side in the side bar, click on the gear icon ( %1$s ) then "
+#~ "click %2$s."
+#~ msgstr "Adj nevet a projektnek és kattints a \"Create\" gombra újra."
+
+#, fuzzy, php-format
+#~| msgid "Enter your domain name to the App Domains"
+#~ msgid "Enter your domain name to the %1$s field, probably: %2$s"
+#~ msgstr "Írd be a domain neved az \"App Domains\" mezőbe"
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Fill up the \"Privacy Policy URL\". Provide a publicly available and "
+#~| "easily accessible privacy policy that explains what data you are "
+#~| "collecting and how you will use that data."
+#~ msgid ""
+#~ "Fill up the %1$s field. Provide a publicly available and easily "
+#~ "accessible privacy policy that explains what data you are collecting and "
+#~ "how you will use that data."
+#~ msgstr ""
+#~ "Töltsd ki a \"Privacy Policy URL\" mezőt. A megadott link legyen publikus "
+#~ "és tartalmazza az adatvédelmi irányelveket, amik elmagyarázzák, milyen "
+#~ "információkat gyűjtesz és mihez kezdesz velük."
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Fill up the \"Privacy Policy URL\". Provide a publicly available and "
+#~| "easily accessible privacy policy that explains what data you are "
+#~| "collecting and how you will use that data."
+#~ msgid ""
+#~ "Fill up the %1$s field. Provide a publicly available terms and conditions "
+#~ "page link, where you describe the rules and guidelines that your visitors "
+#~ "must agree to."
+#~ msgstr ""
+#~ "Töltsd ki a \"Privacy Policy URL\" mezőt. A megadott link legyen publikus "
+#~ "és tartalmazza az adatvédelmi irányelveket, amik elmagyarázzák, milyen "
+#~ "információkat gyűjtesz és mihez kezdesz velük."
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Select a %1$s, an %2$s."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Add the following URL to the \"Redirect URLs\" field <b>%s</b> "
+#~ msgid ""
+#~ "Select %1$s platform, then press %2$s and enter the following URL into "
+#~ "the %3$s field: %4$s"
+#~ msgstr "Tedd a következő linket az \"Redirect URLs:\" mezőbe: <b>%s</b>"
+
+#, fuzzy, php-format
+#~| msgid "Name your project and then click on the Create button again"
+#~ msgid "Once your verification is completed, click on the %1$s tab. "
+#~ msgstr "Adj nevet a projektnek és kattints a \"Create\" gombra újra."
+
+#, fuzzy, php-format
+#~| msgid "Name your project and then click on the Create button again"
+#~ msgid "After everything is done, click on the %1$s tab, then click %2$s."
+#~ msgstr "Adj nevet a projektnek és kattints a \"Create\" gombra újra."
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Here you can see your \"APP ID\" and you can see your \"App secret\" if "
+#~| "you click on the \"Show\" button. These will be needed in plugin's "
+#~| "settings."
+#~ msgid ""
+#~ "At the top of the page you can find your %1$s and you can see your %2$s "
+#~ "if you click on the %3$s button. These will be needed in plugin’s "
+#~ "settings."
+#~ msgstr ""
+#~ "Itt találod az \"App ID\"-t és az \"App Secret\"-et, ha a \"Show\" gombra "
+#~ "kattintasz. Ezekre lesz szükséged a plugin beállításainál."
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "If you don't have a project yet, you'll need to create one. You can do "
+#~| "this by clicking on the blue \"Create project\" button on the right "
+#~| "side!  ( If you already have a project, click on the name of your "
+#~| "project in the dashboard instead, which will bring up a modal and click "
+#~| "New Project. )"
+#~ msgid ""
+#~ "If you don't have a project yet, you'll need to create one. You can do "
+#~ "this by clicking on the \"%1$s\" button (if you already have a project, "
+#~ "then in the top bar click on the name of your project instead). This will "
+#~ "bring up a modal, then click \"%2$s\"."
+#~ msgstr ""
+#~ "Ha még nincs projected, készítened kell egyet. Ezt a job oldalon levő "
+#~ "\"Create project\" gombra kattintva teheted meg! ( Ha már van projected, "
+#~ "kattints a projected nevére a dashboardon, ami előfog hozni egy ablakot "
+#~ "ahol a \"New Project\"-re kell kattintanod.)"
+
+#, fuzzy, php-format
+#~| msgid "Name your project and then click on the Create button again"
+#~ msgid "Name your project and then click on the \"%s\" button again!"
+#~ msgstr "Adj nevet a projektnek és kattints a \"Create\" gombra újra."
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Click on the blue \"%s\" button."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Agree to the \"%1$s\", and click \"%2$s\"."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Next, select the \"%s\" option from the left menu."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Select an \"%s\"."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Fill the \"Authorized domains\" field with your domain name probably: "
+#~| "<b>%s</b> without subdomains!"
+#~ msgid ""
+#~ "Under the \"%1$s\" section press the \"%2$s\" button and enter your "
+#~ "domain name without subdomains, probably: %3$s"
+#~ msgstr ""
+#~ "Írd be a weboldalad főoldalának címét a \"Authorized domains\" mezőbe. "
+#~ "Valószínűleg ez lesz az: <b>%s</b>"
+
+#, fuzzy, php-format
+#~| msgid "Name your project and then click on the Create button again"
+#~ msgid "Once you are done, click on the \"%s\" button."
+#~ msgstr "Adj nevet a projektnek és kattints a \"Create\" gombra újra."
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid ""
+#~ "Next, select the \"%1$s\" option from the left menu, then click \"%2$s\"."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Make sure that the \"%1$s\" field contains %2$s"
+#~ msgid "Under the \"%1$s\" section click \"%2$s\" and add the following URL:"
+#~ msgstr "Győződj meg róla, hogy a \"%1$s\" mező tartalmazza: %2$s"
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Click on the \"%s\" button."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "A modal should pop up with your credentials. If that doesn't happen, go "
+#~| "to the Credentials in the left hand menu and select your app by clicking "
+#~| "on its name and you'll be able to copy-paste the Client ID and Client "
+#~| "Secret from there."
+#~ msgid ""
+#~ "A modal should pop up with your credentials. If that doesn't happen, go "
+#~ "to the \"%1$s\" in the left hand menu and select your app by clicking on "
+#~ "its name and you'll be able to copy-paste the \"%2$s\" and \"%3$s\" from "
+#~ "there."
+#~ msgstr ""
+#~ "Fel fog ugrani egy ablak a hitelesítő adataiddal. Ha ez nem történik meg, "
+#~ "menj a \"Credentials\" fülre a bal oldali menüben és választ ki az "
+#~ "appodat a nevére kattintva. Innen ki tudod másolni a Client ID-t és "
+#~ "Client Secretet."
+
+#, fuzzy, php-format
+#~| msgid "Click on \"Save\""
+#~ msgid "Click on \"<b>%s</b>\"!"
+#~ msgstr "Kattints a \"Save\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Click on the  the %1$s button on the bottom right corner."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Name your project and then click on the Create button again"
+#~ msgid "Scroll down and click on the %1$s button at %2$s."
+#~ msgstr "Adj nevet a projektnek és kattints a \"Create\" gombra újra."
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Choose the %1$s option at %2$s."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Select the %1$s option for %2$s."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Add the following URL to the \"Live Return URL\" field <b>%s</b> "
+#~ msgid "Enter your site's URL to the \"<b>%1$s</b>\" field: <b>%2$s</b>"
+#~ msgstr "Tedd a következő linket az \"Live Return URL\" mezőbe: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "User and Admin"
+#~ msgid "User Rate Limit:"
+#~ msgstr "Felhasználó és Admin"
+
+#, fuzzy
+#~| msgid ""
+#~| "If you don't have a Security Profile yet, you'll need to create one. You "
+#~| "can do this by clicking on the orange \"Create a New Security Profile\" "
+#~| "button on the left side."
+#~ msgid ""
+#~ "If you don't have a Security Profile yet, you'll need to create one. You "
+#~ "can do this by clicking on the orange \"<b>Create a New Security Profile</"
+#~ "b>\" button on the left side."
+#~ msgstr ""
+#~ "Ha még nincs Security Profilod, újat kell készítened. Ezt megteheted a "
+#~ "narancssárga \"Create a New Security Profile\" gombra kattintva a bal "
+#~ "oldalon."
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Fill \"Allowed Origins\" with the url of your homepage, probably: <b>%s</"
+#~| "b>"
+#~ msgid ""
+#~ "Fill \"<b>Allowed Origins</b>\" with the url of your homepage, probably: "
+#~ "<b>%s</b>"
+#~ msgstr ""
+#~ "Írd be a weboldalad főoldalának címét a \"Allowed Origins\" mezőbe. "
+#~ "Valószínűleg ez lesz az: <b>%s</b>"
+
+#, fuzzy
+#~| msgid ""
+#~| "Find the necessary \"Client ID\" and \"Client Secret\" at the middle of "
+#~| "the page, under the \"Web Settings\" tab."
+#~ msgid ""
+#~ "Find the necessary \"<b>Client ID</b>\" and \"<b>Client Secret</b>\" at "
+#~ "the middle of the page, under the \"<b>Web Settings</b>\" tab."
+#~ msgstr ""
+#~ "Itt találod a \"Client ID\"-t és a \"Client Secret\"-et az oldal közepén, "
+#~ "a Web Settings tab alatt."
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "To allow your visitors to log in with their %1$s account, first you must "
+#~| "create an %1$s App. The following guide will help you through the %1$s "
+#~| "App creation process. After you have created your %1$s App, head over to "
+#~| "\"Settings\" and configure the given \"%2$s\" and \"%3$s\" according to "
+#~| "your %1$s App."
+#~ msgid ""
+#~ "To allow your visitors to log in with their %1$s account, first you must "
+#~ "create an %1$s App. The following guide will help you through the %1$s "
+#~ "App creation process. After you have created your %1$s App, head over to "
+#~ "\"Settings\" and configure the given \"%2$s\", \"%3$s\", \"%4$s\" and "
+#~ "\"%5$s\" according to your %1$s App."
+#~ msgstr ""
+#~ "Ahhoz. hogy a felhasználók beléphessenek a %1$s fiókjukkal, először létre "
+#~ "kell hoznod egy %1$s Appot. Az alábbi útmutató végig vezet a %1$s App "
+#~ "létrehozás folyamatán. Miután a(z) %1$s fiókod elkészült, menj a "
+#~ "\"Beállítások\" fülre és állítsd be a \"%2$s\"-t és \"%3$s\"-t a %1$s "
+#~ "Appod alapján."
+
+#, fuzzy
+#~| msgid "Click the \"Create App\" button."
+#~ msgid ""
+#~ "Click the \"<b>Next</b>\" button then press the \"<b>Done</b>\" button."
+#~ msgstr "Kattints a \"Create App\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Navigate to %s"
+#~ msgid "Navigate to: <b>%s</b>"
+#~ msgstr "Látogasd meg ezt az oldalt: %s"
+
+#, fuzzy
+#~| msgid "Click on the name of your %s App."
+#~ msgid "Click on the <b>name of your Key</b>."
+#~ msgstr "Kattints az %s Appod nevére."
+
+#, fuzzy
+#~| msgid "Click on the \"Create New Application\" button."
+#~ msgid "Click the \"<b>New Application</b>\" button."
+#~ msgstr "Kattints a \"Create New Application\" gombra."
+
+#, fuzzy
+#~| msgid "Read the Developer Terms and click the Create button again!"
+#~ msgid ""
+#~ "Fill the \"<b>Name</b>\" field and click the \"<b>Create</b>\" button."
+#~ msgstr ""
+#~ "Olvasd el a Fejlesztői feltételeket és kattints a Create gombra újra."
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Click on the \"Credentials\" in the left hand menu to create new API "
+#~| "credentials"
+#~ msgid ""
+#~ "On the left side, click on the “<b>%1$s</b>” menu point in the Settings."
+#~ msgstr ""
+#~ "Kattints a \"Credentials\" feliratra a bal oldali menüben hogy új API "
+#~ "adatokat készíts"
+
+#, fuzzy
+#~| msgid "Click on the \"Save Changes\" button."
+#~ msgid "Click the \"<b>Save Changes</b>\" button."
+#~ msgstr "Kattints a \"Save Changes\" gombra."
+
+#, fuzzy
+#~| msgid ""
+#~| "Find the necessary \"Client ID\" and \"Client Secret\" at the middle of "
+#~| "the page, under the \"Web Settings\" tab."
+#~ msgid ""
+#~ "Copy the necessary \"<b>Client ID</b>\" and \"<b>Client Secret</b>\" "
+#~ "values and fill these fields in the plugin settings!"
+#~ msgstr ""
+#~ "Itt találod a \"Client ID\"-t és a \"Client Secret\"-et az oldal közepén, "
+#~ "a Web Settings tab alatt."
+
+#, fuzzy
+#~| msgid ""
+#~| "Click on the link \"registering an application\" under the Applications "
+#~| "tab."
+#~ msgid ""
+#~ "Click on the \"<b>Registering new application</b>\" button under the "
+#~ "Applications tab."
+#~ msgstr ""
+#~ "Kattints a \"registering an application\" linker az Aplications tab alatt."
+
+#, fuzzy, php-format
+#~| msgid "Fill \"Website\" with the url of your homepage, probably: <b>%s</b>"
+#~ msgid ""
+#~ "Fill \"<b>Website</b>\" with the url of your homepage, probably: <b>%s</b>"
+#~ msgstr ""
+#~ "Írd be a weboldalad főoldalának címét a \"Website\" mezőbe. Valószínűleg "
+#~ "ez lesz az: <b>%s</b>"
+
+#, fuzzy
+#~| msgid ""
+#~| "Complete the Human test and click the \"Register my application\" button."
+#~ msgid ""
+#~ "Complete the Human test and click the \"<b>Register my application</b>\" "
+#~ "button."
+#~ msgstr ""
+#~ "Végezze el az Ember tesztet és kattintson a \"Register my application\" "
+#~ "gombra."
+
+#, fuzzy, php-format
+#~| msgid "Fill the \"Domains\" field with your domain name like: <b>%s</b>"
+#~ msgid ""
+#~ "Fill the \"<b>Domains</b>\" field with your domain name like: <b>%s</b>"
+#~ msgstr ""
+#~ "Írd be a weboldalad főoldalának címét a \"Domains\" mezőbe. Valószínűleg "
+#~ "ez lesz az: <b>%s</b>"
+
+#, fuzzy
+#~| msgid ""
+#~| "Select \"Read only\" at Default Access under the Authentication section."
+#~ msgid ""
+#~ "Select \"<b>Read only</b>\" as Default Access under the Authentication "
+#~ "section."
+#~ msgstr ""
+#~ "Válaszd ki a \"Read only\"-t a Default Access-nél az Authentication "
+#~ "szekcióban."
+
+#, fuzzy
+#~| msgid "Click on the \"Save Changes\" button."
+#~ msgid "Click on the \"<b>Save Changes</b>\" button!"
+#~ msgstr "Kattints a \"Save Changes\" gombra."
+
+#, fuzzy
+#~| msgid "Navigate to the \"Details\" tab of your Application!"
+#~ msgid "Navigate to the \"<b>Details</b>\" tab of your Application!"
+#~ msgstr "Navigálj az alkalmazásod \"Details\" tabjára."
+
+#, fuzzy
+#~| msgid ""
+#~| "Here you can see your \"API Key\" and \"API Secret:\". These will be "
+#~| "needed in the plugin's settings."
+#~ msgid ""
+#~ "Here you can see your \"<b>API Key</b>\" and \"<b>API Secret</b>\". These "
+#~ "will be needed in the plugin's settings."
+#~ msgstr ""
+#~ "Itt találod az \"API Key\"-t és az \"API Secret\"-et. Ezekre lesz "
+#~ "szükséged a plugin beállításainál."
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Fill \"Website URL\" with the url of your homepage, probably: <b>%s</b>"
+#~ msgid ""
+#~ "Fill <b>Homepage URL</b> with the url of your homepage, probably: <b>%s</"
+#~ "b>"
+#~ msgstr ""
+#~ "Írd be a weboldalad főoldalának címét a \"Website  URL\" mezőbe. "
+#~ "Valószínűleg ez lesz az: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "Click on the \"Create New Application\" button."
+#~ msgid "Click the <b>Register application</b> button."
+#~ msgstr "Kattints a \"Create New Application\" gombra."
+
+#, fuzzy
+#~| msgid ""
+#~| "Find the necessary \"Client ID\" and \"Client Secret\" at the middle of "
+#~| "the page, under the \"Web Settings\" tab."
+#~ msgid ""
+#~ "Find the necessary <b>Client ID</b> and <b>Client Secret</b> at the "
+#~ "middle of the page. These will be needed in the plugin's settings!"
+#~ msgstr ""
+#~ "Itt találod a \"Client ID\"-t és a \"Client Secret\"-et az oldal közepén, "
+#~ "a Web Settings tab alatt."
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Click on the blue \"%s\" button!"
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Once you have a project, you'll end up in the dashboard."
+#~ msgid "Once you have a project, click on it, and you will enter the %1$s."
+#~ msgstr "Ha van már projekted át leszel irányítva az irányítópultra"
+
+#, fuzzy, php-format
+#~| msgid "Make sure that the \"%1$s\" field contains %2$s"
+#~ msgid ""
+#~ "Scroll down to the \"%1$s\" section, then click on the \"%2$s\" button, "
+#~ "and enter the following URL: "
+#~ msgstr "Győződj meg róla, hogy a \"%1$s\" mező tartalmazza: %2$s"
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Click on the \"Credentials\" in the left hand menu to create new API "
+#~| "credentials"
+#~ msgid "After this, click on the \"%1$s\" menu point on the left."
+#~ msgstr ""
+#~ "Kattints a \"Credentials\" feliratra a bal oldali menüben hogy új API "
+#~ "adatokat készíts"
+
+#, fuzzy, php-format
+#~| msgid "Enter your domain name to the App Domains"
+#~ msgid ""
+#~ "Click on the blue \"%1$s\" button, then enter your domain name into the "
+#~ "\"%2$s\" field, probably: %3$s"
+#~ msgstr "Írd be a domain neved az \"App Domains\" mezőbe"
+
+#, fuzzy
+#~| msgid "Click the \"Create\" button!"
+#~ msgid "Click the \"<b>Create a new provider</b>\" button."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy
+#~| msgid "Read the Developer Terms and click the Create button again!"
+#~ msgid ""
+#~ "Fill the \"<b>Provider name</b>\" field and click the \"<b>Create</b>\" "
+#~ "button."
+#~ msgstr ""
+#~ "Olvasd el a Fejlesztői feltételeket és kattints a Create gombra újra."
+
+#, fuzzy
+#~| msgid "Click on \"Save\""
+#~ msgid "Select your \"<b>Region</b>\"."
+#~ msgstr "Kattints a \"Save\" gombra"
+
+#, fuzzy
+#~| msgid "At the \"Type\" make sure \"Web\" is selected!"
+#~ msgid "At the \"<b>App types</b>\" select the \"<b>Web app</b>\" option."
+#~ msgstr "Győződjön meg hogy a \"Típusnál\"  a \"Web\" van kiválasztva!"
+
+#, fuzzy
+#~| msgid "Read the Developer Terms and click the Create button again!"
+#~ msgid ""
+#~ "Read and consent to the \"<b>LINE Developers Agreement</b>\", then click "
+#~ "the \"<b>Create</b>\" button."
+#~ msgstr ""
+#~ "Olvasd el a Fejlesztői feltételeket és kattints a Create gombra újra."
+
+#, fuzzy
+#~| msgid ""
+#~| "Complete the Human test and click the \"Register my application\" button."
+#~ msgid "Fill out the form, then click the \"<b>Submit</b>\" button."
+#~ msgstr ""
+#~ "Végezze el az Ember tesztet és kattintson a \"Register my application\" "
+#~ "gombra."
+
+#, fuzzy
+#~| msgid ""
+#~| "Here you can see your \"Client ID\" and \"Client Secret\". These will be "
+#~| "needed in the plugin's settings."
+#~ msgid ""
+#~ "Go to the \"<b>Basic settings</b>\" tab and find the necessary "
+#~ "\"<b>Channel ID</b>\" and \"<b>Channel secret</b>\" values and fill these "
+#~ "fields in the plugin settings!"
+#~ msgstr ""
+#~ "Itt találod az \"Client ID\"-t és az \"Client Secret\"-et. Ezekre lesz "
+#~ "szükséged a plugin beállításainál."
+
+#, fuzzy, php-format
+#~| msgid "Locate the blue \"Create application\" button and click on it."
+#~ msgid "Locate the %s button and click on it."
+#~ msgstr "Keresd meg a kék \"Create application\" gombot és kattints rá."
+
+#, fuzzy, php-format
+#~| msgid "Add the following URL to the \"Callback URLs\" field: <b>%s</b>"
+#~ msgid "Enter the name of your App to the %s field."
+#~ msgstr "Tedd a következő linket az \"Callback URL\" mezőbe: <b>%s</b>"
+
+#, fuzzy, php-format
+#~| msgid "Name your project and then click on the Create button again"
+#~ msgid "Read and agree the %1$s then click the %2$s button!"
+#~ msgstr "Adj nevet a projektnek és kattints a \"Create\" gombra újra."
+
+#, fuzzy, php-format
+#~| msgid "Name your project and then click on the Create button again"
+#~ msgid "Find %1$s and click %2$s."
+#~ msgstr "Adj nevet a projektnek és kattints a \"Create\" gombra újra."
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Click on the %1$s tab."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Add the following URL to the \"Redirect URLs\" field <b>%s</b> "
+#~ msgid "Find the %1$s section and add the following URL at %2$s:"
+#~ msgstr "Tedd a következő linket az \"Redirect URLs:\" mezőbe: <b>%s</b>"
+
+#, fuzzy, php-format
+#~| msgid "Log in with your %s credentials if you are not logged in yet"
+#~ msgid ""
+#~ "Log in with your %s credentials if you are not logged in or create a new "
+#~ "account."
+#~ msgstr "Lépj be a %s fiókoddal ha még nem vagy belépve."
+
+#, fuzzy
+#~| msgid "Click on \"Save\""
+#~ msgid "Click on \"<b>New registration</b>\"."
+#~ msgstr "Kattints a \"Save\" gombra"
+
+#, fuzzy
+#~| msgid "Fill the \"Domains\" field with your domain name like: <b>%s</b>"
+#~ msgid "Fill the \"<b>Name</b>\" field with your App Name."
+#~ msgstr ""
+#~ "Írd be a weboldalad főoldalának címét a \"Domains\" mezőbe. Valószínűleg "
+#~ "ez lesz az: <b>%s</b>"
+
+#, fuzzy, php-format
+#~| msgid "Add the following URL to the \"Redirect URLs\" field <b>%s</b> "
+#~ msgid ""
+#~ "At the %1$s field, select the %2$s option as platform, and add the "
+#~ "following URL into the input field:"
+#~ msgstr "Tedd a következő linket az \"Redirect URLs:\" mezőbe: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "Click on the \"Create New Application\" button."
+#~ msgid "Create your App with the \"<b>Register</b>\" button."
+#~ msgstr "Kattints a \"Create New Application\" gombra."
+
+#, fuzzy
+#~| msgid "Click on the Create button"
+#~ msgid "You land on the \"<b>Overview</b>\" page."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy
+#~| msgid "Click on \"Save\""
+#~ msgid "Click on \"<b>New client secret</b>\"."
+#~ msgstr "Kattints a \"Save\" gombra"
+
+#, fuzzy
+#~| msgid "Add the following URL to the \"Redirect URLs\" field <b>%s</b> "
+#~ msgid "Set the expiration date at the \"<b>Expires</b>\" field."
+#~ msgstr "Tedd a következő linket az \"Redirect URLs:\" mezőbe: <b>%s</b>"
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Here you can see your \"Client ID\" and \"Client Secret\". These will be "
+#~| "needed in the plugin's settings."
+#~ msgid ""
+#~ "Copy the %s, this will be the <b>Client secret</b> in the plugin settings."
+#~ msgstr ""
+#~ "Itt találod az \"Client ID\"-t és az \"Client Secret\"-et. Ezekre lesz "
+#~ "szükséged a plugin beállításainál."
+
+#, fuzzy, php-format
+#~| msgid "Log in with your %s credentials if you are not logged in yet"
+#~ msgid ""
+#~ "Log in with your %1$s credentials if you are not logged in, or make a new "
+#~ "%1$s account."
+#~ msgstr "Lépj be a %s fiókoddal ha még nem vagy belépve."
+
+#, fuzzy, php-format
+#~| msgid "Add the following URL to the \"Callback URLs\" field: <b>%s</b>"
+#~ msgid "Enter the name of your App in the %s field."
+#~ msgstr "Tedd a következő linket az \"Callback URL\" mezőbe: <b>%s</b>"
+
+#, fuzzy, php-format
+#~| msgid "Add the following URL to the \"Callback URLs\" field: <b>%s</b>"
+#~ msgid "Add the description of your App in the %s field."
+#~ msgstr "Tedd a következő linket az \"Callback URL\" mezőbe: <b>%s</b>"
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Select the %1$s, pick %2$s."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Enter your email address"
+#~ msgid "Enter your %s."
+#~ msgstr "Add meg az email címed"
+
+#, fuzzy, php-format
+#~| msgid "Enter your domain name to the App Domains"
+#~ msgid "Add the domain of your company to the %1$s field, probably: %2$s"
+#~ msgstr "Írd be a domain neved az \"App Domains\" mezőbe"
+
+#, fuzzy, php-format
+#~| msgid "Make sure that the \"%1$s\" field contains %2$s"
+#~ msgid "Make sure that the %1$s is set to %2$s."
+#~ msgstr "Győződj meg róla, hogy a \"%1$s\" mező tartalmazza: %2$s"
+
+#, fuzzy, php-format
+#~| msgid "Log in with your %s credentials if you are not logged in."
+#~ msgid "Log in with your %s credentials."
+#~ msgstr "Lépj be a %s fiókoddal ha még nem vagy belépve."
+
+#, fuzzy
+#~| msgid "Click the \"Create App\" button."
+#~ msgid ""
+#~ "Click the \"<b>Create App</b>\" button under the REST API apps section."
+#~ msgstr "Kattints a \"Create App\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Name your project and then click on the Create button again"
+#~ msgid "Find the %1$s feature and check the checkbox."
+#~ msgstr "Adj nevet a projektnek és kattints a \"Create\" gombra újra."
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Click on the %1$s link that you can find below the %2$s feature."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Scroll down to %1$s section, and tick the %2$s field."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Name your project and then click on the Create button again"
+#~ msgid "Fill the %1$s and %2$s fields."
+#~ msgstr "Adj nevet a projektnek és kattints a \"Create\" gombra újra."
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Complete the Human test and click the \"Register my application\" button."
+#~ msgid "Complete the Human test and click the %s button."
+#~ msgstr ""
+#~ "Végezze el az Ember tesztet és kattintson a \"Register my application\" "
+#~ "gombra."
+
+#, fuzzy, php-format
+#~| msgid "Log in with your %s credentials if you are not logged in yet"
+#~ msgid ""
+#~ "Visit the %1$s page and log in with your %2$s credentials if you are not "
+#~ "logged in, yet."
+#~ msgstr "Lépj be a %s fiókoddal ha még nem vagy belépve."
+
+#, fuzzy
+#~| msgid "Click the \"Create App\" button."
+#~ msgid ""
+#~ "Click the \"<b>Create New App</b>\" button. (If you can not see this "
+#~ "button, you might need to create a workspace first!)"
+#~ msgstr "Kattints a \"Create App\" gombra"
+
+#, fuzzy
+#~| msgid "Click on the Create button"
+#~ msgid "Choose the \"<b>From scratch</b>\" option."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy
+#~| msgid "Read the Developer Terms and click the Create button again!"
+#~ msgid ""
+#~ "Fill the \"<b>App Name</b>\" field, select your workspace and click the "
+#~ "\"<b>Create App</b>\" button."
+#~ msgstr ""
+#~ "Olvasd el a Fejlesztői feltételeket és kattints a Create gombra újra."
+
+#, fuzzy
+#~| msgid "Add the following URL to the \"Redirect URLs\" field <b>%s</b> "
+#~ msgid "Scroll down to the \"<b>Redirect URLs</b>\" section."
+#~ msgstr "Tedd a következő linket az \"Redirect URLs:\" mezőbe: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "Click on the \"Save Changes\" button."
+#~ msgid "Click on the \"<b>Save URLs</b>\" button."
+#~ msgstr "Kattints a \"Save Changes\" gombra."
+
+#, fuzzy
+#~| msgid "Click on the Create button"
+#~ msgid "Scroll down to the \"<b>Scopes</b>\" section."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy
+#~| msgid "Add the following URL to the \"Redirect URLs\" field <b>%s</b> "
+#~ msgid ""
+#~ "Add the following Scopes to the \"<b>User Token Scopes</b>\" field: "
+#~ "\"<b>openid</b>\", \"<b>profile</b>\", \"<b>email</b>\""
+#~ msgstr "Tedd a következő linket az \"Redirect URLs:\" mezőbe: <b>%s</b>"
+
+#, fuzzy
+#~| msgid ""
+#~| "Click on the \"Credentials\" in the left hand menu to create new API "
+#~| "credentials"
+#~ msgid ""
+#~ "On the top left side click on the \"<b>Basic Information</b>\" option in "
+#~ "the \"<b>Settings</b>\"."
+#~ msgstr ""
+#~ "Kattints a \"Credentials\" feliratra a bal oldali menüben hogy új API "
+#~ "adatokat készíts"
+
+#, fuzzy
+#~| msgid "Read the Developer Terms and click the Create button again!"
+#~ msgid ""
+#~ "Under the \"<b>Install your app</b>\" panel click on the \"<b>Install to "
+#~ "Workspace</b>\" button."
+#~ msgstr ""
+#~ "Olvasd el a Fejlesztői feltételeket és kattints a Create gombra újra."
+
+#, fuzzy
+#~| msgid "Click on the Create button"
+#~ msgid "Click on the \"<b>Allow</b>\" button."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy
+#~| msgid "Read the Developer Terms and click the Create button again!"
+#~ msgid ""
+#~ "Under the \"<b>Manage distribution</b>\" panel click on the "
+#~ "\"<b>Distribute App</b>\" button."
+#~ msgstr ""
+#~ "Olvasd el a Fejlesztői feltételeket és kattints a Create gombra újra."
+
+#, fuzzy
+#~| msgid "Click on the \"Create New Application\" button."
+#~ msgid "Click on the \"<b>Activate Public Distribution</b>\" button."
+#~ msgstr "Kattints a \"Create New Application\" gombra."
+
+#, fuzzy
+#~| msgid ""
+#~| "Click on the \"Credentials\" in the left hand menu to create new API "
+#~| "credentials"
+#~ msgid ""
+#~ "On the top left side click on the \"<b>Basic Information</b>\" option, "
+#~ "that you find under \"<b>Settings</b>\"."
+#~ msgstr ""
+#~ "Kattints a \"Credentials\" feliratra a bal oldali menüben hogy új API "
+#~ "adatokat készíts"
+
+#, fuzzy
+#~| msgid ""
+#~| "Here you can see your \"Client ID\" and \"Client Secret\". These will be "
+#~| "needed in the plugin's settings."
+#~ msgid ""
+#~ "Scroll down to the \"<b>App Credentials</b>\" section, find the necessary "
+#~ "\"<b>Client ID</b>\" and \"<b>Client Secret</b>\" values and fill these "
+#~ "fields in the plugin settings!"
+#~ msgstr ""
+#~ "Itt találod az \"Client ID\"-t és az \"Client Secret\"-et. Ezekre lesz "
+#~ "szükséged a plugin beállításainál."
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Click on the purple \"%s\" button!"
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Fill \"Site URL\" with the url of your homepage, probably: <b>%s</b>"
+#~ msgid "Fill the %1$s field with the url of your homepage, probably: %2$s"
+#~ msgstr ""
+#~ "Írd be a weboldalad főoldalának címét a \"Site URL\" mezőbe. Valószínűleg "
+#~ "ez lesz az: <b>%s</b>"
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Choose the \"%1$s\" option at \"%2$s\"."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Name your project and then click on the Create button again"
+#~ msgid "Read through the \"%1$s\" and put a tick in the checkbox."
+#~ msgstr "Adj nevet a projektnek és kattints a \"Create\" gombra újra."
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Click on the the %1$s button."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "To allow your visitors to log in with their %1$s account, first you must "
+#~| "create a %1$s App. The following guide will help you through the %1$s "
+#~| "App creation process. After you have created your %1$s App, head over to "
+#~| "\"Settings\" and configure the given \"%2$s\" and \"%3$s\" according to "
+#~| "your %1$s App."
+#~ msgid ""
+#~ "To allow your visitors to log in with their %1$s account, first you must "
+#~ "create a %1$s %2$s. The following guide will help you through the %1$s "
+#~ "%2$s creation process. After you have created your %1$s %2$s, head over "
+#~ "to \"Settings\" and configure the given \"%2$s\" field according to your "
+#~ "%1$s %2$s."
+#~ msgstr ""
+#~ "Ahhoz. hogy a felhasználók beléphessenek a %1$s fiókjukkal, először létre "
+#~ "kell hoznod egy %1$s Appot. Az alábbi útmutató végig vezet a %1$s App "
+#~ "létrehozás folyamatán. Miután a(z) %1$s fiókod elkészült, menj a "
+#~ "\"Beállítások\" fülre és állítsd be a \"%2$s\"-t és \"%3$s\"-t a %1$s "
+#~ "Appod alapján."
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Check the %1$s option."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Name your project and then click on the Create button again"
+#~ msgid "On the top right corner click on %1$s then on %2$s."
+#~ msgstr "Adj nevet a projektnek és kattints a \"Create\" gombra újra."
+
+#, fuzzy, php-format
+#~| msgid "Locate the blue \"Create application\" button and click on it."
+#~ msgid "Locate the red %1$s button and click on it."
+#~ msgstr "Keresd meg a kék \"Create application\" gombot és kattints rá."
+
+#, fuzzy, php-format
+#~| msgid "Name your project and then click on the Create button again"
+#~ msgid ""
+#~ "Afterwards, click on %1$s section, then add the %2$s product, and press "
+#~ "the %3$s button."
+#~ msgstr "Adj nevet a projektnek és kattints a \"Create\" gombra újra."
+
+#, fuzzy, php-format
+#~| msgid "Make sure that the \"%1$s\" field contains %2$s"
+#~ msgid ""
+#~ "Next, for the %1$s field under the %2$s product, add the following URL: "
+#~ msgstr "Győződj meg róla, hogy a \"%1$s\" mező tartalmazza: %2$s"
+
+#, fuzzy, php-format
+#~| msgid "Name your project and then click on the Create button again"
+#~ msgid "At the top of the page, click on the %s button."
+#~ msgstr "Adj nevet a projektnek és kattints a \"Create\" gombra újra."
+
+#, fuzzy, php-format
+#~| msgid "Log in with your %s credentials if you are not logged in yet"
+#~ msgid "Open the %1$s and login with your %2$s account."
+#~ msgstr "Lépj be a %s fiókoddal ha még nem vagy belépve."
+
+#, fuzzy, php-format
+#~| msgid "Navigate to %s"
+#~ msgid "Navigate to the %1$s tab."
+#~ msgstr "Látogasd meg ezt az oldalt: %s"
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Click on the %s button on the right side."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Select the %1$s option in the %2$s list."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Name your project and then click on the Create button again"
+#~ msgid "To generate a %1$s, click on the %2$s button."
+#~ msgstr "Adj nevet a projektnek és kattints a \"Create\" gombra újra."
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Here you can see your \"Client ID\" and \"Client Secret\". These will be "
+#~| "needed in the plugin's settings."
+#~ msgid ""
+#~ "Copy the %1$s and the %2$s values. These will be needed in the plugin's "
+#~ "settings."
+#~ msgstr ""
+#~ "Itt találod az \"Client ID\"-t és az \"Client Secret\"-et. Ezekre lesz "
+#~ "szükséged a plugin beállításainál."
+
+#, fuzzy, php-format
+#~| msgid "Name your project and then click on the Create button again"
+#~ msgid ""
+#~ "In the sidebar on the left side, click on %1$s then click on the %2$s "
+#~ "button."
+#~ msgstr "Adj nevet a projektnek és kattints a \"Create\" gombra újra."
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Click the %s button."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Name your project and then click on the Create button again"
+#~ msgid "Select an image, then click on the%s button!"
+#~ msgstr "Adj nevet a projektnek és kattints a \"Create\" gombra újra."
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Fill \"Site URL\" with the url of your homepage, probably: <b>%s</b>"
+#~ msgid "Fill the %1$s field with your domain name, probably: %2$s"
+#~ msgstr ""
+#~ "Írd be a weboldalad főoldalának címét a \"Site URL\" mezőbe. Valószínűleg "
+#~ "ez lesz az: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "Click on the \"Create New Application\" button."
+#~ msgid "Click on the \"<b>Create New Application</b>\" button."
+#~ msgstr "Kattints a \"Create New Application\" gombra."
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Fill \"Website URL\" with the url of your homepage, probably: <b>%s</b>"
+#~ msgid ""
+#~ "Fill \"<b>Website URL</b>\" with the url of your homepage, probably: "
+#~ "<b>%s</b>"
+#~ msgstr ""
+#~ "Írd be a weboldalad főoldalának címét a \"Website  URL\" mezőbe. "
+#~ "Valószínűleg ez lesz az: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "At the \"Type\" make sure \"Web\" is selected!"
+#~ msgid "At the \"<b>Type</b>\" make sure \"<b>Web</b>\" is selected!"
+#~ msgstr "Győződjön meg hogy a \"Típusnál\"  a \"Web\" van kiválasztva!"
+
+#, fuzzy
+#~| msgid "Click the \"Create\" button!"
+#~ msgid "Click the \"<b>Create</b>\" button!"
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy
+#~| msgid ""
+#~| "Here you can see your \"Client ID\" and \"Client Secret\". These will be "
+#~| "needed in the plugin's settings."
+#~ msgid ""
+#~ "Here you can see your \"<b>Client ID</b>\" and \"<b>Client Secret</b>\". "
+#~ "These will be needed in the plugin's settings."
+#~ msgstr ""
+#~ "Itt találod az \"Client ID\"-t és az \"Client Secret\"-et. Ezekre lesz "
+#~ "szükséged a plugin beállításainál."
+
+#, fuzzy
+#~| msgid "Click the \"Create App\" button."
+#~ msgid ""
+#~ "Click on the \"<b>Create an App</b>\" button on the top right corner."
+#~ msgstr "Kattints a \"Create App\" gombra"
+
+#, fuzzy
+#~| msgid "Click on the \"Create New Application\" button."
+#~ msgid "Fill the \"<b>Application Name</b>\" field."
+#~ msgstr "Kattints a \"Create New Application\" gombra."
+
+#, fuzzy, php-format
+#~| msgid "Add the following URL to the \"Live Return URL\" field <b>%s</b> "
+#~ msgid ""
+#~ "Enter the URL of your site to the \"<b>Home Page URL</b>\" field: <b>%s</"
+#~ "b>"
+#~ msgstr "Tedd a következő linket az \"Live Return URL\" mezőbe: <b>%s</b>"
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "At %1$s choose the %2$s option."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy
+#~| msgid "Click the \"Create App\" button."
+#~ msgid "Click \"<b>Create App</b>\"."
+#~ msgstr "Kattints a \"Create App\" gombra"
+
+#, fuzzy
+#~| msgid ""
+#~| "Here you can see your \"Client ID\" and \"Client Secret\". These will be "
+#~| "needed in the plugin's settings."
+#~ msgid ""
+#~ "On the top of the page, you will find the necessary \"<b>Client ID</b>\" "
+#~ "and \"<b>Client Secret</b>\"! These will be needed in the plugin's "
+#~ "settings."
+#~ msgstr ""
+#~ "Itt találod az \"Client ID\"-t és az \"Client Secret\"-et. Ezekre lesz "
+#~ "szükséged a plugin beállításainál."
+
+#, fuzzy
+#~| msgid "Click on the Manage button at the App"
+#~ msgid "Click on the \"<b>Manage</b>\" button next to the associated App."
+#~ msgstr "Kattints a \"Manage \" gombra az Appban."
+
+#, fuzzy
+#~| msgid "Go to the Settings menu"
+#~ msgid "Go to the \"<b>Settings</b>\" menu"
+#~ msgstr "Menj a \"Settings\" menübe."
+
+#, fuzzy
+#~| msgid "Locate the blue \"Create application\" button and click on it."
+#~ msgid "Locate the blue \"<b>Create app</b>\" button and click on it."
+#~ msgstr "Keresd meg a kék \"Create application\" gombot és kattints rá."
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Fill \"Site address\" with the url of your homepage, probably: <b>%s</b>"
+#~ msgid ""
+#~ "Fill \"<b>Website address</b>\" with the url of your homepage, probably: "
+#~ "<b>%s</b>"
+#~ msgstr ""
+#~ "Írd be a weboldalad főoldalának címét a \"Site address\" mezőbe. "
+#~ "Valószínűleg ez lesz az: <b>%s</b>"
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Fill the \"Base domain\" field with your domain, probably: <b>%s</b>"
+#~ msgid ""
+#~ "Fill the \"<b>Base domain</b>\" field with your domain, probably: <b>%s</"
+#~ "b>"
+#~ msgstr ""
+#~ "Írd be a weboldalad főoldalának címét a \"Base domain\" mezőbe. "
+#~ "Valószínűleg ez lesz az: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "Pick Settings at the left-hand menu "
+#~ msgid "Pick <b>Settings</b> at the left-hand menu "
+#~ msgstr "Válaszd ki a \"Settings\"-t a bal oldali menüből."
+
+#, fuzzy
+#~| msgid "Save your app"
+#~ msgid "<b>Save</b> your app"
+#~ msgstr "Ments el az appot."
+
+#, fuzzy
+#~| msgid ""
+#~| "Find the necessary \"Client ID\" and \"Client Secret\" at the middle of "
+#~| "the page, under the \"Web Settings\" tab."
+#~ msgid ""
+#~ "Find the necessary \"<b>App ID</b>\" and \"<b>Secure key</b>\" at the top "
+#~ "of the Settings page where you just hit the save button."
+#~ msgstr ""
+#~ "Itt találod a \"Client ID\"-t és a \"Client Secret\"-et az oldal közepén, "
+#~ "a Web Settings tab alatt."
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Click on the \"Credentials\" in the left hand menu to create new API "
+#~| "credentials"
+#~ msgid "Click the “<b>%1$s</b>” button on the left hand side."
+#~ msgstr ""
+#~ "Kattints a \"Credentials\" feliratra a bal oldali menüben hogy új API "
+#~ "adatokat készíts"
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Choose the \"<b>%1$s</b>\" option."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Click on the link \"registering an application\" under the Applications "
+#~| "tab."
+#~ msgid "Select the \"<b>%1$s</b>\" under Application type."
+#~ msgstr ""
+#~ "Kattints a \"registering an application\" linker az Aplications tab alatt."
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Click on the \"<b>%1$s</b>\" button"
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy
+#~| msgid "Registration notification sent to"
+#~ msgid "BuddyPress registration integration"
+#~ msgstr "Regisztrációról értesítést kap"
+
+#, fuzzy, php-format
+#~| msgid "Click the \"Create App\" button."
+#~ msgid "Click the %1$s button and complete the Security Check."
+#~ msgstr "Kattints a \"Create App\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Press the %1$s button on the top right corner again."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Name your project and then click on the Create button again"
+#~ msgid "At the left hand menu click on the %1$s option under %2$s."
+#~ msgstr "Adj nevet a projektnek és kattints a \"Create\" gombra újra."
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Hit the %1$s button next to the old URI."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Add the following URL to the \"Live Return URL\" field <b>%s</b> "
+#~ msgid "Add your web domain or URL to the \"%1$s\" field."
+#~ msgstr "Tedd a következő linket az \"Live Return URL\" mezőbe: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "No Connect button in login form"
+#~ msgid "No Connect button in \"Checkout for WooCommerce\" form"
+#~ msgstr "Ne legyen összekapcsoló gomb a belépő űrlapnál"
+
+#~ msgid "Click on \"Save\""
+#~ msgstr "Kattints a \"Save\" gombra"
+
+#, fuzzy
+#~| msgid "Important:"
+#~ msgid "Important note:"
+#~ msgstr "Fontos:"
+
+#, fuzzy
+#~| msgid "Read the Developer Terms and click the Create button again!"
+#~ msgid ""
+#~ "Read and agree the \"<b>API Terms of Use</b>\" then click the \"<b>Create "
+#~ "App</b>\" button!"
+#~ msgstr ""
+#~ "Olvasd el a Fejlesztői feltételeket és kattints a Create gombra újra."
+
+#, fuzzy
+#~| msgid "Click on the Create button"
+#~ msgid "Click on the \"<b>Auth</b>\" tab."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy
+#~| msgid ""
+#~| "Find the necessary \"Client ID\" and \"Client Secret\" at the middle of "
+#~| "the page, under the \"Web Settings\" tab."
+#~ msgid ""
+#~ "Find the necessary \"<b>Client ID</b>\" and \"<b>Client Secret</b>\" "
+#~ "under the Application credentials section, on the <b>Auth</b> tab."
+#~ msgstr ""
+#~ "Itt találod a \"Client ID\"-t és a \"Client Secret\"-et az oldal közepén, "
+#~ "a Web Settings tab alatt."
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Pick the %1$s option for the platform."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#~ msgid "Continue with <b>Twitter</b>"
+#~ msgstr "Folytatás a <b>Twitter</b>-rel"
+
+#~ msgid "Sign up with <b>Twitter</b>"
+#~ msgstr "Regisztrálás a <b>Twitter</b>-rel"
+
+#~ msgid "Link account with <b>Twitter</b>"
+#~ msgstr "Fiók összekapcsolása a <b>Twitter</b>-rel"
+
+#~ msgid "Unlink account from <b>Twitter</b>"
+#~ msgstr "Szétkapcsolás <b>Twitter</b>-től"
+
+#, fuzzy
+#~| msgid "In the left sidebar, click on \"Facebook Login\""
+#~ msgid "In the left sidebar, click on \"<b>Facebook Login > Settings</b>\""
+#~ msgstr "A bal oldali menüben kattints a \"Facebook Login\" feliratra"
+
+#, fuzzy
+#~| msgid "Click on \"Save Changes\""
+#~ msgid "Click on \"<b>Save Changes</b>\""
+#~ msgstr "Kattints a \"Save Changes\"-re"
+
+#, fuzzy
+#~| msgid "Click the \"Create App\" button."
+#~ msgid ""
+#~ "Click on the \"<b>Create App</b>\" button and in the Popup choose the "
+#~ "\"<b>Consumer</b>\" App type!"
+#~ msgstr "Kattints a \"Create App\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Add the following URL to the \"Redirect URLs\" field <b>%s</b> "
+#~ msgid ""
+#~ "Select \"<b>Web</b>\" and enter the following URL to the \"<b>Site URL</"
+#~ "b>\" field: <b>%s</b>"
+#~ msgstr "Tedd a következő linket az \"Redirect URLs:\" mezőbe: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "Click on \"Save Changes\""
+#~ msgid "Press “<b>Save</b>”."
+#~ msgstr "Kattints a \"Save Changes\"-re"
+
+#, fuzzy
+#~| msgid "Click on \"Save Changes\""
+#~ msgid "Click on “<b>Save Changes</b>”."
+#~ msgstr "Kattints a \"Save Changes\"-re"
+
+#, fuzzy, php-format
+#~| msgid "Enter your domain name to the App Domains"
+#~ msgid ""
+#~ "Enter your domain name to the \"<b>App Domains</b>\" field, probably: "
+#~ "<b>%s</b>"
+#~ msgstr "Írd be a domain neved az \"App Domains\" mezőbe"
+
+#, fuzzy
+#~| msgid ""
+#~| "Your application is currently private ( Status: In Development ), which "
+#~| "means that only you can log in with it. In the top bar click on the "
+#~| "\"OFF\" switcher and select a category for your App."
+#~ msgid ""
+#~ "Your application is currently private, which means that only you can log "
+#~ "in with it. In the top bar switch the \"<b>App Mode</b>\" from "
+#~ "\"<b>Development</b>\" to \"<b>Live</b>\"."
+#~ msgstr ""
+#~ "Az applikációd jelenleg privát, ami azt jelenti, hogy csak te tudsz "
+#~ "belépni vele. A felső menüben kattintsz az \"OFF\" választó gombra és "
+#~ "válassz egy kategóriát az Appodnak."
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "Switch on the %s option."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Click on the Create button"
+#~ msgid "For %1$s choose the %2$s option."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy
+#~| msgid ""
+#~| "Add the following URL to the \"Valid OAuth redirect URIs\" field: <b>%s</"
+#~| "b>"
+#~ msgid ""
+#~ "Add the following URL to the \"<b>Valid OAuth redirect URIs</b>\" field:"
+#~ msgstr ""
+#~ "Tedd a következő linket az \"Valid OAuth redirect URIs\" mezőbe: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "Find your App and click on the Details button"
+#~ msgid ""
+#~ "Find your App and click on the <b>App settings</b> icon. (The one that "
+#~ "looks like a gear.)"
+#~ msgstr "Keresd meg az Appod és kattints a Details gombra."
+
+#, fuzzy
+#~| msgid "Click the \"Create App\" button."
+#~ msgid "Click on the <b>Edit</b> button at <b>Authentication settings</b>."
+#~ msgstr "Kattints a \"Create App\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Click on \"Save\""
+#~ msgid "Click \"<b>%s</b>\"!"
+#~ msgstr "Kattints a \"Save\" gombra"
+
+#, fuzzy
+#~| msgid ""
+#~| "Add the following URL to the \"Allowed Return URLs\" field <b>%s</b> "
+#~ msgid "Add the following URL to the \"<b>Allowed Return URLs</b>\" field: "
+#~ msgstr ""
+#~ "Tedd a következő linket az \"Allowed Return URLs\" mezőbe: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "Add the following URL to the \"Live Return URL\" field <b>%s</b> "
+#~ msgid "Add the following URL to the \"<b>Return URLs</b>\" field:"
+#~ msgstr "Tedd a következő linket az \"Live Return URL\" mezőbe: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "Add the following URL to the \"Redirect URLs\" field <b>%s</b> "
+#~ msgid "Add the following URL in the \"<b>Redirects</b>\" field:"
+#~ msgstr "Tedd a következő linket az \"Redirect URLs:\" mezőbe: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "Add the following URL to the \"Redirect URLs\" field <b>%s</b> "
+#~ msgid "Add the following URL to the \"<b>Redirects</b>\" field:"
+#~ msgstr "Tedd a következő linket az \"Redirect URLs:\" mezőbe: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "Add the following URL to the \"Callback URLs\" field: <b>%s</b>"
+#~ msgid "Add the following URL to the \"<b>Callback URL</b>\" field:"
+#~ msgstr "Tedd a következő linket az \"Callback URL\" mezőbe: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "Add the following URL to the \"Callback URLs\" field: <b>%s</b>"
+#~ msgid ""
+#~ "Add the following URL to the <b>Authorization callback URL</b> field:"
+#~ msgstr "Tedd a következő linket az \"Callback URL\" mezőbe: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "Add the following URL to the \"Redirect URLs\" field <b>%s</b> "
+#~ msgid "Add the following URL to the \"<b>Redirect URLs</b>\" field:"
+#~ msgstr "Tedd a következő linket az \"Redirect URLs:\" mezőbe: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "Add the following URL to the \"Redirect URLs\" field <b>%s</b> "
+#~ msgid "Add the following URL to the \"<b>Redirect URIs</b>\" field:"
+#~ msgstr "Tedd a következő linket az \"Redirect URLs:\" mezőbe: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "Add the following URL to the \"Redirect URLs\" field <b>%s</b> "
+#~ msgid "Add the following URL to the \"<b>Redirect URI</b>\" field:"
+#~ msgstr "Tedd a következő linket az \"Redirect URLs:\" mezőbe: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "Add the following URL to the \"Live Return URL\" field <b>%s</b> "
+#~ msgid "Add the following URL to the \"<b>Live Return URL</b>\" field:"
+#~ msgstr "Tedd a következő linket az \"Live Return URL\" mezőbe: <b>%s</b>"
+
+#, fuzzy
+#~| msgid ""
+#~| "Add the following URL to the \"Authorized redirect URI:\" field: <b>%s</"
+#~| "b>"
+#~ msgid ""
+#~ "Add the following URL to the \"<b>Authorized redirect URI</b>\" field: "
+#~ msgstr ""
+#~ "Tedd a következő linket az \"Authorized redirect URI:\" mezőbe: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "Add the following URL to the \"Redirect URLs\" field <b>%s</b> "
+#~ msgid "Add the following URL to the \"<b>Redirect URI(s)</b>\" field:"
+#~ msgstr "Tedd a következő linket az \"Redirect URLs:\" mezőbe: <b>%s</b>"
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Add the following URL to the \"Authorised redirect URIs\" field: <b>%s</"
+#~| "b>"
+#~ msgid ""
+#~ "Add the following URL to the \"<b>Authorised redirect URIs</b>\" field: "
+#~ "<b>%s</b>"
+#~ msgstr ""
+#~ "Tedd a következő linket az \"Valid OAuth redirect URIs\" mezőbe: <b>%s</b>"
+
+#, fuzzy, php-format
+#~| msgid "Add the following URL to the \"Callback URL\" field <b>%s</b> "
+#~ msgid ""
+#~ "Add the following URL to the \"<b>Callback URL</b>\" field <b>%s</b> "
+#~ msgstr "Tedd a következő linket az \"Callback URL\" mezőbe: <b>%s</b>"
+
+#, fuzzy, php-format
+#~| msgid "Add the following URL to the \"Callback URLs\" field: <b>%s</b>"
+#~ msgid ""
+#~ "Replace the current URL in the <b>Authorization callback URL</b> field "
+#~ "with: <b>%s</b>"
+#~ msgstr "Tedd a következő linket az \"Callback URL\" mezőbe: <b>%s</b>"
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Add the following URL to the \"Authorized redirect URI\" field <b>%s</b> "
+#~ msgid ""
+#~ "Add the following URL to the \"<b>Authorized redirect URI</b>\" field "
+#~ "<b>%s</b> "
+#~ msgstr ""
+#~ "Tedd a következő linket az \"Authorized redirect URI\" mezőbe: <b>%s</b>"
+
+#~ msgid "ERROR"
+#~ msgstr "HIBA"
+
+#, fuzzy
+#~| msgid "Click on \"Save\""
+#~ msgid "Click on <b>+ New Project</b>!"
+#~ msgstr "Kattints a \"Save\" gombra"
+
+#, fuzzy, php-format
+#~| msgid "Click on the \"Save Changes\" button."
+#~ msgid "Click on the <b>App Settings</b> button at %s."
+#~ msgstr "Kattints a \"Save Changes\" gombra."
+
+#, fuzzy, php-format
+#~| msgid "Add the following URL to the \"Callback URLs\" field: <b>%s</b>"
+#~ msgid "Add the following URL to the <b>Callback URLs</b> field: <b>%s</b>"
+#~ msgstr "Tedd a következő linket az \"Callback URL\" mezőbe: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "Click on \"Save\""
+#~ msgid "Click on <b>Save</b>."
+#~ msgstr "Kattints a \"Save\" gombra"
+
+#, fuzzy
+#~| msgid "Register"
+#~ msgctxt "NSL Register Form submit button text"
+#~ msgid "Register"
+#~ msgstr "Regisztráció"
+
+#, fuzzy
+#~| msgid "Save your changes."
+#~ msgid "Save your settings!"
+#~ msgstr "Mentsd el a módosításaidat."
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "Fill the App name, Application description fields. Then enter your "
+#~| "site's URL to the Website URL field: <b>%s</b>"
+#~ msgid ""
+#~ "Fill the <b>App name</b>, <b>Application description</b> fields. Then "
+#~ "enter your site's URL to the <b>Website URL</b> field: <b>%s</b>"
+#~ msgstr ""
+#~ "Töltsd ki az App name és Application description mezőjet. Aztán írd be az "
+#~ "oldalad címét a Website URL mezőbe: <b>%s</b>"
+
+#, fuzzy
+#~| msgid "Click the Create button."
+#~ msgid "Click the <b>Create</b> button."
+#~ msgstr "Kattints a \"Create\" gombra"
+
+#, fuzzy
+#~| msgid "Read the Developer Terms and click the Create button again!"
+#~ msgid "Read the Developer Terms and click the <b>Create</b> button again!"
+#~ msgstr ""
+#~ "Olvasd el a Fejlesztői feltételeket és kattints a Create gombra újra."
+
+#, fuzzy
+#~| msgid ""
+#~| "Go to the Keys and tokens tab and find the API key and API secret key"
+#~ msgid ""
+#~ "Go to the <b>Keys and tokens</b> tab and find the <b>API key</b> and "
+#~ "<b>API secret key</b>"
+#~ msgstr ""
+#~ "Menj a \"Keys and tokens\" fülre ahol megtalálod az \"API key\"-t és "
+#~ "\"API Secret\"-et"
+
+#, fuzzy
+#~| msgid "Click on the \"Add a New App\" button"
+#~ msgid "Click on the \"<b>Add a New App\" button</b>"
+#~ msgstr "Kattints az \"Add a New App\" gombra"
+
+#, fuzzy
+#~| msgid "Enter your domain name to the App Domains"
+#~ msgid "Enter your domain name to the \"App Domains\" field."
+#~ msgstr "Írd be a domain neved az \"App Domains\" mezőbe"
+
+#~ msgid "Click on blue \"Create App ID\" button"
+#~ msgstr "Kattints a kék \"Create App ID\" gombra"
+
+#, fuzzy
+#~| msgid "In the top of the left sidebar, click on \"Settings\""
+#~ msgid ""
+#~ "In the top of the left sidebar, click on \"Settings\" and select \"Basic\""
+#~ msgstr "A bal oldali menü tetején kattints a \"Settings\"-re"
+
+#~ msgid ""
+#~ "Click the Create credentials button and select \"OAuth client ID\" from "
+#~ "the dropdown."
+#~ msgstr ""
+#~ "Kattints a \"Create credentials\" gombra és válaszd ki az \"OAuth client "
+#~ "ID\"-t a lenyíló listából."
+
+#~ msgid "Your application type should be \"Web application\""
+#~ msgstr "Az applikációd típusa legyen \"Web application\""
+
+#~ msgid "Name your application"
+#~ msgstr "Adj nevet az alkalmazásodnak"
+
+#~ msgid "Click the \"Save Changes\" button!"
+#~ msgstr "Kattints a \"Save Changes\" gombra"
+
+#, php-format
+#~ msgid ""
+#~ "Add the following URL to the \"Authorized Redirect URLs:\" field: <b>%s</"
+#~ "b>"
+#~ msgstr ""
+#~ "Tedd a következő linket az \"Authorized Redirect URLs:\" mezőbe: <b>%s</b>"
+
+#~ msgid "Click the \"Create App\" button."
+#~ msgstr "Kattints a \"Create App\" gombra"
+
+#~ msgid "Locate the blue \"Create application\" button and click on it."
+#~ msgstr "Keresd meg a kék \"Create application\" gombot és kattints rá."
+
+#~ msgid "Click on \"Update\""
+#~ msgstr "Kattints az \"Update\" -ra"
+
+#, fuzzy, php-format
+#~| msgid "Fill the \"Domains\" field with your domain name like: <b>%s</b>"
+#~ msgid ""
+#~ "Check if the saved \"Callback Domain\" matches with your domain: <b>%s</b>"
+#~ msgstr ""
+#~ "Írd be a weboldalad főoldalának címét a \"Domains\" mezőbe. Valószínűleg "
+#~ "ez lesz az: <b>%s</b>"
+
+#, fuzzy
+#~| msgid ""
+#~| "Here you can see your \"Client ID\" and \"Client Secret\". These will be "
+#~| "needed in the plugin's settings."
+#~ msgid ""
+#~ "Replace your old \"Client ID\" and \"Client Secret\" with the one of the "
+#~ "new app!"
+#~ msgstr ""
+#~ "Itt találod az \"Client ID\"-t és az \"Client Secret\"-et. Ezekre lesz "
+#~ "szükséged a plugin beállításainál."
+
+#~ msgid "Fill \"Display Name\" and \"Contact Email\""
+#~ msgstr ""
+#~ "Töltsd ki a \"Display name\" mezőt az app nevével. A \"Contact Email\" "
+#~ "mezőbe írd be az email címet, amin keresztül elérhetnek."
+
+#~ msgid "Locate the yellow \"Create application\" button and click on it."
+#~ msgstr "Keresd meg a sárga \"Create application\" gombot és kattints rá."
+
+#~ msgid "Fill the fields marked with *"
+#~ msgstr "Töltsd ki a csillaggal jelölt mezőket"
+
+#~ msgid "Accept the Terms of use and hit Submit"
+#~ msgstr ""
+#~ "Fogadd el a Felhasználási Feltétleket és kattints a Beküldés (Submit) "
+#~ "gombra"
+
+#~ msgid "Find the necessary Authentication Keys under the Authentication menu"
+#~ msgstr ""
+#~ "A szükséges \"Authentication Keys\"-t az Authentication menüben találod"
+
+#~ msgid ""
+#~ "You probably want to enable the \"r_emailaddress\" under the Default "
+#~ "Application Permissions"
+#~ msgstr ""
+#~ "Valószínűleg be kell kapcsolnod a \"r_emailaddress\"-t a \"Default "
+#~ "Application Permissions\" alatt"
+
+#, fuzzy
+#~| msgid "Log in with your %s credentials if you are not logged in"
+#~ msgid "Log in with your credentials if you are not logged in"
+#~ msgstr "Lépj be a %s fiókoddal ha még nem vagy belépve."
+
+#~ msgid ""
+#~ "Move your mouse over Facebook Login and click on the appearing \"Set Up\" "
+#~ "button"
+#~ msgstr ""
+#~ "Vidd a kurzort a \"Facebook Login\" doboz fölé és kattints a megjelenő "
+#~ "\"Set Up\" gombra."
+
+#~ msgid "Choose Web"
+#~ msgstr "Válaszd a \"Web\"-et"
+
+#~ msgid ""
+#~ "%s took the place of Nextend Google Connect. You can delete Nextend "
+#~ "Google Connect as it is not needed anymore."
+#~ msgstr ""
+#~ "%s átvette a Nextend Google Connect helyét. Letörölheted a Nextend Google "
+#~ "Connect plguint, mivel már nincs rá szükség."
+
+#~ msgid ""
+#~ "%s took the place of Nextend Twitter Connect. You can delete Nextend "
+#~ "Twitter Connect as it is not needed anymore."
+#~ msgstr ""
+#~ "%s átvette a Nextend Twitter Connect helyét. Letörölheted a Nextend "
+#~ "Twitter Connect plguint, mivel már nincs rá szükség."
+
+#~ msgid "Import Facebook configuration"
+#~ msgstr "Facebook konfiguráció importálása"
+
+#~ msgid "Be sure to read the following notices before you proceed."
+#~ msgstr "Mielőtt tovább lépnél, olvasd el az alábbi figyelmeztetéseket."
+
+#~ msgid "Important steps before the import"
+#~ msgstr "Fontos lépések az importálás megkezdése előtt"
+
+#~ msgid ""
+#~ "Make sure that the redirect URI for your app is correct before proceeding."
+#~ msgstr ""
+#~ "A továbblépés előtt győződj meg róla, hogy a \"Redirect URI\" az appodnál "
+#~ "helyesen van beállítva."
+
+#~ msgid "Visit %s."
+#~ msgstr "Látogass el ide: %s."
+
+#~ msgid ""
+#~ "Go to the Settings menu which you can find below the Facebook Login in "
+#~ "the left menu."
+#~ msgstr ""
+#~ "Menj a \"Settings\" menübe a \"Facebook Login\" alatt a bal oldali "
+#~ "menüben."
+
+#~ msgid "The following settings will be imported:"
+#~ msgstr "Az alábbi beállítások kerülnek importálásra:"
+
+#~ msgid "Your old API configurations"
+#~ msgstr "A régi API beállításaid"
+
+#~ msgid "The user prefix you set"
+#~ msgstr "A beállított felhasználónév előtag"
+
+#~ msgid "Create a backup of the old settings"
+#~ msgstr "Készíts biztonsági mentést a régi beállításokról"
+
+#~ msgid "Other changes"
+#~ msgstr "Egyéb változások"
+
+#~ msgid ""
+#~ "The custom redirect URI is now handled globally for all providers, so it "
+#~ "won't be imported from the previous version. Visit \"Nextend Social Login "
+#~ "> Global settings\" to set the new redirect URIs."
+#~ msgstr ""
+#~ "Az átirányítási link már mindegyik providerre egyszerre érvényes, ezért "
+#~ "ez a beállítás nem lesz importálva a régi verzióból. Látogass el a "
+#~ "\"Nextend Social Login > Általános beállítások\" fülre az új átirányítási "
+#~ "link beállításához."
+
+#~ msgid ""
+#~ "The login button's layout will be changed to a new, more modern look. If "
+#~ "you used any custom buttons that won't be imported."
+#~ msgstr ""
+#~ "A belépés gomb kinézete változni fog egy újabb, modernebb változatra. Ha "
+#~ "valamilyen egyedi gombot használtál azok a beállítások nem kerülnek "
+#~ "importálásra."
+
+#~ msgid ""
+#~ "The old version's PHP functions are not available anymore. This means if "
+#~ "you used any custom codes where you used these old functions, you need to "
+#~ "remove them."
+#~ msgstr ""
+#~ "Az előző verzió PHP függvényei nem érhetőek el a továbbiakban. Ez azt "
+#~ "jelenti, hogy ha bármilyen egyedi kódban használtad őket el kell "
+#~ "távolítanod a kódot."
+
+#~ msgid ""
+#~ "After the importing process finishes, you will need to <b>test</b> your "
+#~ "app and <b>enable</b> the provider. You can do both in the next screen."
+#~ msgstr ""
+#~ "Miután az importálási folyamat befejeződött, <b>le kell tesztelned</a> az "
+#~ "appodat majd <b>engedélyezni</a> a providert. Mindkettőt meg tudod tenni "
+#~ "a következő oldalon."
+
+#~ msgid "Import Configuration"
+#~ msgstr "Konfiguráció Importálása"
+
+#~ msgid "Import Google configuration"
+#~ msgstr "Google konfiguráció importálása"
+
+#~ msgid "If you have more projects, select the one where your app is."
+#~ msgstr "Ha több projekted van, válaszd ki azt, amelyikben az appod van."
+
+#~ msgid "Click on Credentials at the left-hand menu then select your app."
+#~ msgstr ""
+#~ "Kattints a \"Credentials\" feliratra a bal oldali menüben majd válaszd ki "
+#~ "az appodat."
+
+#~ msgid "Import Twitter configuration"
+#~ msgstr "Twitter konfiguráció importálása"
+
+#~ msgid "Go to the Settings tab."
+#~ msgstr "Menj a \"Settings\" fülre."
+
+#, fuzzy
+#~| msgid ""
+#~| "Go to the OAuth consent screen tab and enter a product name and provide "
+#~| "the Privacy Policy URL, then click on the save button."
+#~ msgid ""
+#~ "If you're prompted to set a product name, do so. Provide the Privacy "
+#~ "Policy URL as well then click on the save button"
+#~ msgstr ""
+#~ "Menj az \"OAuth consent screen\" fülre. Írd be a termék nevét és írd be a "
+#~ "linket az Adatvédelmi Irányelvek oldalad linkjét. Kattints a Save gombra."
+
+#~ msgid "Authorize your Pro Addon"
+#~ msgstr "Aktiváld a Pro Kiegészítődet"
+
+#~ msgid "Authorize"
+#~ msgstr "Aktiválás"
+
+#~ msgid "Deauthorize Pro Addon"
+#~ msgstr "Pro kiegészítő deaktiválása"
+
+#~ msgid "Accept the Twitter Developer Agreement"
+#~ msgstr "Fogadd el a Twitter Fejlesztői Megállapodást"
+
+#~ msgid ""
+#~ "Create your application by clicking on the Create your Twitter "
+#~ "application button"
+#~ msgstr ""
+#~ "Hozd létre az alkalmazásodat a \"Create your Twitter application\" gombra "
+#~ "kattintva"
+
+#~ msgid "Consumer Key"
+#~ msgstr "Consumer Key"
+
+#~ msgid "Comment login button"
+#~ msgstr "Belépés gomb a kommenteknél"
+
+#~ msgid "Comment button style"
+#~ msgstr "Gomb stílusa a kommenteknél"
+
+#~ msgid "WooCommerce login form"
+#~ msgstr "WooCommerce belépési űrlap"
+
+#~ msgid "Connect button before login form"
+#~ msgstr "Belépés gomb a belépési űrlap előtt"
+
+#~ msgid "Connect button after login form"
+#~ msgstr "Belépés gomb a belépési űrlap után"
+
+#~ msgid "Connect button before billing form"
+#~ msgstr "Belépés gomb a számlázási űrlap előtt"
+
+#~ msgid "Connect button after billing form"
+#~ msgstr "Belépés gomb a számlázási űrlapon"
+
+#~ msgid "Link buttons before account details"
+#~ msgstr "Összekapcsoló gombok a profil részletes beállításai előtt"
+
+#~ msgid "WooCommerce button style"
+#~ msgstr "WooCommerce gomb stílusa"
+
+#~ msgid "Use custom"
+#~ msgstr "Egyedi gomb használata"
+
+#~ msgid "Fixed redirect url for register"
+#~ msgstr "Fix átirányítási link regisztrációnál"
+
+#~ msgid ""
+#~ "%5$s plugin (version: %1$s, required: %2$s or newer) is not compatible "
+#~ "with the PRO addon (version: %3$s, required: %4$s or newer). Please "
+#~ "upgrade to the latest version! PRO addon disabled."
+#~ msgstr ""
+#~ "%5$s  plugin (jelenlegi verzió %1$s, szükséges verzió: %2$s vagy újabb) "
+#~ "nem kompatibilis a Pro Kiegészítővel (jelenlegi verzió: %3$s , szükséges "
+#~ "verzió: %4$s vagy újabb). Kérlek frissítd a legújabb verzióra! A Pro "
+#~ "Kiegészítő kikapcsolva."
+
+#~ msgid "%s needs the CURL PHP extension."
+#~ msgstr "A %s-nak szüksége van a CURL PHP kiegészítőre."
+
+#~ msgid "Https protocol is not supported or disabled in CURL."
+#~ msgstr "A HTTPS protokol nincs támogat a CURL-ben vagy ki van kapcsolva."
+
+#~ msgid "Not Tested"
+#~ msgstr "Nincs Tesztelve"
+
+#~ msgid "Your configuration needs testing"
+#~ msgstr "A konfigurációt le kell tesztelni"
+
+#~ msgid "Test the Configuration"
+#~ msgstr "Teszteld le a Konfigurációt"
+
+#~ msgid "Test Again"
+#~ msgstr "Teszteld Újra"
+
+#~ msgctxt "App creation"
+#~ msgid "Create %"
+#~ msgstr "%s"
